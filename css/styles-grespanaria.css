@@ -243,6 +243,7 @@ body {
     top: 300px;
     z-index: -1;
 }
+
 .triangle-left {
     position: absolute;
     left: 0;
@@ -312,6 +313,8 @@ body {
 	border-color: transparent transparent #005f3a transparent;
 }
 
+
+
 /*Footer*/
 footer {
 	width: 100%;
@@ -327,6 +330,11 @@ footer {
 	font-size: 24px;
 	font-family: 'Raleway ExtraLight';
 	margin-top: 40px;
+}
+
+@font-face {
+  font-family: 'Raleway ExtraLight';
+  src: url('font/Raleway-ExtraLight.ttf') format('truetype');
 }
 
 .shape {
