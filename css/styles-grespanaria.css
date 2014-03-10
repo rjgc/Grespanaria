@@ -3,7 +3,7 @@
 a,
 a:focus,
 a:hover {
-	color: #fff;
+	color: #006940;
 }
 
 /*Custom default button*/
@@ -226,33 +226,58 @@ body {
 }
 
 .imgHeader {
-    background-color: #b9b9b9;
-    height: 150px;
-    width: 100%;
-    overflow: hidden;
+	background-color: #b9b9b9;
+	height: 150px;
+	width: 100%;
+	overflow: hidden;
 }
 
-.triangle-bottom-white {
-    width: 0px;
-    height: 0px;
-    border-style: solid;
-    border-width: 575px 575px 0 575px;
-    border-color: #eee transparent transparent transparent;
-    margin: 0 auto;
-    position: absolute;
-    top: 300px;
-    z-index: -1;
+.rectangle {
+	width: 0;
+	height: 0;
+	right: 0;
+	border-style: solid;
+	border-width: 100px 220px 100px 200px;
+	border-color: #eee #eee #eee #eee;
+	margin: 0 auto;
+	position: absolute;
+	z-index: -1;
+}
+
+.triangle-bottom {
+	width: 0;
+	height: 0;
+	right: 0;
+	top: 490px;
+	border-style: solid;
+	border-width: 208px 208px 0 208px;
+	border-color: #eee transparent transparent transparent;
+	margin: 0 auto;
+	position: absolute;
+	z-index: -1;
+}
+
+.triangle-bottom-left {
+	width: 0;
+	height: 0;
+	right: 416px;
+	border-style: solid;
+	border-width: 200px 0 0 200px;
+	border-color: #eee transparent transparent transparent;
+	margin: 0 auto;
+	position: absolute;
+	z-index: -1;
 }
 
 .triangle-left {
-    position: absolute;
-    left: 0;
-    z-index: 1;
-    width: 250px;
-    height: 0;
-    border-style: solid;
-    border-width: 150px 150px 0 0;
-    border-color: #dadada transparent transparent transparent;
+	position: absolute;
+	left: 0;
+	z-index: 1;
+	width: 250px;
+	height: 0;
+	border-style: solid;
+	border-width: 150px 150px 0 0;
+	border-color: #dadada transparent transparent transparent;
 }
 
 .img-news {
@@ -313,7 +338,37 @@ body {
 	border-color: transparent transparent #005f3a transparent;
 }
 
+.profile {
+	padding-bottom: 20px;
+}
 
+h3, h5 {
+	font-weight: bold;
+	display: inline;
+	vertical-align: middle;
+}
+
+.video {
+	padding-top: 30px;
+}
+
+.video>a {
+	padding-left: 20px;
+}
+
+.video>p {
+	display: inline-block;
+	margin-left: 100px;
+}
+
+.video2 {
+	padding-top: 10px;
+	padding-left: 100px;
+}
+
+.video2>a {
+	padding-left: 20px;
+}
 
 /*Footer*/
 footer {
@@ -333,8 +388,8 @@ footer {
 }
 
 @font-face {
-  font-family: 'Raleway ExtraLight';
-  src: url('font/Raleway-ExtraLight.ttf') format('truetype');
+	font-family: 'Raleway ExtraLight';
+	src: url('font/Raleway-ExtraLight.ttf') format('truetype');
 }
 
 .shape {
