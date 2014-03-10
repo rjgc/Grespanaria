@@ -1,8 +1,23 @@
-/*
- * Globals
- */
+@font-face {
+    font-family: 'Open Sans Light';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+    font-family: 'Open Sans Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
 
- /* Links */
+/* Links */
  a,
  a:focus,
  a:hover {
@@ -334,7 +349,7 @@ section .container {
     margin: 30px auto;
 }
 
-.contactus {
+.contactus, .showroom {
     color: #313131;
     font-family: "Open Sans Light";
     line-height: 30px;
@@ -342,16 +357,79 @@ section .container {
 h3 {
     font-family: "Open Sans";
     font-size: 18px;
-    margin: 0;
+    margin: 0 0 30px;
     line-height: 30px;
 }
 
-.contactus p {
+p {
     font-size: 14px;
 }
 
-.contactus a {
+.contactus #mails a {
     font-size: 14px;
     color: #006940;
-    margin: 30px 0;
+}
+
+#mails {
+    display: block;
+    margin: 0 0 30px;
+}
+
+input, textarea {
+    margin: 5px;
+}
+
+.contactus .form-control {
+    border: 0;
+    border-radius: 0;
+}
+
+.contactus .btn-block {
+    background-color: #006940;
+    border: 0;
+    border-radius: 0;
+    color: #fff;
+    font-family: "Open Sans";
+}
+
+.captcha {
+    display: block;
+    margin: 5px;
+    position: relative;
+}
+
+.captcha .form-control {
+    /*margin-left: 85px;*/
+    display: inline-block;
+    width: 70%;
+    margin: 0;
+    position: absolute;
+    right: -10px;
+
+}
+
+.divider {
+    border: 0;
+    margin: -10px 0 40px;
+}
+
+.showroom {
+    border-top: 1px solid #fff;
+    background: url("../img/showroom-back.png") no-repeat center top;
+    background-size: cover;
+    padding-bottom: 100px;
+    margin-bottom: -120px;
+}
+h1 {
+    font-family: "RalewayLight";
+    font-size: 24px;
+    margin: 5px 15px 35px 0;
+    color: #006940;
+}
+
+.showroom h3 {
+    margin: 0;
+    font-size: 24px;
+    font-family: "open sans light";
+    font-weight: 400;
 }
