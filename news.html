@@ -43,25 +43,37 @@
                     <!-- Logo -->
                     <a href="/"><img class="inner" src="img/logo.png" title="GRES PANARIA" /></a>
                     <!-- Menu -->
-                    <nav class="navbar navbar-default menu">
+                    <nav class="navbar navbar-default menu visible-xs">
                         <div class="navbar-header">
-                            <button type="button" data-toggle="collapse" data-target="#navbar-collapse-grid" class="navbar-toggle">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
+                            <a class="navbar-brand" href="#">Menu</a>
                         </div>
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav masthead-nav">
-                                <li><a href="#">&nbsp;&nbsp;HOME&nbsp;&nbsp;</a></li>
-                                <li><a href="#">&nbsp;&nbsp;GRES PANARIA&nbsp;&nbsp;</a></li>
-                                <li><a href="#">&nbsp;&nbsp;PRESENTATIONS&nbsp;&nbsp;</a></li>
-                                <li class="active"><a href="#">&nbsp;&nbsp;NEWS&nbsp;&nbsp;</a></li>
+                            <ul class="nav navbar-nav">
+                                <li><a href="index.html">&nbsp;&nbsp;HOME&nbsp;&nbsp;</a></li>
+                                <li><a href="grespanaria.html">&nbsp;&nbsp;GRES PANARIA&nbsp;&nbsp;</a></li>
+                                <li><a href="presentations.html">&nbsp;&nbsp;PRESENTATIONS&nbsp;&nbsp;</a></li>
+                                <li class="active"><a href="news.html">&nbsp;&nbsp;NEWS&nbsp;&nbsp;</a></li>
                                 <li><a href="#">&nbsp;&nbsp;CERTIFICATION&nbsp;&nbsp;</a></li>
-                                <li><a href="#">&nbsp;&nbsp;CONTACT US&nbsp;&nbsp;</a></li>
+                                <li><a href="contactus.html">&nbsp;&nbsp;CONTACT US&nbsp;&nbsp;</a></li>
                             </ul>
                         </div>
                     </nav>
+                    <div class="hidden-xs menu">
+                        <ul class="nav masthead-nav">
+                            <li><a href="index.html">&nbsp;&nbsp;HOME&nbsp;&nbsp;</a></li>
+                            <li><a href="grespanaria.html">&nbsp;&nbsp;GRES PANARIA&nbsp;&nbsp;</a></li>
+                            <li><a href="presentations.html">&nbsp;&nbsp;PRESENTATIONS&nbsp;&nbsp;</a></li>
+                            <li class="active"><a href="news.html">&nbsp;&nbsp;NEWS&nbsp;&nbsp;</a></li>
+                            <li><a href="#">&nbsp;&nbsp;CERTIFICATION&nbsp;&nbsp;</a></li>
+                            <li><a href="contactus.html">&nbsp;&nbsp;CONTACT US&nbsp;&nbsp;</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </header>
@@ -83,7 +95,7 @@
                         <div class="col-md-4">
                             <div class="news-feed">
                                 <img src="img/img1.jpg" width="250" height="167" alt="Imagem notícia 1" title="Imagem notícia 1">
-                                <p id="date">01.03.2014</p>
+                                <p class="date">01.03.2014</p>
                                 <h4>Ceramic Tiles Revolution on the way</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac dictum metus... <a href="#">Read More</a></p>
                             </div>
@@ -91,7 +103,7 @@
                         <div class="col-md-4">
                             <div class="news-feed">
                                 <img src="img/img2.jpg" width="250" height="167" alt="Imagem notícia 2" title="Imagem notícia 2">
-                                <p id="date">03.02.2014</p>
+                                <p class="date">03.02.2014</p>
                                 <h4>Panaria Showrooms have more than 25500 visits in 2013</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac dictum metus... <a href="#">Read More</a></p>
                             </div>
@@ -99,7 +111,7 @@
                         <div class="col-md-4">
                             <div class="news-feed">
                                 <img src="img/img3.jpg" width="250" height="167" alt="Imagem notícia 3" title="Imagem notícia 3">
-                                <p id="date">01.12.2013</p>
+                                <p class="date">01.12.2013</p>
                                 <h4>Linea, new solutions</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac dictum metus... <a href="#">Read More</a></p>
                             </div>
@@ -109,7 +121,7 @@
                         <div class="col-md-4">
                             <div class="news-feed">
                                 <img src="img/img4.jpg" width="250" height="167" alt="Imagem notícia 4" title="Imagem notícia 5">
-                                <p id="date">01.11.2013</p>
+                                <p class="date">01.11.2013</p>
                                 <h4>Panaria Group on Mars</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac dictum metus... <a href="#">Read More</a></p>
                             </div>
@@ -117,7 +129,7 @@
                         <div class="col-md-4">
                             <div class="news-feed">
                                 <img src="img/img5.jpg" width="250" height="167" alt="Imagem notícia 5" title="Imagem notícia 5">
-                                <p id="date">25.10.2013</p>
+                                <p class="date">25.10.2013</p>
                                 <h4>Economic crisis effects in 2013</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac dictum metus... <a href="#">Read More</a></p>
                             </div>
@@ -125,7 +137,7 @@
                         <div class="col-md-4">
                             <div class="news-feed">
                                 <img src="img/img6.jpg" width="250" height="167" alt="Imagem notícia 6" title="Imagem notícia 6">
-                                <p id="date">01.03.2013</p>
+                                <p class="date">01.03.2013</p>
                                 <h4>Success meet some changes</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac dictum metus... <a href="#">Read More</a></p>
                             </div>
@@ -169,6 +181,7 @@
                         <p class="copyright"><span style="color: gray;">&copy; 2014</span> Gres Panaria Protugal S.A. | <span style="color: gray;">Disclaimer</span></p>
                     </div>
                 </div>
+            </div>
         </footer>
     </body>
 </html>
