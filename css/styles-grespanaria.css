@@ -1,6 +1,9 @@
 /*Globals*/
 /* Links */
-a,
+a {
+	color: #000;
+}
+
 a:focus,
 a:hover {
 	color: #006940;
@@ -79,18 +82,19 @@ body {
 	border-bottom: 2px solid transparent;
 }
 
-.masthead-nav > li > a:hover,
-.masthead-nav > li > a:focus {
-	background-color: transparent;
-	border-bottom-color: #006940;
-	border-bottom-color: rgba(255,255,255,.25);
-}
-
+.masthead-nav a,
+.masthead-nav a:hover,
+.masthead-nav a:focus
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
 	color: #006940;
 	border-bottom-color: #006940;
+	background-color: transparent;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+	background-color: transparent !important;
 }
 
 @media (min-width: 768px) {
@@ -340,6 +344,11 @@ body {
 
 .profile {
 	padding-bottom: 20px;
+	padding-top: 40px;
+}
+
+.profile>p {
+	padding-top: 30px;
 }
 
 h3, h5 {
@@ -353,16 +362,45 @@ h3, h5 {
 }
 
 .video>a {
-	padding-left: 20px;
+	padding-left: 15px;
 }
 
-.video2 {
+.text-brand {
+	width: 93%;
+	padding-top: 50px;
+	padding-left: 40px;
+}
+
+.text-brand>div>p {
+	padding-left: 15px;
+}
+
+.img {
+	padding-top: 5px;
+	width: 140px;
+	height: 50px;
+}
+
+.presentation {
 	padding-top: 10px;
-	padding-left: 100px;
+	padding-left: 200px;
 }
 
-.video2>a {
-	padding-left: 20px;
+.presentation>a {
+	padding-left: 10px;
+}
+
+.showroom {
+	padding-top: 10px;
+	padding-left: 130px;
+}
+
+.showroom>a {
+	padding-left: 10px;
+}
+
+.bottom {
+	margin: 200px;
 }
 
 /*Footer*/
