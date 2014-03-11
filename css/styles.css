@@ -1,9 +1,12 @@
 /*Globals*/
- /* Links */
- a,
- a:focus,
- a:hover {
-  color: #fff;
+/* Links */
+a {
+  color: #000;
+}
+
+a:focus,
+a:hover {
+  color: #006940;
 }
 
 /*Custom default button*/
@@ -17,15 +20,15 @@
 }
 
 /*Base structure*/
- html,
- body {
+html,
+body {
   height: 100%;
   width: 100%;
 }
 
 body {
   font-family: 'Raleway' !important;
-  background: url('../img/background_marcadagua.jpg') #eaeaea no-repeat;
+  background: url('../img/showroom-back.png') #eaeaea no-repeat;
 }
 
 @font-face {
@@ -57,7 +60,7 @@ body {
 }
 
 /*Header*/
- .masthead-brand {
+.masthead-brand {
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -79,18 +82,19 @@ body {
   border-bottom: 2px solid transparent;
 }
 
-.masthead-nav > li > a:hover,
-.masthead-nav > li > a:focus {
-  background-color: transparent;
-  border-bottom-color: #006940;
-  border-bottom-color: rgba(255,255,255,.25);
-}
-
+.masthead-nav a,
+.masthead-nav a:hover,
+.masthead-nav a:focus
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
   color: #006940;
   border-bottom-color: #006940;
+  background-color: transparent;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: transparent !important;
 }
 
 @media (min-width: 768px) {
@@ -104,7 +108,7 @@ body {
 
 
 /*Cover*/
- .cover {
+.cover {
   padding: 0 20px;
 }
 
@@ -114,7 +118,7 @@ body {
 }
 
 /*Affix and center*/
- @media (min-width: 768px) {
+@media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
     position: fixed;
