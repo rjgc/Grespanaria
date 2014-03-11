@@ -236,6 +236,22 @@ body {
 	overflow: hidden;
 }
 
+.img-triang {
+	z-index: 1;
+	position: absolute;
+	right: 174px;
+	top: 206px;
+	width: 350px;
+}
+
+.img-triang2 {
+	z-index: 1;
+	position: absolute;
+	right: 129px;
+	top: 426px;
+	width: 350px;
+}
+
 .rectangle {
 	width: 0;
 	height: 0;
@@ -246,6 +262,19 @@ body {
 	margin: 0 auto;
 	position: absolute;
 	z-index: -1;
+}
+
+.triangle-little-bottom {
+	width: 0;
+	height: 0;
+	right: 175px;
+	top: 382px;
+	border-style: solid;
+	border-width: 44px 44px 0 45px;
+	border-color: #4b4b4b transparent transparent transparent;
+	margin: 0 auto;
+	position: absolute;
+	z-index: 1;
 }
 
 .triangle-bottom {
@@ -383,7 +412,7 @@ h3, h5 {
 
 .presentation {
 	padding-top: 10px;
-	padding-left: 200px;
+	padding-left: 30px;
 }
 
 .presentation>a {
@@ -392,11 +421,15 @@ h3, h5 {
 
 .showroom {
 	padding-top: 10px;
-	padding-left: 130px;
+	padding-left: 30px;
 }
 
 .showroom>a {
 	padding-left: 10px;
+}
+
+.top {
+	margin: 40px;
 }
 
 .bottom {
@@ -448,6 +481,15 @@ footer {
 		padding-top: 0;
 		padding-bottom: 20px;
 	}
+
+	.text-brand>div>p {
+		padding-left: 30px;
+	}
+
+	.presentation,
+	.showroom {
+		padding-left: 45px;
+	}
 }
 
 @media (max-width: 991px) {
@@ -458,6 +500,16 @@ footer {
 
 	.masthead-nav > li + li {
 		margin-left: 0;
+	}
+
+	.text-brand>div>p {
+		padding-left: 0px;
+		padding-top: 20px;
+	}
+
+	.presentation,
+	.showroom {
+		padding-left: 15px;
 	}
 }
 
@@ -472,3 +524,4 @@ footer {
 		width: auto;
 	}
 }
+
