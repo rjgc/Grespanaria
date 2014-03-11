@@ -176,11 +176,11 @@ footer {
 /*Aarao*/
 /*Header*/
 .lang {
-  position: absolute;
-  right: 135px;
-  color: #000000;
-  display: inline-block;
-  vertical-align: middle;
+    position: absolute;
+    right: 0;
+    color: #000000;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .language {
@@ -436,4 +436,14 @@ h1 {
     font-size: 24px;
     font-family: "open sans light";
     font-weight: 400;
+}
+
+#map-canvas{
+    width:100%;
+    height:380px;
+    display:block;
+}
+
+#map-canvas img {
+    max-width: none;
 }

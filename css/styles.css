@@ -74,12 +74,12 @@ body {
 }
 
 .masthead-nav > li > a {
-  padding-right: 0;
-  padding-left: 0;
-  font-size: 14px;
-  color: #000; /* IE8 proofing */
-  padding-bottom: 0px !important;
-  border-bottom: 2px solid transparent;
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 14px;
+    color: #000; /* IE8 proofing */
+    padding-bottom: 0px !important;
+    border: 0;
 }
 
 .masthead-nav a,
@@ -88,13 +88,17 @@ body {
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
-  color: #006940;
-  border-bottom-color: #006940;
-  background-color: transparent;
+    color: #006940;
+    border-bottom: 2px solid #006940;
+    background-color: transparent;
 }
 
 .nav > li > a:hover, .nav > li > a:focus {
-  background-color: transparent !important;
+    background-color: transparent !important;
+}
+
+.masthead-nav > li .active {
+    border-bottom: 2px solid #006940;
 }
 
 @media (min-width: 768px) {

@@ -176,11 +176,11 @@ footer {
 /*Aarao*/
 /*Header*/
 .lang {
-  position: absolute;
-  right: 135px;
-  color: #000000;
-  display: inline-block;
-  vertical-align: middle;
+    position: absolute;
+    right: 0;
+    color: #000000;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .language {

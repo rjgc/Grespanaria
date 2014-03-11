@@ -15,6 +15,119 @@
         <script src="js/docs.min.js"></script>
         <!--<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>-->
+        <script type="text/javascript"
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACyHnR6xtiTqqjSrYl05xkIKzO6fYJZqk&sensor=false">
+        </script>
+        <script type="text/javascript">
+            function initialize() {
+
+                // Create an array of styles.
+                /*var styles = [
+                    {
+                        stylers: [
+                            { hue: "#90ba92" },
+                            { saturation: 80 },
+                            { lightness: -20 },
+                            { gamma: 3 },
+                        ]
+                    }
+                ];*/
+
+                var styles = [
+                    {
+                        featureType: "all",
+                        stylers: [
+                            { saturation: -80 }
+                        ]
+                    },{
+                        featureType: "road",
+                        elementType: "geometry",
+                        stylers: [
+                            { hue: "#8eb98c" }
+                        ]
+                    },{
+                        featureType: "water",
+                        elementType: "geometry",
+                        stylers: [
+                            { hue: "#8eb98c" },
+                            { lightness: 0 }
+
+                        ]
+                    },{
+                        featureType: "poi.business",
+                        elementType: "labels",
+                        stylers: [
+                            { visibility: "off" }
+                        ]
+                    }
+                ];
+
+                var image1 = 'img/markerM.png';
+                var image2 = 'img/markerPG.png';
+                var image3 = 'img/markerLove.png';
+
+                var styledMap = new google.maps.StyledMapType(styles,
+                        {name: "Styled Map"});
+
+
+                var mapOptions = {
+                    center: new google.maps.LatLng(40.754062,-8.505959),
+                    zoom: 10,
+                    panControl: false,
+                    mapTypeControl: false,
+                    disableDefaultUI: true,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+
+
+                };
+                var map = new google.maps.Map(document.getElementById("map-canvas"),
+                        mapOptions);
+
+                var myLatLng3 = new google.maps.LatLng(40.647686, -8.608828);
+
+                var marker = new google.maps.Marker({
+                    position: myLatLng3,
+                    map: map,
+                    animation: google.maps.Animation.DROP,
+                    icon: image3,
+                    title:"LoveTiles"
+                });
+
+                var myLatLng = new google.maps.LatLng(40.605095, -8.651530);
+
+                var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    animation: google.maps.Animation.DROP,
+                    icon: image1,
+                    title:"MarGres"
+                });
+
+                var myLatLng2 = new google.maps.LatLng(40.603183,-8.652140);
+
+                var marker = new google.maps.Marker({
+                    position: myLatLng2,
+                    map: map,
+                    animation: google.maps.Animation.DROP,
+                    icon: image2,
+                    title:"Gres Panaria"
+                });
+
+                // Code for infowindow
+                var popup=new google.maps.InfoWindow({
+                    content: "Title oi"
+                });
+                google.maps.event.addListener(marker, 'click', function(e) {
+                    console.log(e);
+                    popup.open(map, this);
+                });
+
+                map.mapTypes.set('map_style', styledMap);
+                map.setMapTypeId('map_style');
+
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
     </head>
     <body>
         <header>
@@ -78,7 +191,8 @@
         </header>
         <section>
             <div id="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d96868.18880989288!2d-8.624477926982228!3d40.649044815449514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2spt!4v1394463965090" width="100%" height="380" frameborder="0" style="border:0"></iframe>
+                <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d96868.18880989288!2d-8.624477926982228!3d40.649044815449514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2spt!4v1394463965090" width="100%" height="380" frameborder="0" style="border:0"></iframe>-->
+                <div id="map-canvas"></div>
             </div>
             <div class="container">
                 <div class="contactus">
