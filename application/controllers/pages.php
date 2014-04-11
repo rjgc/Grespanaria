@@ -80,9 +80,12 @@ class Pages extends CI_Controller {
 	public function certification()
 	{
         $data['current'] = 'certification';
-		$this->load->view('templates/header',$data);
+		$this->load->view('templates/header', $data);
 
-		$this->load->view('pages/certification');
+        $data['certificados'] = $this->grespanaria_model->get_certificados();
+        $data['tipos'] = $this->grespanaria_model->get_certificados_tipos();
+		$this->load->view('pages/certification', $data);
+
 		$this->load->view('templates/footer');	
 	}
 	

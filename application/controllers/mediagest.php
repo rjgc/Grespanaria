@@ -71,25 +71,6 @@ class Mediagest extends CI_Controller {
        	
 	}
 
-    function certificados_management()
-    {
-        $crud = new grocery_CRUD();
-
-        $crud->set_table('certificados');
-        $crud->set_subject('Certificados');
-        $crud->columns('nome','tamanho','url');
-
-        $crud->required_fields('nome','tamanho','url');
-
-        $output = $crud->render();
-
-        $data['titulo'] = 'Certificados';
-        $data['sub-titulo'] = 'Faça aqui a gestão dos Certificados';
-        $this->load->view('mediagest/header',(object)array('data' => $data, 'js_files' => $crud->get_js_files() , 'css_files' => $crud->get_css_files()));
-
-        $this->_admin_output($output);
-    }
-
     function noticias_management()
     {
         $crud = new grocery_CRUD();
@@ -106,6 +87,48 @@ class Mediagest extends CI_Controller {
 
         $data['titulo'] = 'Noticias';
         $data['sub-titulo'] = 'Faça aqui a gestão das Noticias';
+        $this->load->view('mediagest/header',(object)array('data' => $data, 'js_files' => $crud->get_js_files() , 'css_files' => $crud->get_css_files()));
+
+        $this->_admin_output($output);
+    }
+
+    function certificados_management()
+    {
+        $crud = new grocery_CRUD();
+
+        $crud->set_table('certificados');
+        $crud->set_subject('Certificados');
+        $crud->columns('nome','url', 'id_tipos', 'id_marcas');
+
+        $crud->required_fields('nome','url', 'id_tipos', 'id_marcas');
+        $crud->set_field_upload('url','assets/uploads/files');
+        $crud->display_as('id_tipos', 'Tipo de Certificados')->display_as('id_marcas', 'Marca');
+
+        $crud->set_relation('id_tipos', 'certificados_tipos', 'nome');
+        $crud->set_relation('id_marcas', 'certificados_marcas', 'nome');
+
+        $output = $crud->render();
+
+        $data['titulo'] = 'Certificados';
+        $data['sub-titulo'] = 'Faça aqui a gestão dos Certificados';
+        $this->load->view('mediagest/header',(object)array('data' => $data, 'js_files' => $crud->get_js_files() , 'css_files' => $crud->get_css_files()));
+
+        $this->_admin_output($output);
+    }
+
+    function certificados_tipo_management()
+    {
+        $crud = new grocery_CRUD();
+
+        $crud->set_table('certificados_tipos');
+        $crud->set_subject('Tipos de Certificados');
+
+        $crud->required_fields('nome');
+
+        $output = $crud->render();
+
+        $data['titulo'] = 'Tipos de Certificados';
+        $data['sub-titulo'] = 'Faça aqui a gestão dos Tipos de Certificados';
         $this->load->view('mediagest/header',(object)array('data' => $data, 'js_files' => $crud->get_js_files() , 'css_files' => $crud->get_css_files()));
 
         $this->_admin_output($output);

@@ -24,18 +24,25 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="logos">
-                                <a href="#"><img src="<?php echo base_url() ?>assets/grespanaria/img/margres3.png" height="31"></a><a href="#"><img src="<?php echo base_url() ?>assets/grespanaria/img/love3.png" height="31"></a><a href="#"><img src="<?php echo base_url() ?>assets/grespanaria/img/bloom3.png" height="31"></a><a href="#"><img src="<?php echo base_url() ?>assets/grespanaria/img/easy3.png" height="31"></a>
+                                <h1>Available Documents</h1><a href="#"><img src="<?php echo base_url() ?>assets/grespanaria/img/margres3.png" height="31"></a><a href="#"><img src="<?php echo base_url() ?>assets/grespanaria/img/love3.png" height="31"></a><a href="#"><img src="<?php echo base_url() ?>assets/grespanaria/img/bloom3.png" height="31"></a><a href="#"><img src="<?php echo base_url() ?>assets/grespanaria/img/easy3.png" height="31"></a>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
                             <ul>
-                                <li><a href="#"><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_pdf.png" width="42" height="42" /> Declaração Ambiental</a> [ 100Kb ]</li>
-                                <li><a href="#"><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_pdf.png" width="42" height="42" /> Marcação CE</a> [ 120kb ]</li>
-                                <li><a href="#"><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_pdf.png" width="42" height="42" /> IQ NET NP EN ISO 9001:2008</a>[ 200kb ]</li>
-                                <li><a href="#"><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_pdf.png" width="42" height="42" /> IQ NET NP EN ISO 9001:2008</a> [ 300kb ]</li>
-                                <li><a href="#"><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_pdf.png" width="42" height="42" /> Certif Wall Tiles</a> [ 350kb ]</li>
+                                <?php foreach($tipos as $tipo) { ?>
+                                    <li><?= $tipo['nome'] ?>
+                                    </li>
+                                <?php } ?>
+                                <?php foreach($certificados as $certficado) { ?>
+                                    <li>
+                                        <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url'] ?>" target="_blank">
+                                            <img src="<?php echo base_url() ?>assets/grespanaria/img/icon_pdf.png" width="42" height="42" />
+                                            <?= $certficado['nome'] ?>
+                                        </a>
+                                    </li>
+                                <?php } ?>
                             </ul>
                         </div>
                     </div>

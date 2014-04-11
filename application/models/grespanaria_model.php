@@ -12,4 +12,18 @@ class Grespanaria_model extends CI_Model
         return $data;
     }
 
+    public function get_certificados(){
+        $query = $this->db->query("select * from certificados");
+
+        $data = $query->result_array();
+        return $data;
+    }
+
+    public function get_certificados_tipos(){
+        $query = $this->db->query("select * from certificados_tipos");
+
+        $data = $query->result_array();
+        return $data;
+    }
+
 }
