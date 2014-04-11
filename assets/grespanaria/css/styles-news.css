@@ -51,7 +51,7 @@ body {
 
 footer {
     background-color: #eaeaea;
-    margin-top: 120px;
+    margin-top: 70px;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -138,9 +138,7 @@ footer {
   font-weight: bold;
 }
 
-/*
- * Affix and center
- */
+
 
  @media (min-width: 768px) {
   /* Pull out the header and footer */
@@ -437,8 +435,10 @@ footer {
     border-color: transparent transparent #b9b9b9 transparent;
 }
 
-section .container {
-    margin: 30px auto;
+section .container {margin: 30px auto 0;}
+section .container div .row .col-md-4 {
+    min-height: 390px;
+    margin: 0 0 10px;
 }
 
 .news-feed, .news-feed h4 {
@@ -470,7 +470,7 @@ h4 {
 }
 
 .row {
-    margin: 20px 0 80px;
+    margin: 20px auto 0;
 }
 
 h1 {
