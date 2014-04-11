@@ -17,7 +17,7 @@
                         <?php foreach($noticias as $noticia) { ?>
                             <div class="col-md-4">
                                 <div class="news-feed">
-                                    <img src="<?php echo base_url() ?>assets/grespanaria/img/<?= $noticia['foto'] ?>" width="250" height="167">
+                                    <img src="<?php echo base_url() ?>assets/uploads/noticias/<?= $noticia['foto'] ?>" width="250" height="167">
                                     <p class="date"><?= $noticia['data'] ?></p>
                                     <h4><?= $noticia['titulo_pt'] ?></h4>
                                     <p><?= $noticia['texto_pt'] ?><a href="<?php echo site_url('pages/noticia/'.$noticia['id_noticia']) ?>">Read More</a></p>
