@@ -3,7 +3,7 @@
             <div class="container">
                 <div class="inner footer">
                     <!-- Title -->
-                    <p class="footer-title">Gres Panaria <span style="color: gray;">Portugal</span></p>
+                    <p class="footer-title">Gres Panaria <span>Portugal</span></p>
                     <div class="row">
                         <div class="col-md-12">
                             <!-- Logo Portugal -->
@@ -14,7 +14,7 @@
                         </div>
                     </div>
                     <!-- Title World -->
-                    <p class="footer-title">Panaria <span style="color: gray;">Bussiness World</span><img class="shape" src="<?php echo base_url() ?>assets/grespanaria/img/shape.png"></p>
+                    <p class="footer-title">Panaria <span>Bussiness World</span><img class="shape" src="<?php echo base_url() ?>assets/grespanaria/img/shape.png"></p>
                     <div class="row">
                         <div class="col-md-12">
                             <!-- Logo World -->
@@ -31,7 +31,7 @@
                             <img class="footer-img" src="<?php echo base_url() ?>assets/grespanaria/img/easy.png" width="58" height="23" title="EASY">
                         </div>
                         <!-- Copyright -->
-                        <p class="copyright"><span style="color: gray;">&copy; 2014</span> Gres Panaria Protugal S.A. | <span style="color: gray;">Disclaimer</span></p>
+                        <p class="copyright">&copy; 2014 <span>Gres Panaria Protugal S.A.</span> |Disclaimer</p>
                     </div>
                 </div>
             </div>

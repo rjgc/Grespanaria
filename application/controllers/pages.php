@@ -37,15 +37,17 @@ class Pages extends CI_Controller {
 		$this->home();
     }
 
-	public function home()
-	{
-		$data['current'] = 'home';
-		$this->load->view('templates/header',$data);
+    public function home()
+    {
+        $data['current'] = 'home';
+        $this->load->view('templates/header',$data);
 
-		$this->load->view('pages/home');
-		$this->load->view('templates/footer');	
+        $data['noticias'] = $this->grespanaria_model->get_noticias_destaque();
 
-	}
+        $this->load->view('pages/home', $data);
+        $this->load->view('templates/footer');
+
+    }
 	
 	public function grespanaria()
 	{
@@ -64,7 +66,7 @@ class Pages extends CI_Controller {
 		$this->load->view('pages/presentations');
 		$this->load->view('templates/footer');	
 	}
-	
+
 	public function news()
 	{
 		$data['current'] = 'news';
@@ -73,7 +75,7 @@ class Pages extends CI_Controller {
         $data['noticias'] = $this->grespanaria_model->get_noticias();
 
 		$this->load->view('pages/news', $data);
-		$this->load->view('templates/footer');	
+		$this->load->view('templates/footer');
 
 	}
 	

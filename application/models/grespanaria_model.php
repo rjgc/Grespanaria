@@ -1,5 +1,5 @@
 <?php
-class Grespanaria_model extends CI_Model
+class grespanaria_model extends CI_Model
 {
     public function __construct() {
         parent::__construct();
@@ -9,6 +9,13 @@ class Grespanaria_model extends CI_Model
         $query = $this->db->query("select * from noticias");
 
         $data = $query->result_array();
+        return $data;
+    }
+
+    public function get_noticias_destaque(){
+        $query = $this->db->query("select * from noticias order by data_news desc limit 3");
+
+        $data = $query->result_array();;
         return $data;
     }
 

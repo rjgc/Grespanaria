@@ -1,37 +1,37 @@
 <!doctype html>
-<html lang="en">
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
-        <meta name="author" content="">
+        <meta name="author" content="Mediaweb Creations">
         <link rel="shortcut icon" href="<?php echo base_url() ?>assets/grespanaria/ico/favicon.ico">
 
         <title>Grespanaria Portugal, S.A.</title>
 
         <!-- Bootstrap core CSS -->
+        <link href="<?php echo base_url() ?>assets/grespanaria/css/reset.css" rel="stylesheet">
         <link href="<?php echo base_url() ?>assets/grespanaria/css/bootstrap.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,300' rel='stylesheet' type='text/css'>
+        <link href="<?php echo base_url() ?>assets/grespanaria/styles.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
-        <?php if( isset($current) && $current === 'home' ){?>
-        <link href="<?php echo base_url() ?>assets/grespanaria/styles.css" rel="stylesheet">
-        <?php }?>
-         <?php if( isset($current) && $current === 'grespanaria' ){?>
+        <?php   if( isset($current) && $current === 'grespanaria' ){ ?>
         <link href="<?php echo base_url() ?>assets/grespanaria/css/styles-grespanaria.css" rel="stylesheet">
-        <?php }?>
-         <?php if( isset($current) && $current === 'presentations' ){?>
+        <?php   }
+                if( isset($current) && $current === 'presentations' ){ ?>
         <link href="<?php echo base_url() ?>assets/grespanaria/css/styles-presentations.css" rel="stylesheet">
-        <?php }?>
-         <?php if( isset($current) && $current === 'news' ){?>
+        <?php   }
+                if( isset($current) && $current === 'news' ){ ?>
         <link href="<?php echo base_url() ?>assets/grespanaria/css/styles-news.css" rel="stylesheet">
-        <?php }?>
-         <?php if( isset($current) && $current === 'certification' ){?>
+        <?php   }
+                if( isset($current) && $current === 'certification' ){ ?>
         <link href="<?php echo base_url() ?>assets/grespanaria/css/styles-certification.css" rel="stylesheet">
-        <?php }?>
-        <?php if( isset($current) && $current === 'contactus' ){?>
+        <?php   }
+                if( isset($current) && $current === 'contactus' ){ ?>
         <link href="<?php echo base_url() ?>assets/grespanaria/css/styles-contactus.css" rel="stylesheet">
-        <?php }?>
+        <?php   } ?>
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
@@ -163,59 +163,54 @@
         <header>
             <div class="container">
                 <div class="lang">
-                    <p class="language">LANGUAGE</p>
-                    <div class="btn-group">
-                        <!-- Language Button -->
-                        <button type="button" class="btn button">PT</button>
-                        <button type="button" class="btn button button-select" data-toggle="dropdown">
-                            <span class="caret"></span>
-                        </button>
-                        <!-- Dropdown -->
-                        <ul class="dropdown-menu dropdown" role="menu">
-                            <li><a href="#">PT</a></li>
-                            <li><a href="#">EN</a></li>
-                            <li><a href="#">FR</a></li>
-                            <li><a href="#">ES</a></li>
-                            <li><a href="#">DE</a></li>
-                            <li><a href="#">PY</a></li>
-                        </ul>
-                    </div>
+                    <form>
+                        <label for="language" class="language">LANGUAGE</label>
+                        <select id="language" name="lang">
+                            <option value="PT" selected>PT</option>
+                            <option value="EN">EN</option>
+                            <option value="FR">FR</option>
+                            <option value="ES">ES</option>
+                            <option value="DE">DE</option>
+                            <option value="PY">PY</option>
+                        </select>
+                        <input type="submit">
+                    </form>
                 </div>
-                <div class="inner">
-                    <!-- Logo -->
-                    <a href="/"><img class="inner" src="<?php echo base_url() ?>assets/grespanaria/img/logo.png" title="GRES PANARIA" /></a>
-                    <!-- Menu -->
-                    <nav class="navbar navbar-default menu visible-xs">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="#">Menu</a>
-                        </div>
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav">
-                                <li><a <?php echo ( isset($current) && $current === 'home' ) ? 'class="active"' : ''?> href="<?php echo site_url('home')?>">&nbsp;&nbsp;HOME&nbsp;&nbsp;</a></li>
-                                <li><a <?php echo ( isset($current) && $current === 'grespanaria' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/grespanaria')?>">&nbsp;&nbsp;GRES PANARIA&nbsp;&nbsp;</a></li>
-                                <li><a <?php echo ( isset($current) && $current === 'presentations' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/presentations')?>">&nbsp;&nbsp;PRESENTATIONS&nbsp;&nbsp;</a></li>
-                                <li><a <?php echo ( isset($current) && $current === 'news' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/news')?>">&nbsp;&nbsp;NEWS&nbsp;&nbsp;</a></li>
-                                <li><a <?php echo ( isset($current) && $current === 'certification' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/certification')?>">&nbsp;&nbsp;CERTIFICATION&nbsp;&nbsp;</a></li>
-                                <li><a <?php echo ( isset($current) && $current === 'contactus' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/contactus')?>.html">&nbsp;&nbsp;CONTACT US&nbsp;&nbsp;</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                    <div class="hidden-xs menu">
-                        <ul class="nav masthead-nav">
-                            <li><a <?php echo ( isset($current) && $current === 'home' ) ? 'class="active"' : ''?> href="<?php echo site_url('home')?>">&nbsp;&nbsp;HOME&nbsp;&nbsp;</a></li>
-                            <li><a <?php echo ( isset($current) && $current === 'grespanaria' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/grespanaria')?>">&nbsp;&nbsp;GRES PANARIA&nbsp;&nbsp;</a></li>
-                            <li><a <?php echo ( isset($current) && $current === 'presentations' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/presentations')?>">&nbsp;&nbsp;PRESENTATIONS&nbsp;&nbsp;</a></li>
-                            <li><a <?php echo ( isset($current) && $current === 'news' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/news')?>">&nbsp;&nbsp;NEWS&nbsp;&nbsp;</a></li>
-                            <li><a <?php echo ( isset($current) && $current === 'certification' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/certification')?>">&nbsp;&nbsp;CERTIFICATION&nbsp;&nbsp;</a></li>
-                            <li><a <?php echo ( isset($current) && $current === 'contactus' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/contactus')?>">&nbsp;&nbsp;CONTACT US&nbsp;&nbsp;</a></li>
+                <div class="logo">
+                    <a href="/">
+                        <h1>GRES PANARIA Portugal S.A.</h1>
+                    </a>
+                </div>
+                <nav class="navbar navbar-default menu visible-xs">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Menu</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a <?php echo ( isset($current) && $current === 'home' ) ? 'class="active"' : ''?> href="<?php echo site_url('home')?>">HOME</a></li>
+                            <li><a <?php echo ( isset($current) && $current === 'grespanaria' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/grespanaria')?>">GRES PANARIA</a></li>
+                            <li><a <?php echo ( isset($current) && $current === 'presentations' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/presentations')?>">PRESENTATIONS</a></li>
+                            <li><a <?php echo ( isset($current) && $current === 'news' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/news')?>">NEWS</a></li>
+                            <li><a <?php echo ( isset($current) && $current === 'certification' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/certification')?>">CERTIFICATION</a></li>
+                            <li><a <?php echo ( isset($current) && $current === 'contactus' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/contactus')?>">CONTACT US;</a></li>
                         </ul>
                     </div>
+                </nav>
+                <div class="hidden-xs menu">
+                    <ul class="nav">
+                        <li><a <?php echo ( isset($current) && $current === 'home' ) ? 'class="active"' : ''?> href="<?php echo site_url('home')?>">HOME</a></li>
+                        <li><a <?php echo ( isset($current) && $current === 'grespanaria' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/grespanaria')?>">GRES PANARIA</a></li>
+                        <li><a <?php echo ( isset($current) && $current === 'presentations' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/presentations')?>">PRESENTATIONS</a></li>
+                        <li><a <?php echo ( isset($current) && $current === 'news' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/news')?>">NEWS</a></li>
+                        <li><a <?php echo ( isset($current) && $current === 'certification' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/certification')?>">CERTIFICATION</a></li>
+                        <li><a <?php echo ( isset($current) && $current === 'contactus' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/contactus')?>">CONTACT US</a></li>
+                    </ul>
                 </div>
             </div>
         </header>

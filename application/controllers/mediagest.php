@@ -77,7 +77,7 @@ class Mediagest extends CI_Controller {
 
         $crud->set_table('noticias');
         $crud->set_subject('Noticias');
-        $crud->columns('data','titulo_pt','texto_pt');
+        $crud->columns('data_news','titulo_pt','texto_pt');
 
         $crud->required_fields('data','titulo_pt','texto_pt','foto');
         $crud->field_type('texto_pt', 'text')->field_type('texto_en', 'text')->field_type('texto_fr', 'text')->field_type('texto_es', 'text')->field_type('texto_de', 'text')->field_type('texto_py', 'text');
