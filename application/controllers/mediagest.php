@@ -92,6 +92,26 @@ class Mediagest extends CI_Controller {
         $this->_admin_output($output);
     }
 
+    function apresentacoes_management()
+    {
+        $crud = new grocery_CRUD();
+
+        $crud->set_table('apresentacoes');
+        $crud->set_subject('Apresentações');
+        $crud->columns('nome','url', 'tamanho');
+
+        $crud->required_fields('nome','url', 'tamanho');
+        $crud->set_field_upload('url','assets/uploads/files');
+
+        $output = $crud->render();
+
+        $data['titulo'] = 'Apresentações';
+        $data['sub-titulo'] = 'Faça aqui a gestão das Apresentações';
+        $this->load->view('mediagest/header',(object)array('data' => $data, 'js_files' => $crud->get_js_files() , 'css_files' => $crud->get_css_files()));
+
+        $this->_admin_output($output);
+    }
+
     function certificados_management()
     {
         $crud = new grocery_CRUD();

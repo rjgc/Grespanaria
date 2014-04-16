@@ -115,6 +115,9 @@
         <li <?php if ($data['titulo'] == 'Noticias') echo 'class="section"'; ?>>
             <a href='<?php echo site_url("mediagest/noticias_management")?>'><span class="icon">&#128196;</span> Noticias</a>
         </li>
+        <li <?php if ($data['titulo'] == 'Apresentações') echo 'class="section"'; ?>>
+            <a href='<?php echo site_url("mediagest/apresentacoes_management")?>'><span class="icon">&#128196;</span> Apresentações</a>
+        </li>
         <li <?php if ($data['titulo'] == 'Certificados' ||
             $data['titulo'] == 'Tipos de Certificados') echo 'class="section"'; ?> >
             <a href='#'><span class="icon">&#59176;</span> Certificados</a>

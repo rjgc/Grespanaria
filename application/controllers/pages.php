@@ -63,21 +63,35 @@ class Pages extends CI_Controller {
 		$data['current'] = 'presentations';
 		$this->load->view('templates/header',$data);
 
-		$this->load->view('pages/presentations');
+        $data['apresentacoes'] = $this->grespanaria_model->get_apresentacoes();
+		$this->load->view('pages/presentations', $data);
+
 		$this->load->view('templates/footer');	
 	}
 
-	public function news()
-	{
-		$data['current'] = 'news';
-		$this->load->view('templates/header',$data);
+    public function media()
+    {
+        $data['current'] = 'media';
+        $this->load->view('templates/header',$data);
 
         $data['noticias'] = $this->grespanaria_model->get_noticias();
 
-		$this->load->view('pages/news', $data);
-		$this->load->view('templates/footer');
+        $this->load->view('pages/news', $data);
+        $this->load->view('templates/footer');
 
-	}
+    }
+
+    public function news()
+    {
+        $data['current'] = 'news';
+        $this->load->view('templates/header',$data);
+
+        $data['noticias'] = $this->grespanaria_model->get_noticias();
+
+        $this->load->view('pages/news', $data);
+        $this->load->view('templates/footer');
+
+    }
 	
 	public function certification()
 	{

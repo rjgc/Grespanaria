@@ -22,9 +22,12 @@
         <?php   }
                 if( isset($current) && $current === 'presentations' ){ ?>
         <link href="<?php echo base_url() ?>assets/grespanaria/css/styles-presentations.css" rel="stylesheet">
+                <?php   }
+        if( isset($current) && $current === 'media' ){ ?>
+            <link href="<?php echo base_url() ?>assets/grespanaria/css/styles-media.css" rel="stylesheet">
         <?php   }
-                if( isset($current) && $current === 'news' ){ ?>
-        <link href="<?php echo base_url() ?>assets/grespanaria/css/styles-news.css" rel="stylesheet">
+        if( isset($current) && $current === 'news' ){ ?>
+            <link href="<?php echo base_url() ?>assets/grespanaria/css/styles-news.css" rel="stylesheet">
         <?php   }
                 if( isset($current) && $current === 'certification' ){ ?>
         <link href="<?php echo base_url() ?>assets/grespanaria/css/styles-certification.css" rel="stylesheet">
@@ -181,7 +184,7 @@
                         <h1>GRES PANARIA Portugal S.A.</h1>
                     </a>
                 </div>
-                <nav class="navbar navbar-default menu visible-xs">
+                <nav class="navbar navbar-default visible-xs">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="sr-only">Toggle navigation</span>
@@ -189,24 +192,25 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">Menu</a>
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
                             <li><a <?php echo ( isset($current) && $current === 'home' ) ? 'class="active"' : ''?> href="<?php echo site_url('home')?>">HOME</a></li>
                             <li><a <?php echo ( isset($current) && $current === 'grespanaria' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/grespanaria')?>">GRES PANARIA</a></li>
                             <li><a <?php echo ( isset($current) && $current === 'presentations' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/presentations')?>">PRESENTATIONS</a></li>
+                            <li><a <?php echo ( isset($current) && $current === 'media' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/media')?>">MEDIA</a></li>
                             <li><a <?php echo ( isset($current) && $current === 'news' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/news')?>">NEWS</a></li>
                             <li><a <?php echo ( isset($current) && $current === 'certification' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/certification')?>">CERTIFICATION</a></li>
                             <li><a <?php echo ( isset($current) && $current === 'contactus' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/contactus')?>">CONTACT US;</a></li>
                         </ul>
                     </div>
                 </nav>
-                <div class="hidden-xs menu">
+                <div class="menu hidden-xs">
                     <ul class="nav">
                         <li><a <?php echo ( isset($current) && $current === 'home' ) ? 'class="active"' : ''?> href="<?php echo site_url('home')?>">HOME</a></li>
                         <li><a <?php echo ( isset($current) && $current === 'grespanaria' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/grespanaria')?>">GRES PANARIA</a></li>
                         <li><a <?php echo ( isset($current) && $current === 'presentations' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/presentations')?>">PRESENTATIONS</a></li>
+                        <li><a <?php echo ( isset($current) && $current === 'media' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/media')?>">MEDIA</a></li>
                         <li><a <?php echo ( isset($current) && $current === 'news' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/news')?>">NEWS</a></li>
                         <li><a <?php echo ( isset($current) && $current === 'certification' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/certification')?>">CERTIFICATION</a></li>
                         <li><a <?php echo ( isset($current) && $current === 'contactus' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/contactus')?>">CONTACT US</a></li>

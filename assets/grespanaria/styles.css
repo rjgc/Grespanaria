@@ -29,6 +29,14 @@
 
 @font-face {
     font-family: 'Open Sans';
+    src: url('font/OpenSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Open Sans';
     src: url('font/OpenSans-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
@@ -55,6 +63,7 @@ header .container {position: relative;height: 100%;}
     height: 60px;
     display: inline-block;
     background: url("img/logo.png") no-repeat;
+    background-size: contain;
     text-indent: -9999px;
 }
 .logo {display: inline-block;position: absolute;left: 20px;top: 20px;}
@@ -88,10 +97,6 @@ header .container {position: relative;height: 100%;}
     padding-left: 20px;
     line-height: 20px;
 }
-.lang {
-
-}
-
 .lang input {display: none;}
 
 .menu {
@@ -99,12 +104,13 @@ header .container {position: relative;height: 100%;}
     padding-top: 32px;
     padding-left: 25px;
     font-size: 14px;
-    margin: 20px 0 0 390px;
+    margin: 20px 0 0 330px;
     color: #000;
 }
 .menu a.active {color: #006940;border-bottom: 2px solid #006940;}
 ul.nav > li {display: inline-block!important;margin: 0 5px;}
 ul.nav > li > a {padding: 10px 5px 8px;}
+ul.nav > li > a:hover {background-color: transparent;}
 
 
 /* ========== FOOTER ================================================================ */
@@ -113,7 +119,7 @@ footer {width: 100%;height: 450px;border-top: 1px solid #fff;background: #eaeaea
 .footer-title span {color: #969696}
 .shape {padding-left: 10px;}
 .footer-img-portugal, .footer-img {margin: 1%;}
-.copyright {font-family: "Open Sans", sans-serif; font-weight: 300; font-size: 12px; color: #424242; margin: 90px 0 0 15px;}
+.copyright {font-family: "Open Sans", sans-serif; font-weight: 300; font-size: 12px; color: #424242; margin: 15px 0 0 15px;}
 .copyright span {font-weight: 700;}
 
 /* ========== MAIN ================================================================ */
@@ -224,89 +230,27 @@ table {
     color: #33795a;
 }
 
-/*Media Querys*/
+/* ========== MEDIA QUERYS ================================================================ */
 @media (max-width: 1366px) {
-    .triangle-left {
-        border-width: 180px 0 0 175px;
-    }
-
-    .triangle-right {
-        border-width: 0 345px 511px 0;
-    }
-
-    .pageOption {
-        width: 630px;
-        height: 430px;
-    }
+    .triangle-left {border-width: 180px 0 0 175px;}
+    .triangle-right {border-width: 0 345px 511px 0;}
+    .pageOption {width: 630px;height: 430px;top: 0;}
 }
 
-@media (max-width: 1199px) {
-    .menu {
-        padding-top: 0;
-        padding-bottom: 20px;
-    }
-}
+@media screen and (max-width: 991px) {
+    .container {width: 95%;}
+    .logo h1 {width: 225px;}
 
-@media (max-width: 991px) {
-    .menu {
-        padding-top: 0;
-        padding-bottom: 20px;
-    }
+    .menu {font-size: 13px;;padding: 32px 0 0;margin: 15px 0 0 270px;}
+    ul.nav > li {margin: 0;}
 
-    .masthead-nav > li + li {
-        margin-left: 0;
-    }
-}
+    .navbar.navbar-default {background: transparent;border: 0;position: absolute;top: 50px;right: 0;width: 200px;z-index: 10;}
+    .navbar ul.nav > li {display: block!important;background: #ddd;padding: 0 10px;}
+    .navbar-default .navbar-toggle {background: #ddd;}
 
-@media (max-width: 767px) {
-    .navbar-brand {
-        height: 50px;
-        padding: 15px 15px;
-        font-size: 18px;
-    }
+    .navbar a {border-bottom: 1px dashed #e7e7e7;}
+    .navbar a:last-child {border: 0;}
+    .navbar a:focus, .navbar a:hover {color: #006940; border-bottom: 2px solid #006940;}
 
-    .navbar-header {
-        width: auto;
-    }
-}
-
-@media (min-width: 768px) {
-    .masthead-brand {
-        float: left;
-    }
-    .masthead-nav {
-        float: right;
-    }
-}
-
-@media (min-width: 992px) {
-    .masthead,
-    .mastfoot,
-    .cover-container {
-        width: 700px;
-    }
-}
-
-/*Affix and center*/
-@media (min-width: 768px) {
-    /* Pull out the header and footer */
-    .masthead {
-        position: fixed;
-        top: 0;
-    }
-    .mastfoot {
-        position: fixed;
-        bottom: 0;
-    }
-    /* Start the vertical centering */
-    .site-wrapper-inner {
-        vertical-align: middle;
-    }
-    /* Handle the widths */
-    .masthead,
-    .mastfoot,
-    .cover-container {
-        width: 100%; /* Must be percentage or pixels for horizontal alignment */
-        margin-left: 20px;
-    }
+    .triangle-left, .triangle-right {display: none;}
 }

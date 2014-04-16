@@ -19,6 +19,13 @@ class grespanaria_model extends CI_Model
         return $data;
     }
 
+    public function get_apresentacoes(){
+        $query = $this->db->query("select * from apresentacoes");
+
+        $data = $query->result_array();
+        return $data;
+    }
+
     public function get_certificados(){
         $query = $this->db->query("select * from certificados");
 

@@ -1,4 +1,4 @@
-<section>
+<main>
     <!--Imagem e triangulos-->
     <div class="imgHeader">
         <div class="triangle-left"></div>
@@ -8,8 +8,8 @@
         <div class="triangle-green-invert"></div>
         <div class="triangle-right"></div>
     </div>
+    <div class="triangle-bottom-white"></div>
     <div class="container">
-        <div class="triangle-bottom-white"></div>
         <div>
             <h1>News</h1>
             <div class="row">
@@ -26,4 +26,4 @@
             </div>
         </div>
     </div>
-</section>
+</main>

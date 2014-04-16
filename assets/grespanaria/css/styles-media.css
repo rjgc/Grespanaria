@@ -9,16 +9,16 @@ main {height: auto; font-family: "Open Sans", sans-serif;}
 .img-news {background: url('../img/top-news.jpg') no-repeat center;background-size: cover;
     margin-left: 115px;width: 925px;height: 150px;z-index: -1;}
 
-.triangle-darkgreen {position: absolute;right: 575px;top: 0;z-index: 2;width: 200px;height: 0;
+.triangle-darkgreen {position: absolute;right: 575px;top: 0;z-index: 1;width: 200px;height: 0;
     border-style: solid;border-width: 0 0 150px 150px;border-color: transparent transparent #006940 transparent;opacity: 0.8;}
 
-.triangle-green {position: absolute;right: 555px;top: 0;z-index: 2;width: 200px;height: 0;
+.triangle-green {position: absolute;right: 555px;top: 0;z-index: 1;width: 200px;height: 0;
     border-style: solid;border-width: 0 0 150px 150px;border-color: transparent transparent #005f3a transparent;}
 
-.triangle-green-invert {position: absolute;right: 400px;top: 0;z-index: 2;width: 200px;height: 0;
+.triangle-green-invert {position: absolute;right: 400px;top: 0;z-index: 1;width: 200px;height: 0;
     border-style: solid;border-width: 150px 150px 0 0;border-color: #005f3a transparent transparent transparent;}
 
-.triangle-right {position: absolute;right: 0;top: 0;z-index: 2;width: 550px;height: 0;
+.triangle-right {position: absolute;right: 0;top: 0;z-index: 1;width: 550px;height: 0;
     border-style: solid;border-width: 0 0 150px 150px;border-color: transparent transparent #b9b9b9 transparent;}
 
 .triangle-bottom-white {width: 0;height: 0;margin: 0 0 0 115px;position: absolute;top: 150px;z-index: -1;
@@ -36,47 +36,3 @@ main h4 {font-weight: 700;font-size: 18px;margin: -5px 0 10px;}
 main .col-md-4 p {font-weight: 300;font-size: 14px;}
 main .col-md-4 p > a {font-weight: 400;font-size: 14px;color: #006940;margin-left: 6px;}
 main .row {margin: 20px auto 0;}
-
-
-/* ========== MEDIA QUERYS ================================================================ */
-@media screen and (max-width: 1700px) {
-    .triangle-left {width: 265px}
-    .img-news {margin-left: 115px}
-    .triangle-darkgreen {right: 575px}
-    .triangle-green {right: 555px}
-    .triangle-green-invert {right: 400px}
-    .triangle-right {width: 550px}
-    .triangle-bottom-white {margin: 0 0 0 115px}
-}
-
-@media screen and (max-width: 1500px) {
-    .triangle-left {width: 250px;}
-    .img-news {margin-left: 100px;}
-    .triangle-darkgreen {right: 430px}
-    .triangle-green {right: 410px}
-    .triangle-green-invert {right: 260px}
-    .triangle-right {width: 410px}
-    .triangle-bottom-white {margin-left: 100px}
-}
-
-@media screen and (max-width: 1366px) {
-    .triangle-left {width: 150px;}
-    .img-news {margin-left: 0;}
-    .triangle-darkgreen {right: 385px}
-    .triangle-green {right: 360px}
-    .triangle-green-invert {right: 210px}
-    .triangle-right {width: 360px}
-    .triangle-bottom-white {margin-left: 0}
-}
-
-@media screen and (max-width: 1150px) {
-    .triangle-darkgreen {right: 175px}
-    .triangle-green {right: 155px}
-    .triangle-green-invert {right: 0}
-    .triangle-right {width: 100px}
-}
-
-@media screen and (max-width: 991px) {
-    .triangle-bottom-white, .imgHeader {display: none}
-    main .container .row .col-md-4 {width: 49%;display: inline-block;}
-}
