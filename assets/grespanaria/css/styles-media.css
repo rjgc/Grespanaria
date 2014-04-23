@@ -26,12 +26,12 @@ main {height: auto; font-family: "Open Sans", sans-serif;}
 
 
 main .container {margin: 30px auto 0;}
-main .container div .row .col-md-4 {min-height: 390px;margin: 0 0 10px;}
+main .container div .row .col-md-4 {min-height: 280px;margin: 0 0 10px;}
 main h1 {font-family: "Raleway", sans-serif;font-weight: 300;font-size: 24px;margin: 5px 15px 35px;}
 
-main .news-feed, .news-feed h4 {line-height: 30px;color: #313131;}
+main .media-feed, .media-feed h4 {line-height: 30px;color: #313131;}
 main .date {font-weight: 300;font-size: 18px;margin-top: 10px;}
-main h4 {font-weight: 700;font-size: 18px;margin: -5px 0 10px;}
+main h4 {font-weight: 700;font-size: 18px;margin: -5px 0 10px;height: 60px;}
 
 main .col-md-4 p {font-weight: 300;font-size: 14px;}
 main .col-md-4 p > a {font-weight: 400;font-size: 14px;color: #006940;margin-left: 6px;}

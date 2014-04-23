@@ -11,7 +11,7 @@
         <div>
             <div class="row">
                 <div class="col-md-12">
-                    <h1>Presentations</h1>
+                    <h1><?= lang('g_presentations'); ?></h1>
                 </div>
             </div>
             <div class="row">

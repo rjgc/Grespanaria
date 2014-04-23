@@ -195,25 +195,25 @@
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li><a <?php echo ( isset($current) && $current === 'home' ) ? 'class="active"' : ''?> href="<?php echo site_url('home')?>">HOME</a></li>
-                            <li><a <?php echo ( isset($current) && $current === 'grespanaria' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/grespanaria')?>">GRES PANARIA</a></li>
-                            <li><a <?php echo ( isset($current) && $current === 'presentations' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/presentations')?>">PRESENTATIONS</a></li>
-                            <li><a <?php echo ( isset($current) && $current === 'media' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/media')?>">MEDIA</a></li>
-                            <li><a <?php echo ( isset($current) && $current === 'news' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/news')?>">NEWS</a></li>
-                            <li><a <?php echo ( isset($current) && $current === 'certification' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/certification')?>">CERTIFICATION</a></li>
-                            <li><a <?php echo ( isset($current) && $current === 'contactus' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/contactus')?>">CONTACT US;</a></li>
+                            <li><a <?php echo ( isset($current) && $current === 'home' ) ? 'class="active"' : ''?> href="<?php echo site_url('home')?>"><?= lang('g_home'); ?></a></li>
+                            <li><a <?php echo ( isset($current) && $current === 'grespanaria' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/grespanaria')?>"><?= lang('g_grespanaria'); ?></a></li>
+                            <li><a <?php echo ( isset($current) && $current === 'presentations' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/presentations')?>"><?= lang('g_presentations'); ?></a></li>
+                            <li><a <?php echo ( isset($current) && $current === 'media' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/media')?>"><?= lang('g_media'); ?></a></li>
+                            <li><a <?php echo ( isset($current) && $current === 'news' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/news')?>"><?= lang('g_news'); ?></a></li>
+                            <li><a <?php echo ( isset($current) && $current === 'certification' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/certification')?>"><?= lang('g_certification'); ?></a></li>
+                            <li><a <?php echo ( isset($current) && $current === 'contactus' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/contactus')?>"><?= lang('g_contactus'); ?></a></li>
                         </ul>
                     </div>
                 </nav>
                 <div class="menu hidden-xs">
                     <ul class="nav">
-                        <li><a <?php echo ( isset($current) && $current === 'home' ) ? 'class="active"' : ''?> href="<?php echo site_url('home')?>">HOME</a></li>
-                        <li><a <?php echo ( isset($current) && $current === 'grespanaria' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/grespanaria')?>">GRES PANARIA</a></li>
-                        <li><a <?php echo ( isset($current) && $current === 'presentations' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/presentations')?>">PRESENTATIONS</a></li>
-                        <li><a <?php echo ( isset($current) && $current === 'media' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/media')?>">MEDIA</a></li>
-                        <li><a <?php echo ( isset($current) && $current === 'news' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/news')?>">NEWS</a></li>
-                        <li><a <?php echo ( isset($current) && $current === 'certification' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/certification')?>">CERTIFICATION</a></li>
-                        <li><a <?php echo ( isset($current) && $current === 'contactus' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/contactus')?>">CONTACT US</a></li>
+                        <li><a <?php echo ( isset($current) && $current === 'home' ) ? 'class="active"' : ''?> href="<?php echo site_url('home')?>"><?= lang('g_home'); ?></a></li>
+                        <li><a <?php echo ( isset($current) && $current === 'grespanaria' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/grespanaria')?>"><?= lang('g_grespanaria'); ?></a></li>
+                        <li><a <?php echo ( isset($current) && $current === 'presentations' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/presentations')?>"><?= lang('g_presentations'); ?></a></li>
+                        <li><a <?php echo ( isset($current) && $current === 'media' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/media')?>"><?= lang('g_media'); ?></a></li>
+                        <li><a <?php echo ( isset($current) && $current === 'news' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/news')?>"><?= lang('g_news'); ?></a></li>
+                        <li><a <?php echo ( isset($current) && $current === 'certification' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/certification')?>"><?= lang('g_certification'); ?></a></li>
+                        <li><a <?php echo ( isset($current) && $current === 'contactus' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/contactus')?>"><?= lang('g_contactus'); ?></a></li>
                     </ul>
                 </div>
             </div>

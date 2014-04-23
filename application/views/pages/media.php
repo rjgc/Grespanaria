@@ -8,18 +8,15 @@
         <div class="triangle-green-invert"></div>
         <div class="triangle-right"></div>
     </div>
-    <div class="triangle-bottom-white"></div>
     <div class="container">
         <div>
-            <h1><?= lang('g_news'); ?></h1>
+            <h1><?= lang('g_media'); ?></h1>
             <div class="row">
                 <?php foreach($noticias as $noticia) { ?>
                     <div class="col-md-4">
-                        <div class="news-feed">
-                            <img src="<?php echo base_url() ?>assets/uploads/noticias/<?= $noticia['foto'] ?>" width="250" height="167">
-                            <p class="date"><?= $noticia['data_news'] ?></p>
+                        <div class="media-feed">
                             <h4><?= $noticia['titulo_pt'] ?></h4>
-                            <p><?= $noticia['texto_pt'] ?><a href="<?php echo site_url('pages/noticia/'.$noticia['id_noticia']) ?>">Read More</a></p>
+                            <img src="<?php echo base_url() ?>assets/uploads/noticias/<?= $noticia['foto'] ?>" width="250" height="167">
                         </div>
                     </div>
                 <?php } ?>

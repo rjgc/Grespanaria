@@ -2,7 +2,7 @@
     <footer>
             <div class="container">
                 <div class="inner footer">
-                    <p class="footer-title">Gres Panaria <span>Portugal</span></p>
+                    <p class="footer-title"><?= lang('g_grespanaria'); ?> <span>Portugal</span></p>
                     <div class="row">
                         <div class="col-md-12">
                             <img class="footer-img-portugal" src="<?php echo base_url() ?>assets/grespanaria/img/margres.png" width="82" height="19" title="MARGRES">

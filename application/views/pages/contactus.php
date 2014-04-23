@@ -49,7 +49,7 @@
                     <p>W 8.60818º</p>
                 </div>
                 <div class="col-md-3">
-                    <h3>Contact Us</h3>
+                    <h3><?= lang('g_contactus'); ?></h3>
                     <form method="post">
                         <input class="form-control" type="text" id="name" name="name" placeholder="Name">
                         <input class="form-control" type="email" id="mail" name="mail" placeholder="E-mail">
