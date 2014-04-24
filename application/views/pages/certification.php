@@ -35,60 +35,62 @@
                         </thead>
                         <tbody>
                         <?php foreach($tipos as $tipo) { ?>
-                            <?php foreach($certificados as $certficado) { ?>
-                                <tr>
-                                    <td><?= $tipo['nome'] ?></td>
+                            <tr>
+                                <td><?= $tipo['nome'] ?></td>
+                                <td>
+                                    <?php   foreach($certificados as $certficado) {
 
+                                                if($tipo['id_certificados_tipo'] == $certficado['id_tipos'] && $certficado['id_marcas'] == 1) { ?>
 
-                                    <td>
-                                        <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url'] ?>" target="_blank">
-                                            <img src="<?php echo base_url() ?>assets/grespanaria/img/icon_pdf.png" width="42" height="42" />
-                                            <?= $certficado['nome'] ?>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="#" target="_blank">
-                                            <img src="<?php echo base_url() ?>assets/grespanaria/img/icon_pdf.png" width="42" height="42" />
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="#" target="_blank">
-                                            <img src="<?php echo base_url() ?>assets/grespanaria/img/icon_pdf.png" width="42" height="42" />
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="#" target="_blank">
-                                            <img src="<?php echo base_url() ?>assets/grespanaria/img/icon_pdf.png" width="42" height="42" />
-                                        </a>
-                                    </td>
-                                </tr>
-                            <?php }
-                        } ?>
+                                                    <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url'] ?>" target="_blank">
+                                                        <img src="<?php echo base_url() ?>assets/grespanaria/img/icon_pdf.png" width="42" height="42" alt="<?= $certficado['nome'] ?>" title="<?= $certficado['nome'] ?>"/>
+                                                    </a>
+
+                                        <?php   } ?>
+                                    <?php } ?>
+                                </td>
+                                <td>
+                                    <?php   foreach($certificados as $certficado) {
+
+                                        if($tipo['id_certificados_tipo'] == $certficado['id_tipos'] && $certficado['id_marcas'] == 2) { ?>
+
+                                            <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url'] ?>" target="_blank">
+                                                <img src="<?php echo base_url() ?>assets/grespanaria/img/icon_pdf.png" width="42" height="42" alt="<?= $certficado['nome'] ?>" title="<?= $certficado['nome'] ?>"/>
+                                            </a>
+
+                                        <?php   } ?>
+                                    <?php } ?>
+                                </td>
+                                <td>
+                                    <?php   foreach($certificados as $certficado) {
+
+                                        if($tipo['id_certificados_tipo'] == $certficado['id_tipos'] && $certficado['id_marcas'] == 3) { ?>
+
+                                            <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url'] ?>" target="_blank">
+                                                <img src="<?php echo base_url() ?>assets/grespanaria/img/icon_pdf.png" width="42" height="42" alt="<?= $certficado['nome'] ?>" title="<?= $certficado['nome'] ?>"/>
+                                            </a>
+
+                                        <?php   } ?>
+                                    <?php } ?>
+                                </td>
+                                <td>
+                                    <?php   foreach($certificados as $certficado) {
+
+                                        if($tipo['id_certificados_tipo'] == $certficado['id_tipos'] && $certficado['id_marcas'] == 4) { ?>
+
+                                            <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url'] ?>" target="_blank">
+                                                <img src="<?php echo base_url() ?>assets/grespanaria/img/icon_pdf.png" width="42" height="42" alt="<?= $certficado['nome'] ?>" title="<?= $certficado['nome'] ?>"/>
+                                            </a>
+
+                                        <?php   } ?>
+                                    <?php } ?>
+                                </td>
+                            </tr>
+                        <?php } ?>
                         </tbody>
                     </table>
                 </div>
             </div>
-
-
-           <!-- <div class="row">
-                <div class="col-md-6">
-                    <br><br><br><br><br>
-
-
-                        <?php /*foreach($certificados as $certficado) { */?>
-                            <li>
-                                <a href="<?php /*echo base_url() */?>assets/uploads/files/<?/*= $certficado['url'] */?>" target="_blank">
-                                    <img src="<?php /*echo base_url() */?>assets/grespanaria/img/icon_pdf.png" width="42" height="42" />
-                                    <?/*= $certficado['nome'] */?>
-                                </a>
-                            </li>
-                        <?php /*} */?>
-                    </ul>
-                </div>
-            </div>-->
-
-
-
         </div>
     </div>
 </main>
