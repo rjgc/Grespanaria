@@ -56,6 +56,18 @@
                 <li><a href='<?php echo site_url("mediagest/certificados_tipo_management")?>'>Tipos de Certificados</a></li>
             </ul>
         </li>
+        <li <?php if ($data['titulo'] == 'Fotos' ||
+            $data['titulo'] == 'Videos') echo 'class="section"'; ?> >
+            <a href='#'><span class="icon">&#59176;</span> Media</a>
+            <ul class="submenu">
+                <li><a href='<?php echo site_url("mediagest/media_photo_management")?>'>Fotos</a></li>
+                <li><a href='<?php echo site_url("mediagest/media_video_management")?>'>Videos</a></li>
+                <li><a href='<?php echo site_url("mediagest/page_video_management")?>'>Videos das Páginas</a></li>
+            </ul>
+        </li>
+        <!--<li <?php /*if ($data['titulo'] == 'Páginas') echo 'class="section"'; */?>>
+            <a href='<?php /*echo site_url("mediagest/paginas_management")*/?>'><span class="icon">&#128196;</span> Páginas</a>
+        </li>-->
     </ul>
 </nav>
 
@@ -69,4 +81,3 @@
                 <h2><?=$data['sub-titulo'];?></h2>
             </hgroup>
         </header>
-        

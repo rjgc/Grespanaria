@@ -40,4 +40,11 @@ class grespanaria_model extends CI_Model
         return $data;
     }
 
+    public function get_page_videos(){
+        $query = $this->db->query("select url from page_videos");
+
+        $data = $query->result_array();
+        return $data;
+    }
+
 }

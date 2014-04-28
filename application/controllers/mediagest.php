@@ -124,7 +124,7 @@ class Mediagest extends CI_Controller {
         $crud->set_field_upload('url','assets/uploads/files');
         $crud->display_as('id_tipos', 'Tipo de Certificados')->display_as('id_marcas', 'Marca');
 
-        $crud->set_relation('id_tipos', 'certificados_tipos', 'nome');
+        $crud->set_relation('id_tipos', 'certificados_tipos', 'nome_pt');
         $crud->set_relation('id_marcas', 'certificados_marcas', 'nome');
 
         $output = $crud->render();
@@ -143,12 +143,95 @@ class Mediagest extends CI_Controller {
         $crud->set_table('certificados_tipos');
         $crud->set_subject('Tipos de Certificados');
 
-        $crud->required_fields('nome');
+        $crud->required_fields('nome_pt');
 
         $output = $crud->render();
 
         $data['titulo'] = 'Tipos de Certificados';
         $data['sub-titulo'] = 'Faça aqui a gestão dos Tipos de Certificados';
+        $this->load->view('mediagest/header',(object)array('data' => $data, 'js_files' => $crud->get_js_files() , 'css_files' => $crud->get_css_files()));
+
+        $this->_admin_output($output);
+    }
+
+    function media_photo_management()
+    {
+        $crud = new grocery_CRUD();
+
+        $crud->set_table('media_photo');
+        $crud->set_subject('Media');
+        $crud->columns('nome_pt', 'url');
+
+        $crud->required_fields('nome_pt', 'nome_en', 'nome_fr', 'nome_es', 'nome_de', 'nome_py', 'url');
+        $crud->set_field_upload('url','assets/uploads/media');
+
+        $output = $crud->render();
+
+        $data['titulo'] = 'Fotos';
+        $data['sub-titulo'] = 'Faça aqui a gestão das Fotos';
+        $this->load->view('mediagest/header',(object)array('data' => $data, 'js_files' => $crud->get_js_files() , 'css_files' => $crud->get_css_files()));
+
+        $this->_admin_output($output);
+    }
+
+    function media_video_management()
+    {
+        $crud = new grocery_CRUD();
+
+        $crud->set_table('media_video');
+        $crud->set_subject('Media');
+        $crud->columns('nome_pt', 'url');
+
+        $crud->required_fields('nome_pt', 'nome_en', 'nome_fr', 'nome_es', 'nome_de', 'nome_py', 'url');
+
+        $output = $crud->render();
+
+        $data['titulo'] = 'Videos';
+        $data['sub-titulo'] = 'Faça aqui a gestão dos Videos';
+        $this->load->view('mediagest/header',(object)array('data' => $data, 'js_files' => $crud->get_js_files() , 'css_files' => $crud->get_css_files()));
+
+        $this->_admin_output($output);
+    }
+
+    function page_video_management()
+    {
+        $crud = new grocery_CRUD();
+
+        $crud->unset_delete();
+        $crud->unset_add();
+        $crud->unset_edit_fields('onde_fica');
+
+        $crud->set_table('page_videos');
+        $crud->set_subject('Videos');
+
+        $crud->required_fields('url');
+
+        $output = $crud->render();
+
+        $data['titulo'] = 'Videos';
+        $data['sub-titulo'] = 'Faça aqui a gestão dos Videos nas páginas';
+        $this->load->view('mediagest/header',(object)array('data' => $data, 'js_files' => $crud->get_js_files() , 'css_files' => $crud->get_css_files()));
+
+        $this->_admin_output($output);
+    }
+
+    function paginas_management()
+    {
+        $crud = new grocery_CRUD();
+
+        $crud->unset_delete();
+
+        $crud->set_table('paginas');
+        $crud->set_subject('Páginas');
+        $crud->columns('titulo_pt','texto_pt');
+
+        $crud->required_fields('titulo_pt','texto_pt');
+        $crud->field_type('texto_pt', 'text')->field_type('texto_en', 'text')->field_type('texto_fr', 'text')->field_type('texto_es', 'text')->field_type('texto_de', 'text')->field_type('texto_py', 'text');
+
+        $output = $crud->render();
+
+        $data['titulo'] = 'Páginas';
+        $data['sub-titulo'] = 'Faça aqui a gestão das Páginas';
         $this->load->view('mediagest/header',(object)array('data' => $data, 'js_files' => $crud->get_js_files() , 'css_files' => $crud->get_css_files()));
 
         $this->_admin_output($output);

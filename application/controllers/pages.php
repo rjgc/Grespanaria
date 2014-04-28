@@ -27,7 +27,6 @@ class Pages extends CI_Controller {
 		$this->load->helper('url');
 		$this->load->helper('text');
 
-        $this->load->model('company_model');
         $this->load->model('grespanaria_model');
     }
 	 
@@ -54,7 +53,8 @@ class Pages extends CI_Controller {
 		$data['current'] = 'grespanaria';
 		$this->load->view('templates/header',$data);
 
-		$this->load->view('pages/grespanaria');
+        $data['videos'] = $this->grespanaria_model->get_page_videos();
+		$this->load->view('pages/grespanaria', $data);
 		$this->load->view('templates/footer');
 	}
 	
@@ -64,6 +64,7 @@ class Pages extends CI_Controller {
 		$this->load->view('templates/header',$data);
 
         $data['apresentacoes'] = $this->grespanaria_model->get_apresentacoes();
+        $data['video'] = $this->grespanaria_model->get_page_videos();
 		$this->load->view('pages/presentations', $data);
 
 		$this->load->view('templates/footer');	

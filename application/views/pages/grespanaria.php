@@ -16,49 +16,48 @@
     </div>
     <div class="container">
         <div class="profile">
-            <h2>Group Profile</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quam turpis, viverra vitae ullamcorper ac, ultricies vitae mi. In sed est egestas, ultrices odio a, mollis lacus. Donec consectetur porttitor ligula, a cursus lacus sollicitudin id. Morbi non metus eros. Mauris scelerisque dolor sit amet dui ullamcorper interdum. Maecenas orci turpis, molestie vel interdum eget, varius vitae justo. Nulla vitae venenatis dui.</p>
-            <p><b>Mauris nec massa non lacus tristique gravida ac ac massa. Maecenas dapibus odio felis, ut pharetra risus aliquet vitae. Pellentesque ut malesuada arcu.</b> Etiam blandit, lectus nec rhoncus pulvinar, turpis metus aliquam quam, at rhoncus felis risus non magna. Suspendisse potenti. Sed eu rhoncus turpis. Pellentesque sit amet dolor nisl. Fusce vel felis at velit facilisis facilisis sed ut elit.</p>
+            <h2><?= lang('g_group_profile') ?></h2>
+            <div><?= lang('g_group_profile_intro') ?></div>
         </div>
         <div class="media">
-            <a href="#">
-                <h3><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_video.png">Watch Institutional Video</h3>
+            <a href="<?= $videos[1]['url']; ?>" target="_blank">
+                <h3><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_video.png"><?= lang('g_institutional_video') ?></h3>
             </a>
-            <a href="#">
-                <h3><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_foto.png">View Gallery</h3>
+            <a href="<?php echo site_url('pages/media'); ?>">
+                <h3><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_foto.png"><?= lang('g_gallery') ?></h3>
             </a>
-            <a href="#">
-                <h4><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_plus.png">Unidade Industrial de Aveiro</h4>
+            <a href="<?php echo site_url('pages/contactus'); ?>">
+                <h4><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_plus.png"><?= lang('g_contact_aveiro') ?></h4>
             </a>
 
-            <a href="#">
-                <h4><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_plus.png">Unidade Industrial de Ílhavo</h4>
+            <a href="<?php echo site_url('pages/contactus'); ?>">
+                <h4><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_plus.png"><?= lang('g_contact_ilhavo') ?></h4>
             </a>
         </div>
         <div class="row">
             <div class="col-md-2"><img class="img" src="<?php echo base_url() ?>assets/grespanaria/img/margres2.png"></div>
             <div class="col-md-10">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quam turpis, viverra vitae ullamcorper ac, ultricies vitae mi. In sed est egestas, ultrices odio a, mollis lacus. Donec consectetur porttitor ligula, a cursus lacus sollicitudin id. Morbi non metus eros. Mauris scelerisque dolor sit amet dui ullamcorper interdum. Maecenas orci turpis, molestie vel interdum eget, varius vitae justo. Nulla vitae venenatis dui.</p>
-                <a href="#"><h4><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_video.png">Watch Margres Presentation</h4></a>
+                <p><?= lang('g_margres_intro') ?></p>
+                <a href="<?= $videos[2]['url']; ?>" target="_blank"><h4><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_video.png"><?= lang('g_margres_video') ?></h4></a>
             </div>
         </div>
         <div class="row">
             <div class="col-md-2"><img class="img" src="<?php echo base_url() ?>assets/grespanaria/img/love2.png"></div>
             <div class="col-md-10">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quam turpis, viverra vitae ullamcorper ac, ultricies vitae mi. In sed est egestas, ultrices odio a, mollis lacus. Donec consectetur porttitor ligula, a cursus lacus sollicitudin id. Morbi non metus eros. Mauris scelerisque dolor sit amet dui ullamcorper interdum. Maecenas orci turpis, molestie vel interdum eget, varius vitae justo. Nulla vitae venenatis dui.</p>
-                <a href="#"><h4><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_video.png">Watch Margres Presentation</h4></a>
+                <p><?= lang('g_love_intro') ?></p>
+                <a href="<?= $videos[3]['url']; ?>" target="_blank"><h4><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_video.png"><?= lang('g_love_video') ?></h4></a>
             </div>
         </div>
         <div class="row">
             <div class="col-md-2"><img class="img" src="<?php echo base_url() ?>assets/grespanaria/img/bloom2.png"></div>
             <div class="col-md-10">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quam turpis, viverra vitae ullamcorper ac, ultricies vitae mi. In sed est egestas, ultrices odio a, mollis lacus.</p>
+                <p><?= lang('g_bloom_intro') ?></p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-2"><img class="img" src="<?php echo base_url() ?>assets/grespanaria/img/easy2.png"></div>
             <div class="col-md-10">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quam turpis, viverra vitae ullamcorper ac, ultricies vitae mi. In sed est egestas, ultrices odio a, mollis lacus. Donec consectetur porttitor ligula, a cursus lacus sollicitudin id. Morbi non metus eros. Mauris scelerisque dolor sit amet dui ullamcorper interdum.</p>
+                <p><?= lang('g_easy_intro') ?></p>
             </div>
         </div>
     </div>

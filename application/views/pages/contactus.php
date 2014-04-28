@@ -6,7 +6,7 @@
         <div class="contactus">
             <div class="row">
                 <div class="col-md-3">
-                    <h3>Sede Gres Panaria</h3>
+                    <h3><?= lang('g_contact_sede'); ?></h3>
                     <span id="mails"><a href="mailto:grespanaria@grespanaria.pt">grespanaria@grespanaria.pt</a></span>
                     <p>Gres Panaria Portugal, S.A.</p>
                     <p>Z.I. de Aveiro</p>
@@ -20,7 +20,7 @@
                     <p>W 8.60818º</p>
                 </div>
                 <div class="col-md-3">
-                    <h3>Unidade Insdutrial de Aveiro</h3>
+                    <h3><?= lang('g_contact_aveiro'); ?></h3>
                     <span id="mails"><a href="mailto:lovetiles@lovetiles.com">lovetiles@lovetiles.com</a></span>
                     <p>Gres Panaria Portugal, S.A.</p>
                     <p>Divisao Love Tiles</p>
@@ -35,7 +35,7 @@
                     <p>W 8.60818º</p>
                 </div>
                 <div class="col-md-3">
-                    <h3>Unidade Insdutrial de Ilhavo</h3>
+                    <h3><?= lang('g_contact_ilhavo'); ?></h3>
                     <span id="mails"><a href="mailto:margres@margres.com">margres@margres.com</a></span>
                     <p>Gres Panaria Portugal, S.A.</p>
                     <p>Divisão Margres</p>
@@ -64,7 +64,7 @@
     </div>
     <section class="showroom">
         <div class="container">
-            <h1>Showrooms</h1>
+            <h1><?= lang('g_showrooms'); ?></h1>
             <div class="row">
                 <div class="col-md-6">
                     <h3>Aveiro</h3>
@@ -77,7 +77,7 @@
                     <p>N 40.64840º</p>
                     <p>W 8.60818º</p>
                     <hr class="divider">
-                    <p>Horário de funcionamento:</p>
+                    <p><?= lang('g_hora_func'); ?>:</p>
                     <p>2ª feira das 9:00 às 12:30 e das 14:00 às 18:00</p>
                     <p>3ª 6ª feira das 9:00 às 12:30 e das 14:00 às 19:00</p>
                     <p>Sábados das 10:00 às 13:00 e das 15:00 às 19:00</p>
@@ -95,7 +95,7 @@
                     <p>N 38.77900º</p>
                     <p>W 9.09750º</p>
                     <hr class="divider">
-                    <p>Horário de funcionamento:</p>
+                    <p><?= lang('g_hora_func'); ?>:</p>
                     <p>2ª a 6ª feira das 10:00 às 13:00 e das 14:00 às 19:00</p>
                     <p>Sábados das 09:00 às 13:00 e das 14:00 às 18:00</p>
                 </div>

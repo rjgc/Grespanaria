@@ -36,7 +36,7 @@
                         <tbody>
                         <?php foreach($tipos as $tipo) { ?>
                             <tr>
-                                <td><?= $tipo['nome'] ?></td>
+                                <td><?= $tipo['nome_pt'] ?></td>
                                 <td>
                                     <?php   foreach($certificados as $certficado) {
 

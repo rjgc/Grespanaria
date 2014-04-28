@@ -16,25 +16,25 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus placerat turpis ac congue. Morbi at hendrerit velit. Vivamus facilisis lectus vel euismod iaculis. Quisque sagittis condimentum turpis, venenatis rutrum risus scelerisque in. Suspendisse semper mollis leo vel iaculis.</p>
+                    <p><?= lang('g_presentation_intro'); ?></p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <h1>Available Documents</h1>
+                    <h1><?= lang('g_available_documents'); ?></h1>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
                     <ul>
                     <?php   foreach($apresentacoes as $apresentacao) { ?>
-                        <li><a href="<?php echo base_url() ?>assets/uploads/files/<?= $apresentacao['url'] ?>"><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_pdf.png"/> <?= $apresentacao['nome'] ?></a> [ <?= $apresentacao['tamanho'] ?> ]</li>
+                        <li><a href="<?php echo base_url() ?>assets/uploads/files/<?= $apresentacao['url'] ?>" target="_blank"><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_pdf.png"/> <?= $apresentacao['nome'] ?></a> [ <?= $apresentacao['tamanho'] ?> ]</li>
                     <?php   } ?>
                     </ul>
                 </div>
                 <div class="col-md-6">
                     <ul>
-                        <li><a href="#"><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_video.png" width="42" height="42" /> Watch Panaria Group Presentation</a> </li>
+                        <li><a href="<?php echo $video[0]['url']; ?>" target="_blank"><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_video.png" width="42" height="42" /> <?= lang('g_v_group_pre'); ?></a> </li>
                     </ul>
                 </div>
             </div>
