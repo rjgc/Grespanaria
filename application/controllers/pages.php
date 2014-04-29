@@ -75,7 +75,8 @@ class Pages extends CI_Controller {
         $data['current'] = 'media';
         $this->load->view('templates/header',$data);
 
-        $data['noticias'] = $this->grespanaria_model->get_noticias();
+        $data['fotos'] = $this->grespanaria_model->get_fotos();
+        $data['videos'] = $this->grespanaria_model->get_videos();
 
         $this->load->view('pages/media', $data);
         $this->load->view('templates/footer');

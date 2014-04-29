@@ -69,3 +69,10 @@ $lang["g_love_intro"] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit
 $lang["g_bloom_intro"] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quam turpis, viverra vitae ullamcorper ac, ultricies vitae mi. In sed est egestas, ultrices odio a, mollis lacus.";
 
 $lang["g_easy_intro"] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quam turpis, viverra vitae ullamcorper ac, ultricies vitae mi. In sed est egestas, ultrices odio a, mollis lacus. Donec consectetur porttitor ligula, a cursus lacus sollicitudin id. Morbi non metus eros. Mauris scelerisque dolor sit amet dui ullamcorper interdum.";
+
+
+// ========================== MEDIA ========================
+
+$lang["g_photo_gallery"] = "Fotos";
+
+$lang["g_video_gallery"] = "Videos";

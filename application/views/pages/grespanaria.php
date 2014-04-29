@@ -38,14 +38,18 @@
             <div class="col-md-2"><img class="img" src="<?php echo base_url() ?>assets/grespanaria/img/margres2.png"></div>
             <div class="col-md-10">
                 <p><?= lang('g_margres_intro') ?></p>
-                <a href="<?= $videos[2]['url']; ?>" target="_blank"><h4><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_video.png"><?= lang('g_margres_video') ?></h4></a>
+                <a href="<?= $videos[2]['url']; ?>" target="_blank">
+                    <h4><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_video.png"><?= lang('g_margres_video') ?></h4>
+                </a>
             </div>
         </div>
         <div class="row">
             <div class="col-md-2"><img class="img" src="<?php echo base_url() ?>assets/grespanaria/img/love2.png"></div>
             <div class="col-md-10">
                 <p><?= lang('g_love_intro') ?></p>
-                <a href="<?= $videos[3]['url']; ?>" target="_blank"><h4><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_video.png"><?= lang('g_love_video') ?></h4></a>
+                <a href="<?= $videos[3]['url']; ?>" target="_blank">
+                    <h4><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_video.png"><?= lang('g_love_video') ?></h4>
+                </a>
             </div>
         </div>
         <div class="row">

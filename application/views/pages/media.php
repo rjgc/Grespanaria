@@ -10,13 +10,25 @@
     </div>
     <div class="container">
         <div>
-            <h1><?= lang('g_media'); ?></h1>
+            <h1><?= lang('g_photo_gallery'); ?></h1>
             <div class="row">
-                <?php foreach($noticias as $noticia) { ?>
+                <?php foreach($fotos as $foto) { ?>
                     <div class="col-md-4">
                         <div class="media-feed">
-                            <h4><?= $noticia['titulo_pt'] ?></h4>
-                            <img src="<?php echo base_url() ?>assets/uploads/noticias/<?= $noticia['foto'] ?>" width="250" height="167">
+                            <h4><?= $foto['nome_pt'] ?></h4>
+                            <img src="<?php echo base_url() ?>assets/uploads/media/<?= $foto['url'] ?>" width="250" height="167">
+                        </div>
+                    </div>
+                <?php } ?>
+            </div>
+
+            <h1><?= lang('g_video_gallery'); ?></h1>
+            <div class="row">
+                <?php foreach($videos as $video) { ?>
+                    <div class="col-md-6">
+                        <div class="video-feed">
+                            <h4><?= $video['nome_pt'] ?></h4>
+                            <iframe width="560" height="315" src="//www.youtube.com/embed/<?= $video['url'] ?>" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
                 <?php } ?>
