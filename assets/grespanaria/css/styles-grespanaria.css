@@ -24,6 +24,39 @@ main .row .col-md-10 a img {margin: 0 20px 0 0;}
 footer {margin: 50px 0 0;}
 
 
+.triangle-left {position: absolute;top: 0;left: 0;z-index: 1;width: 265px;height: 0;
+    border-style: solid;border-width: 150px 150px 0 0;border-color: #dadada transparent transparent transparent;}
+
+.img-news {background: url('../img/top-news.jpg') no-repeat center;background-size: cover;
+    margin-left: 115px;width: 925px;height: 150px;z-index: 0;}
+
+.triangle-darkgreen {position: absolute;right: 575px;top: 0;z-index: 1;width: 200px;height: 0;
+    border-style: solid;border-width: 0 0 150px 150px;border-color: transparent transparent #006940 transparent;opacity: 0.8;}
+
+.triangle-green {position: absolute;right: 0;top: 0;z-index: 1;width: 760px;height: 0;
+    border-style: solid;border-width: 0 0 150px 150px;border-color: transparent transparent #005f3a transparent;}
+
+.afterImgHeader {width: 100%;z-index: -1;}
+
+.triangle-bottom-left {width: 0;height: 0;position: absolute;right: 575px;z-index: -1;
+    border-style: solid;border-width: 200px 0 0 200px;border-color: #eee transparent transparent transparent;}
+
+.rectangle {width: 0;height: 0;position: absolute;right: 0;z-index: -1;
+    border-style: solid;border-width: 100px 300px 100px 275px;border-color: #eee #eee #eee #eee;}
+
+.triangle-bottom {width: 0;height: 0;position: absolute;right: 0;top: 350px;z-index: -1;
+    border-style: solid;border-width: 287px 287px 0 287px;border-color: #eee transparent transparent transparent;}
+
+.img-triang {z-index: 2;position: absolute;right: 350px;top: 50px;width: 350px;}
+
+.img-triang2 {z-index: 2;position: absolute;right: 298px;top: 275px;width: 350px;}
+
+.triangle-little-bottom {width: 0;height: 0;position: absolute;right: 350px;top: 225px;z-index: 1;
+    border-style: solid;border-width: 50px 50px 0 50px;border-color: #4b4b4b transparent transparent transparent;}
+main .profile {max-width: 680px;}
+
+
+
 /* ========== MEDIA QUERYS ================================================================ */
 @media screen and (max-width: 1700px) {
     .triangle-left {position: absolute;top: 0;left: 0;z-index: 1;width: 265px;height: 0;

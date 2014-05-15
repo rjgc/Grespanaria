@@ -39,7 +39,8 @@ class Pages extends CI_Controller {
     public function home()
     {
         $data['current'] = 'home';
-        $this->load->view('templates/header',$data);
+
+        $this->load->view('templates/header',$data, $this->lang->lang());
 
         $data['noticias'] = $this->grespanaria_model->get_noticias_destaque();
 

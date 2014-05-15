@@ -166,8 +166,10 @@
         <header>
             <div class="container">
                 <div class="lang">
+                    <!--
                     <form>
                         <label for="language" class="language">LANGUAGE</label>
+
                         <select id="language" name="lang">
                             <option value="PT" selected>PT</option>
                             <option value="EN">EN</option>
@@ -178,6 +180,10 @@
                         </select>
                         <input type="submit">
                     </form>
+                    -->
+                    <a href="<?= site_url($this->lang->switch_uri('pt')) ?>" >PT</a>
+                    <a href="<?= site_url($this->lang->switch_uri('en')) ?>" >EN</a>
+                    <a href="<?= site_url($this->lang->switch_uri('fr')) ?>" >FR</a>
                 </div>
                 <div class="logo">
                     <a href="/">
