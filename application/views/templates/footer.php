@@ -11,7 +11,7 @@
                             <img class="footer-img-portugal" src="<?php echo base_url() ?>assets/grespanaria/img/easy.png" width="58" height="23" title="EASY">
                         </div>
                     </div>
-                    <p class="footer-title">Panaria <span>Bussiness World</span><img class="shape" src="<?php echo base_url() ?>assets/grespanaria/img/shape.png"></p>
+                    <p class="footer-title">Panaria <span>Business World</span><img class="shape" src="<?php echo base_url() ?>assets/grespanaria/img/shape.png"></p>
                     <div class="row">
                         <div class="col-md-12">
                             <img class="footer-img" src="<?php echo base_url() ?>assets/grespanaria/img/panaria2.png" width="107" height="24" title="PANARIA GROUP">

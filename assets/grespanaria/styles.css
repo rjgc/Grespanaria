@@ -253,10 +253,7 @@ table {
     padding: 9px 0;
 }
 .lang .btn-group.open span.glyphicon.glyphicon-chevron-down {padding: 8px 0;}
-
-.lang .btn-group.open .glyphicon-chevron-down:before {
-    content: "\e113";
-}
+.lang .btn-group.open .glyphicon-chevron-down:before {content: "\e113";}
 
 .lang .btn-group.open ul.dropdown-menu {
     background: #fff;
