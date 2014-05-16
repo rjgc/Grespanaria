@@ -15,7 +15,7 @@
                 <?php foreach($fotos as $foto) { ?>
                     <div class="col-md-3">
                         <div class="media-feed">
-                            <h4><?= $foto['nome_pt'] ?></h4>
+                            <h4><?= $foto['nome_'.$this->lang->lang()] ?></h4>
                             <img src="<?php echo base_url() ?>assets/uploads/media/<?= $foto['url'] ?>" width="250" height="167">
                         </div>
                     </div>
@@ -27,7 +27,7 @@
                 <?php foreach($videos as $video) { ?>
                     <div class="col-md-6">
                         <div class="video-feed">
-                            <h4><?= $video['nome_pt'] ?></h4>
+                            <h4><?= $video['nome_'.$this->lang->lang()] ?></h4>
                             <iframe width="560" height="315" src="//www.youtube.com/embed/<?= $video['url'] ?>" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>

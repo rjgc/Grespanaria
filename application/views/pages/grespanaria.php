@@ -17,7 +17,7 @@
     <div class="container">
         <div class="profile">
             <h2><?= lang('g_group_profile') ?></h2>
-            <div><?= lang('g_group_profile_intro') ?></div>
+            <div><?= $profile[0]['texto_'.$this->lang->lang()]; ?></div>
         </div>
         <div class="media">
             <a href="<?= $videos[1]['url']; ?>" target="_blank">
@@ -37,7 +37,7 @@
         <div class="row">
             <div class="col-md-2"><img class="img" src="<?php echo base_url() ?>assets/grespanaria/img/margres2.png"></div>
             <div class="col-md-10">
-                <p><?= lang('g_margres_intro') ?></p>
+                <div><?= $margres[0]['texto_'.$this->lang->lang()]; ?></div>
                 <a href="<?= $videos[2]['url']; ?>" target="_blank">
                     <h4><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_video.png"><?= lang('g_margres_video') ?></h4>
                 </a>
@@ -46,7 +46,7 @@
         <div class="row">
             <div class="col-md-2"><img class="img" src="<?php echo base_url() ?>assets/grespanaria/img/love2.png"></div>
             <div class="col-md-10">
-                <p><?= lang('g_love_intro') ?></p>
+                <div><?= $love[0]['texto_'.$this->lang->lang()]; ?></div>
                 <a href="<?= $videos[3]['url']; ?>" target="_blank">
                     <h4><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_video.png"><?= lang('g_love_video') ?></h4>
                 </a>
@@ -55,13 +55,13 @@
         <div class="row">
             <div class="col-md-2"><img class="img" src="<?php echo base_url() ?>assets/grespanaria/img/bloom2.png"></div>
             <div class="col-md-10">
-                <p><?= lang('g_bloom_intro') ?></p>
+                <div><?= $bloom[0]['texto_'.$this->lang->lang()]; ?></div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-2"><img class="img" src="<?php echo base_url() ?>assets/grespanaria/img/easy2.png"></div>
             <div class="col-md-10">
-                <p><?= lang('g_easy_intro') ?></p>
+                <div><?= $easy[0]['texto_'.$this->lang->lang()]; ?></div>
             </div>
         </div>
     </div>

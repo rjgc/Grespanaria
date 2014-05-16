@@ -51,12 +51,12 @@
                 <div class="col-md-3">
                     <h3><?= lang('g_contactus'); ?></h3>
                     <form method="post">
-                        <input class="form-control" type="text" id="name" name="name" placeholder="Name">
-                        <input class="form-control" type="email" id="mail" name="mail" placeholder="E-mail">
-                        <input class="form-control" type="text" id="subject" name="subject" placeholder="Subject">
-                        <textarea class="form-control" id="message" name="message" rows="7" placeholder="Message"></textarea>
+                        <input class="form-control" type="text" id="name" name="name" placeholder="<?= lang('g_form_name'); ?>">
+                        <input class="form-control" type="email" id="mail" name="mail" placeholder="<?= lang('g_form_email'); ?>">
+                        <input class="form-control" type="text" id="subject" name="subject" placeholder="<?= lang('g_form_subject'); ?>">
+                        <textarea class="form-control" id="message" name="message" rows="7" placeholder="<?= lang('g_form_message'); ?>"></textarea>
                         <span class="captcha"><img src="http://placehold.it/80x34&text=5 -+ 3 ="><input class="form-control" type="text" id="captcha" name="captcha"></span>
-                        <input class="btn-block" type="submit" value="SEND">
+                        <input class="btn-block" type="submit" value="<?= lang('g_form_send_btn'); ?>">
                     </form>
                 </div>
             </div>
@@ -78,9 +78,10 @@
                     <p>W 8.60818º</p>
                     <hr class="divider">
                     <p><?= lang('g_hora_func'); ?>:</p>
-                    <p>2ª feira das 9:00 às 12:30 e das 14:00 às 18:00</p>
-                    <p>3ª 6ª feira das 9:00 às 12:30 e das 14:00 às 19:00</p>
-                    <p>Sábados das 10:00 às 13:00 e das 15:00 às 19:00</p>
+                    <p><?= lang('g_av_mon'); ?></p>
+                    <p><?= lang('g_av_tue'); ?></p>
+                    <p><?= lang('g_av_sat'); ?></p>
+                    <p><?= lang('g_av_sun'); ?></p>
                 </div>
                 <div class="col-md-6">
                     <h3>Lisboa</h3>
@@ -96,8 +97,9 @@
                     <p>W 9.09750º</p>
                     <hr class="divider">
                     <p><?= lang('g_hora_func'); ?>:</p>
-                    <p>2ª a 6ª feira das 10:00 às 13:00 e das 14:00 às 19:00</p>
-                    <p>Sábados das 09:00 às 13:00 e das 14:00 às 18:00</p>
+                    <p><?= lang('g_lx_mon'); ?></p>
+                    <p><?= lang('g_lx_sat'); ?></p>
+                    <p><?= lang('g_lx_sun'); ?></p>
                 </div>
             </div>
         </div>

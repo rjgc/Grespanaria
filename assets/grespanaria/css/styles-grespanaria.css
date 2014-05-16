@@ -17,7 +17,7 @@ main .media h4 {font-size: 16px;font-weight: 400;}
 main .row {margin: 20px -15px 0;padding: 0 0 40px;}
 main .row .col-md-2 {min-width: 235px;vertical-align: top;}
 main .row .col-md-10 {max-width: 850px;vertical-align: top;}
-main .row .col-md-10 p {padding-top: 0;}
+main .row .col-md-10 div p:first-child {padding-top: 0;}
 main .row .col-md-10 a {display: block}
 main .row .col-md-10 a img {margin: 0 20px 0 0;}
 

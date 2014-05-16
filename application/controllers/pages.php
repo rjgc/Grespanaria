@@ -54,6 +54,12 @@ class Pages extends CI_Controller {
 		$data['current'] = 'grespanaria';
 		$this->load->view('templates/header',$data);
 
+        $data['profile'] = $this->grespanaria_model->get_page(1);
+        $data['margres'] = $this->grespanaria_model->get_page(2);
+        $data['love'] = $this->grespanaria_model->get_page(3);
+        $data['bloom'] = $this->grespanaria_model->get_page(4);
+        $data['easy'] = $this->grespanaria_model->get_page(5);
+
         $data['videos'] = $this->grespanaria_model->get_page_videos();
 		$this->load->view('pages/grespanaria', $data);
 		$this->load->view('templates/footer');
@@ -64,6 +70,7 @@ class Pages extends CI_Controller {
 		$data['current'] = 'presentations';
 		$this->load->view('templates/header',$data);
 
+        $data['intro'] = $this->grespanaria_model->get_page(7);
         $data['apresentacoes'] = $this->grespanaria_model->get_apresentacoes();
         $data['video'] = $this->grespanaria_model->get_page_videos();
 		$this->load->view('pages/presentations', $data);
@@ -101,6 +108,7 @@ class Pages extends CI_Controller {
         $data['current'] = 'certification';
 		$this->load->view('templates/header', $data);
 
+        $data['intro'] = $this->grespanaria_model->get_page(6);
         $data['certificados'] = $this->grespanaria_model->get_certificados();
         $data['tipos'] = $this->grespanaria_model->get_certificados_tipos();
 		$this->load->view('pages/certification', $data);

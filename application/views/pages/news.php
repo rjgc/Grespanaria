@@ -18,8 +18,8 @@
                         <div class="news-feed">
                             <img src="<?php echo base_url() ?>assets/uploads/noticias/<?= $noticia['foto'] ?>" width="250" height="167">
                             <p class="date"><?= $noticia['data_news'] ?></p>
-                            <h4><?= $noticia['titulo_pt'] ?></h4>
-                            <p><?= $noticia['texto_pt'] ?><a href="<?php echo site_url('pages/noticia/'.$noticia['id_noticia']) ?>">Read More</a></p>
+                            <h4><?= $noticia['titulo_'.$this->lang->lang()] ?></h4>
+                            <p><?= $noticia['texto_'.$this->lang->lang()] ?><a href="<?php echo site_url('pages/noticia/'.$noticia['id_noticia']) ?>">Read More</a></p>
                         </div>
                     </div>
                 <?php } ?>

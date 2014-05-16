@@ -16,7 +16,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <p><?= lang('g_presentation_intro'); ?></p>
+                    <div><?= $intro[0]['texto_'.$this->lang->lang()]; ?></div>
                 </div>
             </div>
             <div class="row">

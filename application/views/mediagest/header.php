@@ -65,9 +65,9 @@
                 <li><a href='<?php echo site_url("mediagest/page_video_management")?>'>Videos das Páginas</a></li>
             </ul>
         </li>
-        <!--<li <?php /*if ($data['titulo'] == 'Páginas') echo 'class="section"'; */?>>
-            <a href='<?php /*echo site_url("mediagest/paginas_management")*/?>'><span class="icon">&#128196;</span> Páginas</a>
-        </li>-->
+        <li <?php if ($data['titulo'] == 'Páginas') echo 'class="section"'; ?> >
+            <a href='<?php echo site_url("mediagest/paginas_management")?>'><span class="icon">&#128196;</span> Páginas</a>
+        </li>
     </ul>
 </nav>
 

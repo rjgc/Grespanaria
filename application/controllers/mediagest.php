@@ -223,7 +223,7 @@ class Mediagest extends CI_Controller {
 
         $crud->set_table('paginas');
         $crud->set_subject('Páginas');
-        $crud->columns('titulo_pt','texto_pt');
+        $crud->columns('nome_da_pagina','texto_pt');
 
         $crud->required_fields('titulo_pt','texto_pt');
         $crud->field_type('texto_pt', 'text')->field_type('texto_en', 'text')->field_type('texto_fr', 'text')->field_type('texto_es', 'text')->field_type('texto_de', 'text')->field_type('texto_py', 'text');

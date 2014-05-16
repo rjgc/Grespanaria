@@ -15,8 +15,8 @@ class MY_Lang extends CI_Lang {
 		'en' => 'english',
 		'pt' => 'portuguese',
 		'fr' => 'french',
-		'de' => 'deutsche',
         'es' => 'spanish',
+		'de' => 'deutsche',
         'py' => 'paraguay'
 
 	);
@@ -85,18 +85,18 @@ class MY_Lang extends CI_Lang {
 
 	   $country_lang_code =  array(
 
-              'pt' => 'pt' ,'br' => 'pt' ,'cv' => 'pt' , 'gw' => 'pt' , 
-              'st' => 'pt' ,'mz' => 'pt' ,'ao' => 'pt' ,'tl' => 'pt' ,
-              'au' => 'en' ,'bz' => 'en' ,'ca' => 'en' ,'cb' => 'en' ,
-              'gb' => 'en' ,'in' => 'en' ,'ie' => 'en' ,'jm' => 'en' ,
-              'nz' => 'en' ,'ph' => 'en' ,'za' => 'en' ,'tt' => 'en' ,
-              'us' => 'en' ,'be' => 'fr' ,/*'ca' => 'fr' ,*/'fr' => 'fr' ,
-              'lu' => 'fr' ,'ch' => 'fr' ,
-              'at' => 'de' ,'de' => 'de' ,'li' => 'de' ,
-              'es' => 'es' , 'py' => 'py'
-              //'lu' => 'de' ,
-              //'ch' => 'de'
-		 );
+           'pt' => 'pt' ,'br' => 'pt' ,'cv' => 'pt' , 'gw' => 'pt' ,
+           'st' => 'pt' ,'mz' => 'pt' ,'ao' => 'pt' ,'tl' => 'pt' ,
+           'au' => 'en' ,'bz' => 'en' ,'ca' => 'en' ,'cb' => 'en' ,
+           'gb' => 'en' ,'in' => 'en' ,'ie' => 'en' ,'jm' => 'en' ,
+           'nz' => 'en' ,'ph' => 'en' ,'za' => 'en' ,'tt' => 'en' ,
+           'us' => 'en' ,'be' => 'fr' ,'fr' => 'fr' ,
+           'lu' => 'fr' ,'ch' => 'fr' ,
+           'at' => 'de' ,'de' => 'de' ,'li' => 'de' ,
+           'es' => 'es' ,
+           'py' => 'py'
+
+       );
 		                            
 
 		foreach ($country_lang_code as $key => $value) {

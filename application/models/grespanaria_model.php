@@ -61,4 +61,11 @@ class grespanaria_model extends CI_Model
         return $data;
     }
 
+    public function get_page($id){
+        $query = $this->db->query("select * from paginas where id_pagina=$id");
+
+        $data = $query->result_array();
+        return $data;
+    }
+
 }

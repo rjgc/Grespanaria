@@ -66,7 +66,7 @@ header .container {position: relative;height: 100%;}
     background-size: contain;
     text-indent: -9999px;
 }
-.logo {display: inline-block;position: absolute;left: 20px;top: 20px;}
+.logo {display: inline-block;position: absolute;left: 15px;top: 20px;}
 .logo a {height: 100%; display: inline-block; width: 100%;}
 
 .lang {

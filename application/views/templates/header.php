@@ -174,19 +174,21 @@
                 <div class="lang">
                     <div class="btn-group">
                         <a class="lang-dropdown dropdown-toggle" data-toggle="dropdown" href="#">
-                            <?php if (strpos($_SERVER['REQUEST_URI'], 'pt')) {
+                            <?php
+
+                            if (strpos($_SERVER['REQUEST_URI'], '/pt/')) {
                                 echo "PT";
-                            } else if (strpos($_SERVER['REQUEST_URI'], 'en')) {
+                            } else if (strpos($_SERVER['REQUEST_URI'], '/en/')) {
                                 echo "EN";
-                            } else if (strpos($_SERVER['REQUEST_URI'], 'fr')) {
+                            } else if (strpos($_SERVER['REQUEST_URI'], '/fr/')) {
                                 echo "FR";
-                            } else if (strpos($_SERVER['REQUEST_URI'], 'es')) {
-                                echo "ES";
-                            } else if (strpos($_SERVER['REQUEST_URI'], 'de')) {
+                            } else if (strpos($_SERVER['REQUEST_URI'], '/de/')) {
                                 echo "DE";
-                            } else if (strpos($_SERVER['REQUEST_URI'], 'py')) {
+                            } else if (strpos($_SERVER['REQUEST_URI'], '/py/')) {
                                 echo "PY";
-                            } ?>
+                            } else if (strpos($_SERVER['REQUEST_URI'], '/es/')) {
+                                echo "ES";
+                            }?>
                             <span class="glyphicon glyphicon-chevron-down"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="<?= site_url($this->lang->switch_uri('pt')) ?>" >PT</a></li>
@@ -197,31 +199,6 @@
                             <li><a href="<?= site_url($this->lang->switch_uri('py')) ?>" >PY</a></li>
                         </ul>
                     </div>
-
-
-                    <!--
-                    <form>
-                        <label for="language" class="language">LANGUAGE</label>
-
-                        <select id="language" name="lang">
-                            <option value="PT" selected>PT</option>
-                            <option value="EN">EN</option>
-                            <option value="FR">FR</option>
-                            <option value="ES">ES</option>
-                            <option value="DE">DE</option>
-                            <option value="PY">PY</option>
-                        </select>
-                        <input type="submit">
-                    </form>
-
-                    <a href="<?= site_url($this->lang->switch_uri('pt')) ?>" >PT</a>
-                    <a href="<?= site_url($this->lang->switch_uri('en')) ?>" >EN</a>
-                    <a href="<?= site_url($this->lang->switch_uri('fr')) ?>" >FR</a>
-                    <a href="<?= site_url($this->lang->switch_uri('es')) ?>" >ES</a>
-                    <a href="<?= site_url($this->lang->switch_uri('de')) ?>" >DE</a>
-                    <a href="<?= site_url($this->lang->switch_uri('py')) ?>" >PY</a>
-
-                    -->
                 </div>
                 <div class="logo">
                     <a href="/">

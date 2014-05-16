@@ -18,12 +18,28 @@ $lang["g_certification"] = "Certificação";
 
 $lang["g_contactus"] = "Contatos";
 
+// ====================== HOME =============================
+
+$lang["g_welcome"] = "Bem vindo à Gres Panaria Portugal";
+
+$lang["g_latest_news"] = "Últimas Notícias";
+
 
 // ================== CERTIFICATION ========================
 
 $lang["g_available_documents"] = "Documentos Disponíveis";
 
-$lang["g_certification_intro"] = "A Gres Panaria Portugal S.A. tem um sistema de gestão certificado de acordo com as Normas ISO 9001, ISO 14001 e Regulamento EMAS (Regulamento nº1221/2009). Os produtos produzidos cumprem os requisitos da ISO 13006, EN14411 e Regulamento dos Produtos de Construção (Regulamento CE nº305/2011).";
+
+// ================== PRESENTATIONS ========================
+
+$lang["g_v_group_pre"] = "Vídeo Apresentação do Grupo Panaria";
+
+
+// ========================== MEDIA ========================
+
+$lang["g_photo_gallery"] = "Fotos";
+
+$lang["g_video_gallery"] = "Vídeos";
 
 
 // ================== CONTACT US ========================
@@ -32,47 +48,51 @@ $lang["g_contact_sede"] = "Sede Gres Panaria";
 
 $lang["g_contact_aveiro"] = "Unidade Industrial de Aveiro";
 
-$lang["g_contact_ilhavo"] = "Unidade Industrial de Ilhavo";
+$lang["g_contact_ilhavo"] = "Unidade Industrial de Ílhavo";
 
 $lang["g_showrooms"] = "Showrooms";
 
 $lang["g_hora_func"] = "Horário de funcionamento";
 
+// Formulário de Contacto *********************************************
 
-// ================== PRESENTATIONS ========================
+$lang["g_form_name"] = "Nome";
 
-$lang["g_presentation_intro"] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus placerat turpis ac congue. Morbi at hendrerit velit. Vivamus facilisis lectus vel euismod iaculis. Quisque sagittis condimentum turpis, venenatis rutrum risus scelerisque in. Suspendisse semper mollis leo vel iaculis.";
+$lang["g_form_email"] = "E-mail";
 
-$lang["g_v_group_pre"] = "Vídeo Apresentação do Grupo Panaria";
+$lang["g_form_subject"] = "Assunto";
+
+$lang["g_form_message"] = "Mensagem";
+
+$lang["g_form_send_btn"] = "Enviar";
+
+// Horários Aveiro *********************************************
+
+$lang["g_av_mon"] = "Segunda das 09:00 às 12:30 e das 13:30 às 18:00";
+
+$lang["g_av_tue"] = "Terça a sexta das 09:00 às 12:30 e das 14:00 às 19:00";
+
+$lang["g_av_sat"] = "Sábado das 10:00 às 13:00 e das 15:00 às 19:00";
+
+$lang["g_av_sun"] = "Fechado: Domingo e Feriados";
+
+// Horários Lisboa *********************************************
+
+$lang["g_lx_mon"] = "Segunda a sexta das 10:00 às 13:00 e das 14:00 às 19:00";
+
+$lang["g_lx_sat"] = "Sábado das 9:00 às 13:00 e das 14:00 às 18:00";
+
+$lang["g_lx_sun"] = "Fechado: Domingo e Feriados";
 
 
 // ================== GRES PANARIA ========================
 
 $lang["g_group_profile"] = "Perfil do Grupo";
 
-$lang["g_group_profile_intro"] = "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quam turpis, viverra vitae ullamcorper ac, ultricies vitae mi. In sed est egestas, ultrices odio a, mollis lacus. Donec consectetur porttitor ligula, a cursus lacus sollicitudin id. Morbi non metus eros. Mauris scelerisque dolor sit amet dui ullamcorper interdum. Maecenas orci turpis, molestie vel interdum eget, varius vitae justo. Nulla vitae venenatis dui.</p><p><b>Mauris nec massa non lacus tristique gravida ac ac massa. Maecenas dapibus odio felis, ut pharetra risus aliquet vitae. Pellentesque ut malesuada arcu.</b> Etiam blandit, lectus nec rhoncus pulvinar, turpis metus aliquam quam, at rhoncus felis risus non magna. Suspendisse potenti. Sed eu rhoncus turpis. Pellentesque sit amet dolor nisl. Fusce vel felis at velit facilisis facilisis sed ut elit.</p>";
-
-
 $lang["g_institutional_video"] = "Video Institucional";
 
-$lang["g_gallery"] = "Ver Galeria";
+$lang["g_gallery"] = "Galeria de Fotos";
 
 $lang["g_margres_video"] = "Vídeo Apresentação Margres";
 
 $lang["g_love_video"] = "Vídeo Apresentação Love";
-
-
-$lang["g_margres_intro"] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quam turpis, viverra vitae ullamcorper ac, ultricies vitae mi. In sed est egestas, ultrices odio a, mollis lacus. Donec consectetur porttitor ligula, a cursus lacus sollicitudin id. Morbi non metus eros. Mauris scelerisque dolor sit amet dui ullamcorper interdum. Maecenas orci turpis, molestie vel interdum eget, varius vitae justo. Nulla vitae venenatis dui.";
-
-$lang["g_love_intro"] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quam turpis, viverra vitae ullamcorper ac, ultricies vitae mi. In sed est egestas, ultrices odio a, mollis lacus. Donec consectetur porttitor ligula, a cursus lacus sollicitudin id. Morbi non metus eros. Mauris scelerisque dolor sit amet dui ullamcorper interdum. Maecenas orci turpis, molestie vel interdum eget, varius vitae justo. Nulla vitae venenatis dui.";
-
-$lang["g_bloom_intro"] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quam turpis, viverra vitae ullamcorper ac, ultricies vitae mi. In sed est egestas, ultrices odio a, mollis lacus.";
-
-$lang["g_easy_intro"] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quam turpis, viverra vitae ullamcorper ac, ultricies vitae mi. In sed est egestas, ultrices odio a, mollis lacus. Donec consectetur porttitor ligula, a cursus lacus sollicitudin id. Morbi non metus eros. Mauris scelerisque dolor sit amet dui ullamcorper interdum.";
-
-
-// ========================== MEDIA ========================
-
-$lang["g_photo_gallery"] = "Fotos";
-
-$lang["g_video_gallery"] = "Videos";

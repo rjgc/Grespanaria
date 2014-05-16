@@ -18,7 +18,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <p><?= lang('g_certification_intro') ?></p>
+                    <div><?= $intro[0]['texto_'.$this->lang->lang()]; ?></div>
                 </div>
             </div>
             <div class="row">
@@ -36,7 +36,7 @@
                         <tbody>
                         <?php foreach($tipos as $tipo) { ?>
                             <tr>
-                                <td><?= $tipo['nome_pt'] ?></td>
+                                <td><?= $tipo['nome_'.$this->lang->lang()] ?></td>
                                 <td>
                                     <?php   foreach($certificados as $certficado) {
 
