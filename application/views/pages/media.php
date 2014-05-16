@@ -13,7 +13,7 @@
             <h1><?= lang('g_photo_gallery'); ?></h1>
             <div class="row">
                 <?php foreach($fotos as $foto) { ?>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="media-feed">
                             <h4><?= $foto['nome_pt'] ?></h4>
                             <img src="<?php echo base_url() ?>assets/uploads/media/<?= $foto['url'] ?>" width="250" height="167">

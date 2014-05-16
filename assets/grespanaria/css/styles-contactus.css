@@ -1,4 +1,5 @@
 html, body {overflow: visible; font-family: "Open Sans", sans-serif;}
+body {background: #e7e7e7;}
 
 section .container {margin: 30px auto;}
 .contactus, .showroom {color: #313131;font-weight: 300;line-height: 30px;}
@@ -38,6 +39,12 @@ footer {font-family: "Raleway", sans-serif}
     .contactus .row .col-md-3:last-child {float: right;margin-top: -980px}
 
     .showroom .container .row .col-md-6 {width: 49%;display: inline-block;vertical-align: top;}
+}
+
+@media screen and (max-width: 564px) {
+    .contactus .row .col-md-3:last-child {
+        margin-top: -1010px;
+    }
 }
 
 @media screen and (max-width: 450px) {

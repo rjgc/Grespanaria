@@ -4,25 +4,25 @@ main {height: auto; font-family: "Open Sans", sans-serif;}
 
 .imgHeader {background-color: #e7e7e7;height: 150px;width: 100%;overflow: hidden;position: relative;z-index: -1;}
 
-.triangle-left-grey {position: absolute;top: 0;left: 0;z-index: 0;width: 265px;height: 0;
+.triangle-left-grey {position: absolute;top: 0;left: 0;z-index: 0;width: 400px;height: 0;
     border-style: solid;border-width: 150px 150px 0 0;border-color: #e7e7e7 transparent transparent transparent;}
 
 .triangle-left {position: absolute;top: 0;left: 0;z-index: 0;width: 0;height: 0;
-    border-style: solid;border-width: 250px 250px 0 0;border-color: #eee transparent transparent transparent;}
+    border-style: solid;border-width: 380px 380px 0 0;border-color: #eee transparent transparent transparent;}
 .img-news {background: url('../img/top-news.png') no-repeat center;background-size: cover;
-    margin-left: 115px;width: 925px;height: 150px;z-index: -1;}
+    margin-left: 250px;width: 925px;height: 150px;z-index: -1;}
 
-.triangle-darkgreen {position: absolute;right: 575px;top: 0;z-index: 2;width: 200px;height: 0;
+.triangle-darkgreen {position: absolute;right: 685px;top: 0;z-index: 2;width: 200px;height: 0;
     border-style: solid;border-width: 0 0 150px 150px;border-color: transparent transparent #006940 transparent;opacity: 0.8;}
 
-.triangle-green {position: absolute;right: 355px;top: 0;z-index: 2;width: 400px;height: 0;
+.triangle-green {position: absolute;right: 465px;top: 0;z-index: 2;width: 400px;height: 0;
     border-style: solid;border-width: 0 0 150px 150px;border-color: transparent transparent #005f3a transparent;}
 
-.triangle-green-invert {position: absolute;right: 200px;top: 0;z-index: 2;width: 200px;height: 0;
+.triangle-green-invert {position: absolute;right: 310px;top: 0;z-index: 2;width: 200px;height: 0;
     border-style: solid;border-width: 150px 150px 0 0;border-color: #005f3a transparent transparent transparent;}
 
 .triangle-bottom-white {width: 0;height: 0;margin: 0;position: absolute;top: 150px;right: 0; z-index: -1;
-    border-style: solid;border-width: 475px 0 0 475px;border-color: #eee transparent transparent transparent;}
+    border-style: solid;border-width: 600px 0 0 600px;border-color: #eee transparent transparent transparent;}
 
 
 main .container {margin: 30px auto 0;}

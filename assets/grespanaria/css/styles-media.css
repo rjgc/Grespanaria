@@ -4,35 +4,85 @@ main {height: auto; font-family: "Open Sans", sans-serif;}
 
 .imgHeader {background-color: #dadada;height: 150px;width: 100%;overflow: hidden;position: relative;z-index: -1;}
 
-.triangle-left {position: absolute;top: 0;left: 0;z-index: 0;width: 265px;height: 0;
+.triangle-left {position: absolute;top: 0;left: 0;z-index: 0;width: 380px;height: 0;
     border-style: solid;border-width: 150px 150px 0 0;border-color: #dadada transparent transparent transparent;}
 .img-news {background: url('../img/top-news.jpg') no-repeat center;background-size: cover;
-    margin-left: 115px;width: 925px;height: 150px;z-index: -1;}
+    margin-left: 230px;width: 925px;height: 150px;z-index: -1;}
 
-.triangle-darkgreen {position: absolute;right: 575px;top: 0;z-index: 1;width: 200px;height: 0;
+.triangle-darkgreen {position: absolute;right: 700px;top: 0;z-index: 2;width: 200px;height: 0;
     border-style: solid;border-width: 0 0 150px 150px;border-color: transparent transparent #006940 transparent;opacity: 0.8;}
 
-.triangle-green {position: absolute;right: 555px;top: 0;z-index: 1;width: 200px;height: 0;
+.triangle-green {position: absolute;right: 680px;top: 0;z-index: 2;width: 200px;height: 0;
     border-style: solid;border-width: 0 0 150px 150px;border-color: transparent transparent #005f3a transparent;}
 
-.triangle-green-invert {position: absolute;right: 400px;top: 0;z-index: 1;width: 200px;height: 0;
+.triangle-green-invert {position: absolute;right: 480px;top: 0;z-index: 2;width: 200px;height: 0;
     border-style: solid;border-width: 150px 150px 0 0;border-color: #005f3a transparent transparent transparent;}
 
-.triangle-right {position: absolute;right: 0;top: 0;z-index: 1;width: 550px;height: 0;
+.triangle-right {position: absolute;right: 0;top: 0;z-index: 2;width: 630px;height: 0;
     border-style: solid;border-width: 0 0 150px 150px;border-color: transparent transparent #b9b9b9 transparent;}
 
-.triangle-bottom-white {width: 0;height: 0;margin: 0 0 0 115px;position: absolute;top: 150px;z-index: -1;
-    border-style: solid;border-width: 575px 575px 0 575px;border-color: #eee transparent transparent transparent;}
 
 
 main .container {margin: 30px auto 0;}
-main .container div .row .col-md-4 {min-height: 280px;margin: 0 0 10px;}
+main .container div .row .col-md-3 {min-height: 280px;min-width: 280px;margin: 0 0 10px;display: inline-block;vertical-align: top;}
 main h1 {font-family: "Raleway", sans-serif;font-weight: 300;font-size: 24px;margin: 5px 15px 35px;}
 
 main .media-feed, .media-feed h4 {line-height: 30px;color: #313131;}
 main .date {font-weight: 300;font-size: 18px;margin-top: 10px;}
-main h4 {font-weight: 700;font-size: 18px;margin: -5px 0 10px;height: 60px;}
+main h4 {font-weight: 700;font-size: 18px;margin: -5px 0 10px;height: 30px;}
 
-main .col-md-4 p {font-weight: 300;font-size: 14px;}
-main .col-md-4 p > a {font-weight: 400;font-size: 14px;color: #006940;margin-left: 6px;}
+main .col-md-3 p {font-weight: 300;font-size: 14px;}
+main .col-md-3 p > a {font-weight: 400;font-size: 14px;color: #006940;margin-left: 6px;}
 main .row {margin: 20px auto 0;}
+
+main .video-feed iframe {width: 100%;}
+main .video-feed {max-width: 560px;margin: 0 auto 30px}
+
+
+
+/* ========== MEDIA QUERYS ================================================================ */
+@media screen and (max-width: 1700px) {
+    .triangle-left {width: 265px}
+    .img-news {margin-left: 115px}
+    .triangle-darkgreen {right: 575px}
+    .triangle-green {right: 555px}
+    .triangle-green-invert {right: 400px}
+    .triangle-right {width: 550px}
+}
+
+@media screen and (max-width: 1500px) {
+    .triangle-left {width: 250px;}
+    .img-news {margin-left: 100px;}
+    .triangle-darkgreen {right: 430px}
+    .triangle-green {right: 410px}
+    .triangle-green-invert {right: 260px}
+    .triangle-right {width: 410px}
+}
+
+@media screen and (max-width: 1366px) {
+    .triangle-left {width: 150px;}
+    .img-news {margin-left: 0;}
+    .triangle-darkgreen {right: 385px}
+    .triangle-green {right: 360px}
+    .triangle-green-invert {right: 210px}
+    .triangle-right {width: 360px}
+}
+@media screen and (max-width: 1199px) {
+    main .container div .row .col-md-3 {width: 33.3%}
+}
+
+@media screen and (max-width: 1150px) {
+    .triangle-darkgreen {right: 175px}
+    .triangle-green {right: 155px}
+    .triangle-green-invert {right: 0}
+    .triangle-right {width: 100px}
+}
+
+@media screen and (max-width: 991px) {
+    .imgHeader {display: none}
+    main .container div .row .col-md-3 {margin: 0 4% 10px;}
+}
+
+@media screen and (max-width: 768px) {
+    main .container div .row .col-md-3 {margin: 0 auto 10px;width: 49%;}
+}
