@@ -48,10 +48,10 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = '123';
-$db['default']['database'] = 'grespanaria';
+$db['default']['hostname'] = 'critecns.com';
+$db['default']['username'] = 'crtns25g_gestor';
+$db['default']['password'] = 'rGGST}T6vm=@';
+$db['default']['database'] = 'crtns25g_grespanaria';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
