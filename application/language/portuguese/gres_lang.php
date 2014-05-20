@@ -24,10 +24,14 @@ $lang["g_welcome"] = "Bem vindo à Gres Panaria Portugal";
 
 $lang["g_latest_news"] = "Últimas Notícias";
 
+$lang["g_disclaimer"] = "Disclaimer";
+
 
 // ================== CERTIFICATION ========================
 
 $lang["g_available_documents"] = "Documentos Disponíveis";
+
+$lang["g_document_error"] = "Não existem documentos disponíveis";
 
 
 // ================== PRESENTATIONS ========================

@@ -14,18 +14,18 @@
                             foreach ($noticias as $noticia) {
                                 if ($i == 0) { ?>
                                     <div class="item active">
-                                        <img class="img-news" src="<?= base_url()?>assets/uploads/noticias/<?= $noticia['foto'] ?>" />
+                                        <a href="<?php echo site_url('pages/noticia/'.$noticia['id_noticia']) ?>"><img class="img-news" src="<?= base_url()?>assets/uploads/noticias/<?= $noticia['foto'] ?>" /></a>
                                         <div class="news-text">
-                                            <h3><?= $noticia['titulo_'.$this->lang->lang()] ?></h3>
-                                            <p><?php echo substr($noticia['texto_'.$this->lang->lang()], 0, 150); if (strlen($noticia['texto_'.$this->lang->lang()]) > 150) echo '...' ?> <a class="read-more" href="<?php echo site_url('pages/noticia/'.$noticia['id_noticia']) ?>">&nbsp;Read More</a></p>
+                                            <h3><a href="<?php echo site_url('pages/noticia/'.$noticia['id_noticia']) ?>"><?= $noticia['titulo_'.$this->lang->lang()] ?></a></h3>
+                                            <div><?php echo substr($noticia['texto_'.$this->lang->lang()], 0, 125); if (strlen($noticia['texto_'.$this->lang->lang()]) > 125) echo '...' ?> <a class="read-more" href="<?php echo site_url('pages/noticia/'.$noticia['id_noticia']) ?>">&nbsp;Read More</a></div>
                                         </div>
                                     </div>
                     <?php       } else { ?>
                                     <div class="item">
-                                        <img class="img-news" src="<?= base_url()?>assets/uploads/noticias/<?= $noticia['foto'] ?>" />
+                                        <a href="<?php echo site_url('pages/noticia/'.$noticia['id_noticia']) ?>"><img class="img-news" src="<?= base_url()?>assets/uploads/noticias/<?= $noticia['foto'] ?>" /></a>
                                         <div class="news-text">
-                                            <h3><?= $noticia['titulo_'.$this->lang->lang()] ?></h3>
-                                            <p><?php echo substr($noticia['texto_.$this->lang->lang()'], 0, 150); if (strlen($noticia['texto_'.$this->lang->lang()]) > 150) echo '...' ?> <a class="read-more" href="<?php echo site_url('pages/noticia/'.$noticia['id_noticia']) ?>">&nbsp;Read More</a></p>
+                                            <h3><a href="<?php echo site_url('pages/noticia/'.$noticia['id_noticia']) ?>"><?= $noticia['titulo_'.$this->lang->lang()] ?></a></h3>
+                                            <div><?php echo substr($noticia['texto_'.$this->lang->lang()], 0, 125); if (strlen($noticia['texto_'.$this->lang->lang()]) > 125) echo '...' ?> <a class="read-more" href="<?php echo site_url('pages/noticia/'.$noticia['id_noticia']) ?>">&nbsp;Read More</a></div>
                                         </div>
                                     </div>
                     <?php       } $i++;

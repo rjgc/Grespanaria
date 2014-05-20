@@ -16,10 +16,10 @@
                 <?php foreach($noticias as $noticia) { ?>
                     <div class="col-md-4">
                         <div class="news-feed">
-                            <img src="<?php echo base_url() ?>assets/uploads/noticias/<?= $noticia['foto'] ?>" width="250" height="167">
+                            <a href="<?php echo site_url('pages/noticia/'.$noticia['id_noticia']) ?>"><img src="<?php echo base_url() ?>assets/uploads/noticias/<?= $noticia['foto'] ?>" width="250" height="167"></a>
                             <p class="date"><?= $noticia['data_news'] ?></p>
-                            <h4><?= $noticia['titulo_'.$this->lang->lang()] ?></h4>
-                            <p><?= $noticia['texto_'.$this->lang->lang()] ?><a href="<?php echo site_url('pages/noticia/'.$noticia['id_noticia']) ?>">Read More</a></p>
+                            <h4><a href="<?php echo site_url('pages/noticia/'.$noticia['id_noticia']) ?>"><?= $noticia['titulo_'.$this->lang->lang()] ?></a></h4>
+                            <div><?php echo substr($noticia['texto_'.$this->lang->lang()], 0, 100); if (strlen($noticia['texto_'.$this->lang->lang()]) > 100) echo '...' ?> <a class="read-more" href="<?php echo site_url('pages/noticia/'.$noticia['id_noticia']) ?>">&nbsp;Read More</a></div>
                         </div>
                     </div>
                 <?php } ?>

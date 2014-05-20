@@ -220,6 +220,7 @@ class Mediagest extends CI_Controller {
         $crud = new grocery_CRUD();
 
         $crud->unset_delete();
+        $crud->unset_add();
 
         $crud->set_table('paginas');
         $crud->set_subject('Páginas');

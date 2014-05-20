@@ -102,6 +102,30 @@ class Pages extends CI_Controller {
         $this->load->view('templates/footer');
 
     }
+
+    public function noticia($id = null)
+    {
+        $data['current'] = 'news';
+        $this->load->view('templates/header',$data);
+
+        $data['noticias'] = $this->grespanaria_model->get_noticia($id);
+
+        $this->load->view('pages/new', $data);
+        $this->load->view('templates/footer');
+
+    }
+
+    public function disclaimer()
+    {
+        $data['current'] = 'page';
+        $this->load->view('templates/header',$data);
+
+        $data['disclaimer'] = $this->grespanaria_model->get_page(8);
+
+        $this->load->view('pages/page', $data);
+        $this->load->view('templates/footer');
+
+    }
 	
 	public function certification()
 	{

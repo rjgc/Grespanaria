@@ -27,7 +27,7 @@
                             <img class="footer-img" src="<?php echo base_url() ?>assets/grespanaria/img/easy.png" width="58" height="23" title="EASY">
                         </div>
                     </div>
-                    <p class="copyright">&copy; 2014 <span>Gres Panaria Portugal S.A.</span> | <a href="#">Disclaimer</a></p>
+                    <p class="copyright">&copy; 2014 <span>Gres Panaria Portugal S.A.</span> | <a href="<?= site_url('pages/disclaimer'); ?>"><?= lang('g_disclaimer'); ?></a></p>
                 </div>
             </div>
         </footer>

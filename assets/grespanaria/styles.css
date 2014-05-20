@@ -118,8 +118,8 @@ footer {width: 100%;height: 450px;border-top: 1px solid #fff;background: #eaeaea
 .footer-title {font-size: 24px;font-weight: 100;color: #272727;margin-top: 70px}
 .footer-title span {color: #969696}
 .shape {padding-left: 10px;}
-.footer-img-portugal, .footer-img {margin: 1%;}
-.copyright {font-family: "Open Sans", sans-serif; font-weight: 300; font-size: 12px; color: #424242; margin: 15px 0 0 15px;}
+.footer-img-portugal, .footer-img {margin: 10px 2% 10px 0;}
+.copyright {font-family: "Open Sans", sans-serif; font-weight: 300; font-size: 12px; color: #424242; margin: 15px 0 0;}
 .copyright span {font-weight: 700;}
 
 /* ========== MAIN ================================================================ */
@@ -151,7 +151,7 @@ main {
     border-style: solid;
     border-width: 0 400px 500px 0;
     border-color: transparent #00603b transparent transparent;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .pageOption {
@@ -213,13 +213,17 @@ main {
     font-size: 18px;
     margin: 8px 0 0;
     line-height: 22px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 400px;
 }
 
 .lastNews p {
     font-family: "Open Sans";
     font-weight: 300;
     margin: 8px 0 0;
-    line-height: 20px;
+    line-height: 30px;
 }
 
 table {
@@ -267,14 +271,22 @@ table {
 
 /* ========== MEDIA QUERYS ================================================================ */
 @media (max-width: 1366px) {
-    .triangle-left {border-width: 180px 0 0 175px;}
-    .triangle-right {border-width: 0 345px 511px 0;}
+    .triangle-left {display: none}
+    .triangle-right {right: -344px;}
     .pageOption {width: 630px;height: 430px;top: 0;}
 }
 
+@media (max-width: 1024px) {
+    .triangle-right {display: none}
+    .pageOption {right: -350px;}
+}
+
 @media screen and (max-width: 991px) {
+    .pageOption {display: none;}
     .container {width: 95%;}
     .logo h1 {width: 225px;}
+
+    .title {margin: 50px 0 40px;}
 
     .menu {font-size: 13px;;padding: 32px 0 0;margin: 15px 0 0 270px;}
     ul.nav > li {margin: 0;}
@@ -288,4 +300,6 @@ table {
     .navbar a:focus, .navbar a:hover {color: #006940; border-bottom: 2px solid #006940;}
 
     .triangle-left, .triangle-right {display: none;}
+
+    .lastNews {max-width: inherit; width: 100%;}
 }

@@ -9,7 +9,7 @@ main {height: auto; font-family: "Open Sans", sans-serif;}
 
 .triangle-left {position: absolute;top: 0;left: 0;z-index: 0;width: 0;height: 0;
     border-style: solid;border-width: 380px 380px 0 0;border-color: #eee transparent transparent transparent;}
-.img-news {background: url('../img/top-news.png') no-repeat center;background-size: cover;
+.img-news {background: url('../img/top-certification.png') no-repeat center;background-size: cover;
     margin-left: 250px;width: 925px;height: 150px;z-index: -1;}
 
 .triangle-darkgreen {position: absolute;right: 685px;top: 0;z-index: 2;width: 200px;height: 0;
@@ -26,15 +26,15 @@ main {height: auto; font-family: "Open Sans", sans-serif;}
 
 
 main .container {margin: 30px auto 0;}
-h1 {font-family: "Raleway", sans-serif;font-size: 24px;margin: 5px 18px 35px;padding: 0 20px;}
-main .container p {font-family: "Open Sans", sans-serif;font-size: 14px;font-weight: 300;margin: 10px 18px 50px;padding: 0 20px;line-height: 2;width: 75%;}
+main h1 {font-size: 24px;font-family: Raleway, sans-serif;font-weight: 400;margin: 5px 0 35px;padding: 0;}
+main .container p {font-family: "Open Sans", sans-serif;font-size: 14px;font-weight: 300;margin: 10px 0 50px;padding: 0;line-height: 2;width: 75%;}
 
 .logos {padding: 0 20px 0 0;margin: 0 20px 50px;height: 62px;border-bottom: 2px solid #d3d3d3;max-width: 1000px;}
 .logos th {padding: 0 40px;margin: 0;text-align: center;}
 .logos th:hover {border-bottom: 2px solid #006940;}
 .logos th:first-child:hover {border-bottom: 2px solid #d3d3d3;}
 .logos th:first-child {padding: 0;text-align: left;}
-.logos h1 {display: inline-block;margin: 5px 0 35px;width: 275px;}
+.logos h1 {width: 275px;}
 
 .col-md-12 td {text-align: center;height: 45px;padding: 10px 0;}
 .col-md-12 td:first-child {text-align: left;}

@@ -1,0 +1,86 @@
+html, body {overflow: visible}
+body {background: #e7e7e7;}
+main {height: auto; font-family: "Open Sans", sans-serif;}
+
+.imgHeader {background-color: #e7e7e7;height: 150px;width: 100%;overflow: hidden;position: relative;z-index: -1;}
+
+.triangle-left-grey {position: absolute;top: 0;left: 0;z-index: 0;width: 400px;height: 0;
+    border-style: solid;border-width: 150px 150px 0 0;border-color: #e7e7e7 transparent transparent transparent;}
+
+.triangle-left {position: absolute;top: 0;left: 0;z-index: 0;width: 0;height: 0;
+    border-style: solid;border-width: 380px 380px 0 0;border-color: #eee transparent transparent transparent;}
+.img-news {background: url('../img/top-certification.png') no-repeat center;background-size: cover;
+    margin-left: 250px;width: 925px;height: 150px;z-index: -1;}
+
+.triangle-darkgreen {position: absolute;right: 685px;top: 0;z-index: 2;width: 200px;height: 0;
+    border-style: solid;border-width: 0 0 150px 150px;border-color: transparent transparent #006940 transparent;opacity: 0.8;}
+
+.triangle-green {position: absolute;right: 465px;top: 0;z-index: 2;width: 400px;height: 0;
+    border-style: solid;border-width: 0 0 150px 150px;border-color: transparent transparent #005f3a transparent;}
+
+.triangle-green-invert {position: absolute;right: 310px;top: 0;z-index: 2;width: 200px;height: 0;
+    border-style: solid;border-width: 150px 150px 0 0;border-color: #005f3a transparent transparent transparent;}
+
+.triangle-bottom-white {width: 0;height: 0;margin: 0;position: absolute;top: 150px;right: 0; z-index: -1;
+    border-style: solid;border-width: 600px 0 0 600px;border-color: #eee transparent transparent transparent;}
+
+
+main .container {margin: 30px auto 0;}
+main h1 {font-size: 24px;font-family: Raleway, sans-serif;font-weight: 400;margin: 5px 0 35px;padding: 0;}
+main .container p {font-family: "Open Sans", sans-serif;font-size: 14px;font-weight: 300;margin: 10px 0 50px;padding: 0;line-height: 2;width: 75%;}
+
+.logos {padding: 0 20px 0 0;margin: 0 20px 50px;height: 62px;border-bottom: 2px solid #d3d3d3;max-width: 1000px;}
+.logos th {padding: 0 40px;margin: 0;text-align: center;}
+.logos th:hover {border-bottom: 2px solid #006940;}
+.logos th:first-child:hover {border-bottom: 2px solid #d3d3d3;}
+.logos th:first-child {padding: 0;text-align: left;}
+.logos h1 {width: 275px;}
+
+.col-md-12 td {text-align: center;height: 45px;padding: 10px 0;}
+.col-md-12 td:first-child {text-align: left;}
+
+
+/* ========== MEDIA QUERYS ================================================================ */
+@media screen and (max-width: 1700px) {
+    .triangle-left-grey {left: 0;width: 265px;border-width: 150px 150px 0 0;}
+    .triangle-left {border-width: 250px 250px 0 0;}
+    .img-news {margin-left: 115px;}
+
+    .triangle-darkgreen {right: 575px;width: 200px;}
+    .triangle-green {right: 355px;width: 400px;}
+    .triangle-green-invert {right: 200px;width: 200px;}
+    .triangle-bottom-white {border-width: 475px 0 0 475px;}
+}
+
+@media screen and (max-width: 1500px) {
+    .triangle-left-grey {left: 0;width: 215px;}
+    .triangle-left {border-width: 200px 200px 0 0;}
+    .img-news {margin-left: 40px;}
+
+    .triangle-darkgreen {right: 460px;width: 200px;}
+    .triangle-green {right: 340px;width: 300px;}
+    .triangle-green-invert {right: 150px;}
+    .triangle-bottom-white {border-width: 400px 0 0 400px;}
+}
+
+@media screen and (max-width: 1366px) {
+    .triangle-left-grey {width: 0px;border-width: 150px 150px 0 0;}
+    .triangle-left {width: 0;border-width: 130px 130px 0 0;}
+    .img-news {margin-left: 0;}
+
+    .triangle-darkgreen {right: 360px;width: 200px;}
+    .triangle-green {right: 190px;width: 350px;}
+    .triangle-green-invert {right: 35px;width: 200px;}
+    .triangle-bottom-white {border-width: 275px 0 0 275px;}
+}
+
+@media screen and (max-width: 1150px) {
+    .triangle-darkgreen {right: 190px;width: 200px;}
+    .triangle-green {right: 120px;width: 250px;}
+    .triangle-green-invert {right: -30px;width: 0;}
+    .triangle-bottom-white {border-width: 200px 0 0 200px;}
+}
+
+@media screen and (max-width: 991px) {
+    .imgHeader, .triangle-left, .triangle-bottom-white  {display: none}
+}

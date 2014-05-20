@@ -34,6 +34,9 @@
         <?php   }
                 if( isset($current) && $current === 'contactus' ){ ?>
         <link href="<?php echo base_url() ?>assets/grespanaria/css/styles-contactus.css" rel="stylesheet">
+        <?php   }
+                if( isset($current) && $current === 'page' ){ ?>
+        <link href="<?php echo base_url() ?>assets/grespanaria/css/styles-pages.css" rel="stylesheet">
         <?php   } ?>
         <!-- Bootstrap core JavaScript
         ================================================== -->
@@ -109,7 +112,7 @@
                     zoom: 10,
                     panControl: false,
                     mapTypeControl: false,
-                    disableDefaultUI: true,
+                    disableDefaultUI: false,
                     mapTypeId: google.maps.MapTypeId.ROADMAP,
                     
                 };
@@ -176,17 +179,17 @@
                         <a class="lang-dropdown dropdown-toggle" data-toggle="dropdown" href="#">
                             <?php
 
-                            if (strpos($_SERVER['REQUEST_URI'], '/pt/')) {
+                            if (strpos($_SERVER['REQUEST_URI'], '/pt')) {
                                 echo "PT";
-                            } else if (strpos($_SERVER['REQUEST_URI'], '/en/')) {
+                            } else if (strpos($_SERVER['REQUEST_URI'], '/en')) {
                                 echo "EN";
-                            } else if (strpos($_SERVER['REQUEST_URI'], '/fr/')) {
+                            } else if (strpos($_SERVER['REQUEST_URI'], '/fr')) {
                                 echo "FR";
-                            } else if (strpos($_SERVER['REQUEST_URI'], '/de/')) {
+                            } else if (strpos($_SERVER['REQUEST_URI'], '/de')) {
                                 echo "DE";
-                            } else if (strpos($_SERVER['REQUEST_URI'], '/py/')) {
+                            } else if (strpos($_SERVER['REQUEST_URI'], '/py')) {
                                 echo "PY";
-                            } else if (strpos($_SERVER['REQUEST_URI'], '/es/')) {
+                            } else if (strpos($_SERVER['REQUEST_URI'], '/es')) {
                                 echo "ES";
                             }?>
                             <span class="glyphicon glyphicon-chevron-down"></span></a>
@@ -201,7 +204,7 @@
                     </div>
                 </div>
                 <div class="logo">
-                    <a href="/">
+                    <a href="<?php echo base_url() ?>">
                         <h1>GRES PANARIA Portugal S.A.</h1>
                     </a>
                 </div>

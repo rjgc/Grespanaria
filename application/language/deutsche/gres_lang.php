@@ -18,61 +18,81 @@ $lang["g_certification"] = "Certification";
 
 $lang["g_contactus"] = "Contact Us";
 
+// ====================== HOME =============================
+
+$lang["g_welcome"] = "Welcome to Gres Panaria Portugal";
+
+$lang["g_latest_news"] = "Latest News";
+
+$lang["g_disclaimer"] = "Disclaimer";
+
 
 // ================== CERTIFICATION ========================
 
 $lang["g_available_documents"] = "Available Documents";
 
-$lang["g_certification_intro"] = "A Gres Panaria Portugal S.A. tem um sistema de gestão certificado de acordo com as Normas ISO 9001, ISO 14001 e Regulamento EMAS (Regulamento nº1221/2009). Os produtos produzidos cumprem os requisitos da ISO 13006, EN14411 e Regulamento dos Produtos de Construção (Regulamento CE nº305/2011).";
+// ================== PRESENTATIONS ========================
+
+$lang["g_v_group_pre"] = "Watch Panaria Group Presentation";
+
+// ========================== MEDIA ========================
+
+$lang["g_photo_gallery"] = "Photos";
+
+$lang["g_video_gallery"] = "Videos";
 
 
 // ================== CONTACT US ========================
 
-$lang["g_contact_sede"] = "Sede Gres Panaria";
+$lang["g_contact_sede"] = "Head Office Gres Panaria";
 
-$lang["g_contact_aveiro"] = "Unidade Insdutrial de Aveiro";
+$lang["g_contact_aveiro"] = "Aveiro Unit";
 
-$lang["g_contact_ilhavo"] = "Unidade Insdutrial de Ilhavo";
+$lang["g_contact_ilhavo"] = "Ílhavo Unit";
 
 $lang["g_showrooms"] = "Showrooms";
 
-$lang["g_hora_func"] = "Horário de funcionamento";
+$lang["g_hora_func"] = "Opening Hours";
 
+// Formulário de Contacto *********************************************
 
-// ================== PRESENTATIONS ========================
+$lang["g_form_name"] = "Name";
 
-$lang["g_presentation_intro"] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus placerat turpis ac congue. Morbi at hendrerit velit. Vivamus facilisis lectus vel euismod iaculis. Quisque sagittis condimentum turpis, venenatis rutrum risus scelerisque in. Suspendisse semper mollis leo vel iaculis.";
+$lang["g_form_email"] = "E-mail";
 
-$lang["g_v_group_pre"] = "Watch Panaria Group Presentation";
+$lang["g_form_subject"] = "Subject";
+
+$lang["g_form_message"] = "Message";
+
+$lang["g_form_send_btn"] = "Send";
+
+// Horários Aveiro *********************************************
+
+$lang["g_av_mon"] = "Monday from 9 am to 12.30 pm and from 1.30 pm to 6 pm";
+
+$lang["g_av_tue"] = "Tuesday to Friday from 9 am to 0.30 pm and from 2 pm to 7 pm";
+
+$lang["g_av_sat"] = "Saturday from 10 am to 1 pm and from 3 pm to 7 pm";
+
+$lang["g_av_sun"] = "Closed: Sunday and Public Holidays";
+
+// Horários Lisboa *********************************************
+
+$lang["g_lx_mon"] = "Monday to Friday from 10 am to 1 pm and from 2 pm to 7 pm";
+
+$lang["g_lx_sat"] = "Saturdays from 9 am to 1 pm and from 2 pm to 6 pm";
+
+$lang["g_lx_sun"] = "Closed: Sunday and Public Holidays";
 
 
 // ================== GRES PANARIA ========================
 
 $lang["g_group_profile"] = "Group Profile";
 
-$lang["g_group_profile_intro"] = "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quam turpis, viverra vitae ullamcorper ac, ultricies vitae mi. In sed est egestas, ultrices odio a, mollis lacus. Donec consectetur porttitor ligula, a cursus lacus sollicitudin id. Morbi non metus eros. Mauris scelerisque dolor sit amet dui ullamcorper interdum. Maecenas orci turpis, molestie vel interdum eget, varius vitae justo. Nulla vitae venenatis dui.</p><p><b>Mauris nec massa non lacus tristique gravida ac ac massa. Maecenas dapibus odio felis, ut pharetra risus aliquet vitae. Pellentesque ut malesuada arcu.</b> Etiam blandit, lectus nec rhoncus pulvinar, turpis metus aliquam quam, at rhoncus felis risus non magna. Suspendisse potenti. Sed eu rhoncus turpis. Pellentesque sit amet dolor nisl. Fusce vel felis at velit facilisis facilisis sed ut elit.</p>";
-
-
 $lang["g_institutional_video"] = "Watch Institutional Video";
 
-$lang["g_gallery"] = "View Gallery";
+$lang["g_gallery"] = "Photo Gallery";
 
 $lang["g_margres_video"] = "Watch Margres Presentation";
 
 $lang["g_love_video"] = "Watch Love Presentation";
-
-
-$lang["g_margres_intro"] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quam turpis, viverra vitae ullamcorper ac, ultricies vitae mi. In sed est egestas, ultrices odio a, mollis lacus. Donec consectetur porttitor ligula, a cursus lacus sollicitudin id. Morbi non metus eros. Mauris scelerisque dolor sit amet dui ullamcorper interdum. Maecenas orci turpis, molestie vel interdum eget, varius vitae justo. Nulla vitae venenatis dui.";
-
-$lang["g_love_intro"] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quam turpis, viverra vitae ullamcorper ac, ultricies vitae mi. In sed est egestas, ultrices odio a, mollis lacus. Donec consectetur porttitor ligula, a cursus lacus sollicitudin id. Morbi non metus eros. Mauris scelerisque dolor sit amet dui ullamcorper interdum. Maecenas orci turpis, molestie vel interdum eget, varius vitae justo. Nulla vitae venenatis dui.";
-
-$lang["g_bloom_intro"] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quam turpis, viverra vitae ullamcorper ac, ultricies vitae mi. In sed est egestas, ultrices odio a, mollis lacus.";
-
-$lang["g_easy_intro"] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quam turpis, viverra vitae ullamcorper ac, ultricies vitae mi. In sed est egestas, ultrices odio a, mollis lacus. Donec consectetur porttitor ligula, a cursus lacus sollicitudin id. Morbi non metus eros. Mauris scelerisque dolor sit amet dui ullamcorper interdum.";
-
-
-// ========================== MEDIA ========================
-
-$lang["g_photo_gallery"] = "Fotos";
-
-$lang["g_video_gallery"] = "Videos";

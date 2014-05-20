@@ -1,9 +1,9 @@
-<section>
+<main>
     <div id="map">
         <div id="map-canvas"></div>
     </div>
-    <div class="container">
-        <div class="contactus">
+    <section class="contactus">
+        <div class="container">
             <div class="row">
                 <div class="col-md-3">
                     <h3><?= lang('g_contact_sede'); ?></h3>
@@ -61,13 +61,14 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <section class="showroom">
         <div class="container">
             <h1><?= lang('g_showrooms'); ?></h1>
             <div class="row">
                 <div class="col-md-6">
                     <h3>Aveiro</h3>
+                    <hr class="divider">
                     <p>Zona Industrial de Aveiro</p>
                     <p>3801-101 Aveiro - Portugal</p>
                     <hr class="divider">
@@ -85,6 +86,7 @@
                 </div>
                 <div class="col-md-6">
                     <h3>Lisboa</h3>
+                    <hr class="divider">
                     <p>Av. Dom João II</p>
                     <p>Parque das Nações</p>
                     <p>Lote 4.53 02G</p>
@@ -104,4 +106,4 @@
             </div>
         </div>
     </section>
-</section>
+</main>
