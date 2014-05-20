@@ -20,36 +20,53 @@
             <div><?= $profile[0]['texto_'.$this->lang->lang()]; ?></div>
         </div>
         <div class="media">
-            <a href="<?= $videos[1]['url']; ?>" target="_blank">
-                <h3><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_video.png"><?= lang('g_institutional_video') ?></h3>
-            </a>
-            <a href="<?php echo site_url('pages/media'); ?>">
-                <h3><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_foto.png"><?= lang('g_gallery') ?></h3>
-            </a>
-            <a href="<?php echo site_url('pages/contactus'); ?>">
-                <h4><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_plus.png"><?= lang('g_contact_aveiro') ?></h4>
-            </a>
-
-            <a href="<?php echo site_url('pages/contactus'); ?>">
-                <h4><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_plus.png"><?= lang('g_contact_ilhavo') ?></h4>
-            </a>
+            <h3>
+                <a href="<?= $videos[1]['url']; ?>" target="_blank">
+                    <i class="icon-video"></i>
+                    <span><?= lang('g_institutional_video') ?></span>
+                </a>
+            </h3>
+            <h3>
+                <a href="<?php echo site_url('pages/media'); ?>">
+                    <i class="icon-galeria"></i>
+                    <span><?= lang('g_gallery') ?></span>
+                </a>
+            </h3>
+            <h3>
+                <a href="<?php echo site_url('pages/contactus'); ?>">
+                    <i class="icon-plus"></i>
+                    <span><?= lang('g_contact_aveiro') ?></span>
+                </a>
+            </h3>
+            <h3>
+                <a href="<?php echo site_url('pages/contactus'); ?>">
+                    <i class="icon-plus"></i>
+                    <span><?= lang('g_contact_ilhavo') ?></span>
+                </a>
+            </h3>
         </div>
         <div class="row">
             <div class="col-md-2"><img class="img" src="<?php echo base_url() ?>assets/grespanaria/img/margres2.png"></div>
             <div class="col-md-10">
                 <div><?= $margres[0]['texto_'.$this->lang->lang()]; ?></div>
-                <a href="<?= $videos[2]['url']; ?>" target="_blank">
-                    <h4><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_video.png"><?= lang('g_margres_video') ?></h4>
-                </a>
+                <h3>
+                    <a href="<?= $videos[2]['url']; ?>" target="_blank">
+                        <i class="icon-video"></i>
+                        <span><?= lang('g_margres_video') ?></span>
+                    </a>
+                </h3>
             </div>
         </div>
         <div class="row">
             <div class="col-md-2"><img class="img" src="<?php echo base_url() ?>assets/grespanaria/img/love2.png"></div>
             <div class="col-md-10">
                 <div><?= $love[0]['texto_'.$this->lang->lang()]; ?></div>
-                <a href="<?= $videos[3]['url']; ?>" target="_blank">
-                    <h4><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_video.png"><?= lang('g_love_video') ?></h4>
-                </a>
+                <h3>
+                    <a href="<?= $videos[3]['url']; ?>" target="_blank">
+                        <i class="icon-video"></i>
+                        <span><?= lang('g_love_video') ?></span>
+                    </a>
+                </h3>
             </div>
         </div>
         <div class="row">

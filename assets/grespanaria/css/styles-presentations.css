@@ -2,6 +2,8 @@ html, body {overflow: visible}
 body {background: #e7e7e7;}
 main {height: auto; font-family: "Open Sans", sans-serif;}
 
+[class^="icon-"], [class*=" icon-"] {font-size: 40px;margin-right: 5px;}
+
 .bg-presentations {background: url("../img/back-presentation.png") no-repeat right;background-size: cover;padding-bottom: 60px;margin-bottom: -60px;}
 
 .imgHeader {background-color: #b9b9b9;height: 150px;width: 100%;overflow: hidden;}
@@ -28,9 +30,10 @@ main p {font-weight: 300;font-size: 14px;margin: 0 18px 40px;padding: 0 20px;lin
 
 main .col-md-6 ul {list-style: none;}
 main .col-md-6 li {margin: 15px 0;}
-main .col-md-6 img {margin: 2px 5px 2px 0;}
 main .col-md-6 a {color: #000;text-decoration: none;}
 main .col-md-6 a:hover {color: #006940;}
+main .col-md-6 li span {display: inline-block;height: 40px;vertical-align: top;padding-top: 12px;}
+main .col-md-6 li .tamanho {margin-left: 10px;padding-top: 11px;}
 main .col-md-12, main .col-md-12 h1, main .col-md-12 p {padding: 0;}
 
 

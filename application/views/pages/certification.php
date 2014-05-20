@@ -44,7 +44,7 @@
                                                     if($tipo['id_certificados_tipo'] == $certficado['id_tipos'] && $certficado['id_marcas'] == 1) { ?>
 
                                                         <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url'] ?>" target="_blank">
-                                                            <img src="<?php echo base_url() ?>assets/grespanaria/img/icon_pdf.png" width="42" height="42" alt="<?= $certficado['nome'] ?>" title="<?= $certficado['nome'] ?>"/>
+                                                            <i class="icon-pdf"></i>
                                                         </a>
 
                                             <?php   } ?>
@@ -56,7 +56,7 @@
                                             if($tipo['id_certificados_tipo'] == $certficado['id_tipos'] && $certficado['id_marcas'] == 2) { ?>
 
                                                 <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url'] ?>" target="_blank">
-                                                    <img src="<?php echo base_url() ?>assets/grespanaria/img/icon_pdf.png" width="42" height="42" alt="<?= $certficado['nome'] ?>" title="<?= $certficado['nome'] ?>"/>
+                                                    <i class="icon-pdf"></i>
                                                 </a>
 
                                             <?php   } ?>
@@ -68,7 +68,7 @@
                                             if($tipo['id_certificados_tipo'] == $certficado['id_tipos'] && $certficado['id_marcas'] == 3) { ?>
 
                                                 <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url'] ?>" target="_blank">
-                                                    <img src="<?php echo base_url() ?>assets/grespanaria/img/icon_pdf.png" width="42" height="42" alt="<?= $certficado['nome'] ?>" title="<?= $certficado['nome'] ?>"/>
+                                                    <i class="icon-pdf"></i>
                                                 </a>
 
                                             <?php   } ?>
@@ -80,7 +80,8 @@
                                             if($tipo['id_certificados_tipo'] == $certficado['id_tipos'] && $certficado['id_marcas'] == 4) { ?>
 
                                                 <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url'] ?>" target="_blank">
-                                                    <img src="<?php echo base_url() ?>assets/grespanaria/img/icon_pdf.png" width="42" height="42" alt="<?= $certficado['nome'] ?>" title="<?= $certficado['nome'] ?>"/>
+                                                    <!--<img src="<?php /*echo base_url() */?>assets/grespanaria/img/icon_pdf.png" width="42" height="42" alt="<?/*= $certficado['nome'] */?>" title="<?/*= $certficado['nome'] */?>"/>-->
+                                                    <i class="icon-pdf"></i>
                                                 </a>
 
                                             <?php   } ?>

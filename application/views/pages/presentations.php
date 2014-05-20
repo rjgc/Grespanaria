@@ -29,13 +29,23 @@
                     <div class="col-md-6">
                         <ul>
                         <?php   foreach($apresentacoes as $apresentacao) { ?>
-                            <li><a href="<?php echo base_url() ?>assets/uploads/files/<?= $apresentacao['url'] ?>" target="_blank"><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_pdf.png"/> <?= $apresentacao['nome'] ?></a> [ <?= $apresentacao['tamanho'] ?> ]</li>
+                            <li><a href="<?php echo base_url() ?>assets/uploads/files/<?= $apresentacao['url'] ?>" target="_blank">
+                                    <i class="icon-pdf"></i>
+                                    <span><?= $apresentacao['nome'] ?></span>
+                                </a>
+                                <span class="tamanho">[ <?= $apresentacao['tamanho'] ?> ]</span>
+                            </li>
                         <?php   } ?>
                         </ul>
                     </div>
                     <div class="col-md-6">
                         <ul>
-                            <li><a href="<?php echo $video[0]['url']; ?>" target="_blank"><img src="<?php echo base_url() ?>assets/grespanaria/img/icon_video.png" width="42" height="42" /> <?= lang('g_v_group_pre'); ?></a> </li>
+                            <li>
+                                <a href="<?php echo $video[0]['url']; ?>" target="_blank">
+                                    <i class="icon-video"></i>
+                                    <span><?= lang('g_v_group_pre'); ?></span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>

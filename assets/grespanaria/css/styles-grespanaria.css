@@ -2,6 +2,8 @@ html, body {overflow: visible}
 body {background: #e7e7e7;}
 main {height: auto}
 
+[class^="icon-"], [class*=" icon-"] {font-size: 40px;margin-right: 10px;}
+
 .imgHeader {background-color: #b9b9b9;height: 150px;width: 100%;overflow: hidden;position: relative;}
 
 main .container p {line-height: 28px;padding: 30px 0 5px;margin: 0;}
@@ -9,17 +11,17 @@ main .profile {max-width: 700px;padding: 40px 0 20px;}
 main .profile h2 {font-size: 24px;font-family: Raleway, sans-serif;font-weight: 400;margin: 0;}
 
 main .media {margin: 15px 0 70px;}
-main .media a {width: 100%;display: block;margin: 0 0 30px;}
-main .media a img {margin: 0 20px 0 0;}
-main .media h3 {font-size: 22px;font-weight: 400;}
-main .media h4 {font-size: 16px;font-weight: 400;}
+main .media a {margin: 0 0 20px;}
+main .media h3 {font-size: 18px;font-weight: 400;}
+main .media h3 span {display: inline-block;height: 40px;vertical-align: top;padding-top: 12px;}
 
 main .row {margin: 20px -15px 0;padding: 0 0 40px;}
 main .row .col-md-2 {min-width: 235px;vertical-align: top;}
 main .row .col-md-10 {max-width: 850px;vertical-align: top;}
 main .row .col-md-10 div p:first-child {padding-top: 0;}
-main .row .col-md-10 a {display: block}
-main .row .col-md-10 a img {margin: 0 20px 0 0;}
+main .row .col-md-10  a {margin: 0 0 20px;}
+main .row .col-md-10 h3 {font-size: 16px;font-weight: 400;}
+main .row .col-md-10 h3 span {display: inline-block;height: 40px;vertical-align: top;padding-top: 12px;}
 
 footer {margin: 50px 0 0;}
 

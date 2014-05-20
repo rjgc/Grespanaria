@@ -14,6 +14,7 @@
         <link href="<?php echo base_url() ?>assets/grespanaria/css/reset.css" rel="stylesheet">
         <link href="<?php echo base_url() ?>assets/grespanaria/css/bootstrap.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,300' rel='stylesheet' type='text/css'>
+        <link href="<?php echo base_url() ?>assets/grespanaria/font-styles.css" rel="stylesheet">
         <link href="<?php echo base_url() ?>assets/grespanaria/styles.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
