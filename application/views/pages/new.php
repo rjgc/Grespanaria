@@ -1,12 +1,10 @@
 <main>
     <!--Imagem e triangulos-->
     <div class="imgHeader">
-        <div class="triangle-left"></div>
         <div class="img-news"></div>
         <div class="triangle-darkgreen"></div>
         <div class="triangle-green"></div>
-        <div class="triangle-green-invert"></div>
-        <div class="triangle-right"></div>
+        <div class="triangle-right-grey"></div>
     </div>
     <div class="container">
         <div class="noticia">

@@ -1,12 +1,10 @@
 <main>
     <!--Imagem e triangulos-->
     <div class="imgHeader">
-        <div class="triangle-left"></div>
         <div class="img-news"></div>
         <div class="triangle-darkgreen"></div>
         <div class="triangle-green"></div>
-        <div class="triangle-green-invert"></div>
-        <div class="triangle-right"></div>
+        <div class="triangle-right-grey"></div>
     </div>
     <div class="container">
         <div>
@@ -15,8 +13,9 @@
                 <?php foreach($fotos as $foto) { ?>
                     <div class="col-md-3">
                         <div class="media-feed">
-                            <!--<h4><?/*= $foto['nome_'.$this->lang->lang()] */?></h4>-->
-                            <img src="<?php echo base_url() ?>assets/uploads/media/<?= $foto['url'] ?>" width="250" height="167">
+                            <a class="galeria" href="<?php echo base_url() ?>assets/uploads/media/<?= $foto['url'] ?>">
+                                <img src="<?php echo base_url() ?>assets/uploads/media/<?= $foto['url'] ?>" width="250" height="167">
+                            </a>
                         </div>
                     </div>
                 <?php } ?>

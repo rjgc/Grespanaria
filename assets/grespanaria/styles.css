@@ -190,7 +190,7 @@ main {
     color: #006940;
 }
 .lastNews .carousel-control .glyphicon {font-size: 20px;}
-.lastNews .left.carousel-control {right: 60px;left: initial}
+.lastNews .left.carousel-control {right: 60px;left: auto}
 
 .lastNews .img-news {
     width: 150px!important;
@@ -208,7 +208,7 @@ main {
 }
 
 .lastNews h3 {
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 18px;
     margin: 8px 0 0;
@@ -220,7 +220,7 @@ main {
 }
 
 .lastNews p {
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;;
     font-weight: 300;
     margin: 8px 0 0;
     line-height: 30px;
@@ -270,10 +270,25 @@ table {
 
 
 /* ========== MEDIA QUERYS ================================================================ */
-@media (max-width: 1366px) {
+@media (max-width: 1700px) {
+    .triangle-left {border-width: 230px 0 0 230px;}
+    .triangle-right {right: -77px;}
+    .pageOption {right: -200px;}
+}
+
+@media (max-width: 1500px) {
     .triangle-left {display: none}
-    .triangle-right {right: -344px;}
-    .pageOption {width: 630px;height: 430px;top: 0;}
+    .triangle-right {right: -292px;}
+    .pageOption {width: 630px;height: 430px;top: 0;right: -100px;}
+}
+
+@media (max-width: 1200px) {
+    .triangle-right {right: -382px;}
+    .pageOption {right: -190px;}
+
+    .menu {padding: 32px 0 0;margin: 15px 0 0 300px;}
+    ul.nav > li {margin: 0;}
+    ul.nav > li > a {padding: 10px 4px 8px;}
 }
 
 @media (max-width: 1024px) {
@@ -288,11 +303,12 @@ table {
 
     .title {margin: 50px 0 40px;}
 
-    .menu {font-size: 13px;;padding: 32px 0 0;margin: 15px 0 0 270px;}
+    main {height: 440px;}
+
     ul.nav > li {margin: 0;}
 
     .navbar.navbar-default {background: transparent;border: 0;position: absolute;top: 50px;right: 0;width: 200px;z-index: 10;}
-    .navbar ul.nav > li {display: block!important;background: #ddd;padding: 0 10px;}
+    .navbar ul.nav > li {display: block!important;background: #ddd;padding: 0 10px;width: 100%;}
     .navbar-default .navbar-toggle {background: #ddd;}
 
     .navbar a {border-bottom: 1px dashed #e7e7e7;}
@@ -302,4 +318,24 @@ table {
     .triangle-left, .triangle-right {display: none;}
 
     .lastNews {max-width: inherit; width: 100%;}
+
+    nav.visible-xs, .navbar-default .navbar-toggle {display: block!important;}
+    .menu.hidden-xs {display: none!important;}
+
+    .navbar-collapse.collapse {display: none!important;}
+    .navbar-collapse.collapse.in {display: block!important;}
+
+    .navbar-header {float: none;}
+
+    .footer-img-portugal, .footer-img {margin: 10px 5% 30px 0;}
+
+}
+
+@media screen and (max-width: 768px) {
+    main {height: 540px;}
+    .lastNews .news-text {
+        width: 100%;
+        max-width: 100%;
+        margin: 20px 0 0;
+    }
 }

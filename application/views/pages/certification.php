@@ -23,7 +23,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <table>
+                    <table class="hidden-sm hidden-xs">
                         <thead>
                             <tr class="logos">
                                 <th><h1><?= lang('g_available_documents') ?></h1></th>
@@ -99,6 +99,101 @@
                             <p><i><span class="glyphicon glyphicon-info-sign"></span> <?= lang('g_document_error') ?></i></p>
                         </div>
                     <?php   } ?>
+
+                    <div class="cert-mobile visible-sm visible-xs">
+                        <h1><?= lang('g_available_documents') ?></h1>
+                        <?php if(isset($tipos) && !empty($tipos)) { ?>
+
+                            <div class="margres">
+                                <div class="logos">
+                                    <img src="<?php echo base_url() ?>assets/grespanaria/img/margres3.png" height="45">
+                                </div>
+                                <div class="certificados">
+                                    <?php foreach($tipos as $tipo) {
+
+                                            foreach($certificados as $certficado) {
+
+                                                if($tipo['id_certificados_tipo'] == $certficado['id_tipos'] && $certficado['id_marcas'] == 1) { ?>
+
+                                                    <div class="certificado">
+                                                        <?= $tipo['nome_'.$this->lang->lang()] ?>
+                                                        <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url'] ?>" target="_blank">
+                                                            <i class="icon-pdf"></i>
+                                                        </a>
+                                                    </div>
+                                    <?php       }
+                                            }
+                                    } ?>
+                                </div>
+                            </div>
+                            <div class="love">
+                                <div class="logos">
+                                    <img src="<?php echo base_url() ?>assets/grespanaria/img/love3.png" height="45">
+                                </div>
+                                <div class="certificados">
+                                    <?php foreach($tipos as $tipo) {
+
+                                        foreach($certificados as $certficado) {
+
+                                            if($tipo['id_certificados_tipo'] == $certficado['id_tipos'] && $certficado['id_marcas'] == 2) { ?>
+
+                                                <div class="certificado">
+                                                    <?= $tipo['nome_'.$this->lang->lang()] ?>
+                                                    <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url'] ?>" target="_blank">
+                                                        <i class="icon-pdf"></i>
+                                                    </a>
+                                                </div>
+                                            <?php       }
+                                        }
+                                    } ?>
+                                </div>
+                            </div>
+                            <div class="bloom">
+                                <div class="logos">
+                                    <img src="<?php echo base_url() ?>assets/grespanaria/img/bloom3.png" height="45">
+                                </div>
+                                <div class="certificados">
+                                    <?php foreach($tipos as $tipo) {
+
+                                        foreach($certificados as $certficado) {
+
+                                            if($tipo['id_certificados_tipo'] == $certficado['id_tipos'] && $certficado['id_marcas'] == 3) { ?>
+
+                                                <div class="certificado">
+                                                    <?= $tipo['nome_'.$this->lang->lang()] ?>
+                                                    <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url'] ?>" target="_blank">
+                                                        <i class="icon-pdf"></i>
+                                                    </a>
+                                                </div>
+                                            <?php       }
+                                        }
+                                    } ?>
+                                </div>
+                            </div>
+                            <div class="easy">
+                                <div class="logos">
+                                    <img src="<?php echo base_url() ?>assets/grespanaria/img/easy3.png" height="45">
+                                </div>
+                                <div class="certificados">
+                                    <?php foreach($tipos as $tipo) {
+
+                                        foreach($certificados as $certficado) {
+
+                                            if($tipo['id_certificados_tipo'] == $certficado['id_tipos'] && $certficado['id_marcas'] == 4) { ?>
+
+                                                <div class="certificado">
+                                                    <?= $tipo['nome_'.$this->lang->lang()] ?>
+                                                    <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url'] ?>" target="_blank">
+                                                        <i class="icon-pdf"></i>
+                                                    </a>
+                                                </div>
+                                <?php       }
+                                        }
+                                    } ?>
+                                </div>
+                            </div>
+                        <?php } ?>
+                    </div>
                 </div>
             </div>
         </div>

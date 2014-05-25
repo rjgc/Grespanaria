@@ -21,7 +21,7 @@
         </div>
         <div class="media">
             <h3>
-                <a href="<?= $videos[1]['url']; ?>" target="_blank">
+                <a href="<?= $videos[1]['url']; ?>" class="youtube">
                     <i class="icon-video"></i>
                     <span><?= lang('g_institutional_video') ?></span>
                 </a>
@@ -50,7 +50,7 @@
             <div class="col-md-10">
                 <div><?= $margres[0]['texto_'.$this->lang->lang()]; ?></div>
                 <h3>
-                    <a href="<?= $videos[2]['url']; ?>" target="_blank">
+                    <a href="<?= $videos[2]['url']; ?>" class="youtube">
                         <i class="icon-video"></i>
                         <span><?= lang('g_margres_video') ?></span>
                     </a>
@@ -62,7 +62,7 @@
             <div class="col-md-10">
                 <div><?= $love[0]['texto_'.$this->lang->lang()]; ?></div>
                 <h3>
-                    <a href="<?= $videos[3]['url']; ?>" target="_blank">
+                    <a href="<?= $videos[3]['url']; ?>" class="youtube">
                         <i class="icon-video"></i>
                         <span><?= lang('g_love_video') ?></span>
                     </a>

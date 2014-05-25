@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-sm-6">
                         <ul>
                         <?php   foreach($apresentacoes as $apresentacao) { ?>
                             <li><a href="<?php echo base_url() ?>assets/uploads/files/<?= $apresentacao['url'] ?>" target="_blank">
@@ -38,10 +38,10 @@
                         <?php   } ?>
                         </ul>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-sm-6">
                         <ul>
                             <li>
-                                <a href="<?php echo $video[0]['url']; ?>" target="_blank">
+                                <a href="<?php echo $video[0]['url']; ?>" class="youtube">
                                     <i class="icon-video"></i>
                                     <span><?= lang('g_v_group_pre'); ?></span>
                                 </a>

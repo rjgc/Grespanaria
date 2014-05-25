@@ -46,6 +46,19 @@
         <script src="<?php echo base_url() ?>assets/grespanaria/js/bootstrap.min.js"></script>
         <script src="<?php echo base_url() ?>assets/grespanaria/js/docs.min.js"></script>
 
+        <?php if(isset($current) && (($current == 'grespanaria' ) || ($current == 'presentations' ) || ($current == 'media' ) )) { ?>
+        <link href="<?php echo base_url() ?>assets/grespanaria/css/colorbox.css" rel="stylesheet">
+        <script src="<?php echo base_url() ?>assets/grespanaria/js/jquery.colorbox.js"></script>
+        <script type="text/javascript">
+        //<![CDATA[
+            $(document).ready(function(){
+                $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+                $(".galeria").colorbox({rel:'galeria', maxWidth: "90%", maxHeight: "90%", speed: "900", slideshow:true});
+            });
+        //]]>
+        </script>
+        <?php } ?>
+
         <!-- Just for debugging purposes. Don't actually copy this line! -->
         <!--[if lt IE 9]><script src="<?php echo base_url() ?>assets/grespanaria/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -54,117 +67,118 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-         <script type="text/javascript"
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACyHnR6xtiTqqjSrYl05xkIKzO6fYJZqk&sensor=false">
-        </script>
-        <script type="text/javascript">
-            function initialize() {
 
-                // Create an array of styles.
-                /*var styles = [
-                    {
-                        stylers: [
-                            { hue: "#90ba92" },
-                            { saturation: 80 },
-                            { lightness: -20 },
-                            { gamma: 3 },
-                        ]
-                    }
-                ];*/
+        <?php if(isset($current) && ($current == 'contactus')) { ?>
+            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACyHnR6xtiTqqjSrYl05xkIKzO6fYJZqk&sensor=false"></script>
+            <script type="text/javascript">
+                function initialize() {
 
-                var styles = [
-                    {
-                        featureType: "all",
-                        stylers: [
-                            { saturation: -80 }
-                        ]
-                    },{
-                        featureType: "road",
-                        elementType: "geometry",
-                        stylers: [
-                            { hue: "#8eb98c" }
-                        ]
-                    },{
-                        featureType: "water",
-                        elementType: "geometry",
-                        stylers: [
-                            { hue: "#8eb98c" },
-                            { lightness: 0 }
+                    // Create an array of styles.
+                    /*var styles = [
+                        {
+                            stylers: [
+                                { hue: "#90ba92" },
+                                { saturation: 80 },
+                                { lightness: -20 },
+                                { gamma: 3 },
+                            ]
+                        }
+                    ];*/
 
-                        ]
-                    },{
-                        featureType: "poi.business",
-                        elementType: "labels",
-                        stylers: [
-                            { visibility: "off" }
-                        ]
-                    }
-                ];
+                    var styles = [
+                        {
+                            featureType: "all",
+                            stylers: [
+                                { saturation: -80 }
+                            ]
+                        },{
+                            featureType: "road",
+                            elementType: "geometry",
+                            stylers: [
+                                { hue: "#8eb98c" }
+                            ]
+                        },{
+                            featureType: "water",
+                            elementType: "geometry",
+                            stylers: [
+                                { hue: "#8eb98c" },
+                                { lightness: 0 }
 
-                var image1 = '<?=base_url()?>assets/grespanaria/img/markerM.png';
-                var image2 = '<?=base_url()?>assets/grespanaria/img/markerPG.png';
-                var image3 = '<?=base_url()?>assets/grespanaria/img/markerLove.png';
+                            ]
+                        },{
+                            featureType: "poi.business",
+                            elementType: "labels",
+                            stylers: [
+                                { visibility: "off" }
+                            ]
+                        }
+                    ];
 
-                var styledMap = new google.maps.StyledMapType(styles,
-                        {name: "Styled Map"});
+                    var image1 = '<?=base_url()?>assets/grespanaria/img/markerM.png';
+                    var image2 = '<?=base_url()?>assets/grespanaria/img/markerPG.png';
+                    var image3 = '<?=base_url()?>assets/grespanaria/img/markerLove.png';
 
-                var mapOptions = {
-                    center: new google.maps.LatLng(40.754062,-8.505959),
-                    zoom: 10,
-                    panControl: false,
-                    mapTypeControl: false,
-                    disableDefaultUI: false,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP,
-                    
-                };
-                var map = new google.maps.Map(document.getElementById("map-canvas"),
-                        mapOptions);
+                    var styledMap = new google.maps.StyledMapType(styles,
+                            {name: "Styled Map"});
 
-                var myLatLng3 = new google.maps.LatLng(40.647686, -8.608828);
+                    var mapOptions = {
+                        center: new google.maps.LatLng(40.754062,-8.505959),
+                        zoom: 10,
+                        panControl: false,
+                        mapTypeControl: false,
+                        disableDefaultUI: false,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP,
 
-                var marker = new google.maps.Marker({
-                    position: myLatLng3,
-                    map: map,
-                    animation: google.maps.Animation.DROP,
-                    icon: image3,
-                    title:"LoveTiles"
-                });
+                    };
+                    var map = new google.maps.Map(document.getElementById("map-canvas"),
+                            mapOptions);
 
-                var myLatLng = new google.maps.LatLng(40.605095, -8.651530);
+                    var myLatLng3 = new google.maps.LatLng(40.647686, -8.608828);
 
-                var marker = new google.maps.Marker({
-                    position: myLatLng,
-                    map: map,
-                    animation: google.maps.Animation.DROP,
-                    icon: image1,
-                    title:"MarGres"
-                });
+                    var marker = new google.maps.Marker({
+                        position: myLatLng3,
+                        map: map,
+                        animation: google.maps.Animation.DROP,
+                        icon: image3,
+                        title:"LoveTiles"
+                    });
 
-                var myLatLng2 = new google.maps.LatLng(40.603183,-8.652140);
+                    var myLatLng = new google.maps.LatLng(40.605095, -8.651530);
 
-                var marker = new google.maps.Marker({
-                    position: myLatLng2,
-                    map: map,
-                    animation: google.maps.Animation.DROP,
-                    icon: image2,
-                    title:"Gres Panaria"
-                });
+                    var marker = new google.maps.Marker({
+                        position: myLatLng,
+                        map: map,
+                        animation: google.maps.Animation.DROP,
+                        icon: image1,
+                        title:"MarGres"
+                    });
 
-                // Code for infowindow
-                var popup=new google.maps.InfoWindow({
-                    content: "Title oi"
-                });
-                google.maps.event.addListener(marker, 'click', function(e) {
-                    console.log(e);
-                    popup.open(map, this);
-                });
+                    var myLatLng2 = new google.maps.LatLng(40.603183,-8.652140);
 
-                map.mapTypes.set('map_style', styledMap);
-                map.setMapTypeId('map_style');
+                    var marker = new google.maps.Marker({
+                        position: myLatLng2,
+                        map: map,
+                        animation: google.maps.Animation.DROP,
+                        icon: image2,
+                        title:"Gres Panaria"
+                    });
 
-            }
-            google.maps.event.addDomListener(window, 'load', initialize);
-        </script>
+                    // Code for infowindow
+                    var popup=new google.maps.InfoWindow({
+                        content: "Title oi"
+                    });
+                    google.maps.event.addListener(marker, 'click', function(e) {
+                        console.log(e);
+                        popup.open(map, this);
+                    });
+
+                    map.mapTypes.set('map_style', styledMap);
+                    map.setMapTypeId('map_style');
+
+                }
+                google.maps.event.addDomListener(window, 'load', initialize);
+            </script>
+        <?php } ?>
     </head>
     <body>
         <header>
@@ -222,7 +236,7 @@
                         <ul class="nav navbar-nav">
                             <li><a <?php echo ( isset($current) && $current === 'home' ) ? 'class="active"' : ''?> href="<?php echo site_url('home')?>"><?= lang('g_home'); ?></a></li>
                             <li><a <?php echo ( isset($current) && $current === 'grespanaria' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/grespanaria')?>"><?= lang('g_grespanaria'); ?></a></li>
-                            <li><a <?php echo ( isset($current) && $current === 'presentations' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/presentations')?>"><?= lang('g_presentations'); ?></a></li>
+                            <!-- <li><a <?php echo ( isset($current) && $current === 'presentations' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/presentations')?>"><?= lang('g_presentations'); ?></a></li> -->
                             <li><a <?php echo ( isset($current) && $current === 'media' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/media')?>"><?= lang('g_media'); ?></a></li>
                             <li><a <?php echo ( isset($current) && $current === 'news' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/news')?>"><?= lang('g_news'); ?></a></li>
                             <li><a <?php echo ( isset($current) && $current === 'certification' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/certification')?>"><?= lang('g_certification'); ?></a></li>
@@ -234,7 +248,7 @@
                     <ul class="nav">
                         <li><a <?php echo ( isset($current) && $current === 'home' ) ? 'class="active"' : ''?> href="<?php echo site_url('home')?>"><?= lang('g_home'); ?></a></li>
                         <li><a <?php echo ( isset($current) && $current === 'grespanaria' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/grespanaria')?>"><?= lang('g_grespanaria'); ?></a></li>
-                        <li><a <?php echo ( isset($current) && $current === 'presentations' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/presentations')?>"><?= lang('g_presentations'); ?></a></li>
+                        <!-- <li><a <?php echo ( isset($current) && $current === 'presentations' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/presentations')?>"><?= lang('g_presentations'); ?></a></li> -->
                         <li><a <?php echo ( isset($current) && $current === 'media' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/media')?>"><?= lang('g_media'); ?></a></li>
                         <li><a <?php echo ( isset($current) && $current === 'news' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/news')?>"><?= lang('g_news'); ?></a></li>
                         <li><a <?php echo ( isset($current) && $current === 'certification' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/certification')?>"><?= lang('g_certification'); ?></a></li>
