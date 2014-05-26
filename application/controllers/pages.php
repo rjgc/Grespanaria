@@ -2,38 +2,38 @@
 
 class Pages extends CI_Controller {
 
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -  
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in 
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see http://codeigniter.com/user_guide/general/urls.html
-	 */
-	 
-	function __construct()
+    /**
+     * Index Page for this controller.
+     *
+     * Maps to the following URL
+     *      http://example.com/index.php/welcome
+     *  - or -  
+     *      http://example.com/index.php/welcome/index
+     *  - or -
+     * Since this controller is set as the default controller in 
+     * config/routes.php, it's displayed at http://example.com/
+     *
+     * So any other public methods not prefixed with an underscore will
+     * map to /index.php/welcome/<method_name>
+     * @see http://codeigniter.com/user_guide/general/urls.html
+     */
+     
+    function __construct()
     {
         parent::__construct();
  
         // you might want to just autoload these two helpers
-		$this->load->helper('language');
-		$this->load->helper('url');
-		$this->load->helper('text');
+        $this->load->helper('language');
+        $this->load->helper('url');
+        $this->load->helper('text');
 
         $this->load->model('grespanaria_model');
     }
-	 
-	
-	public function index()
-	{
-		$this->home();
+     
+    
+    public function index()
+    {
+        $this->home();
     }
 
     public function home()
@@ -48,11 +48,11 @@ class Pages extends CI_Controller {
         $this->load->view('templates/footer');
 
     }
-	
-	public function grespanaria()
-	{
-		$data['current'] = 'grespanaria';
-		$this->load->view('templates/header',$data);
+    
+    public function grespanaria()
+    {
+        $data['current'] = 'grespanaria';
+        $this->load->view('templates/header',$data);
 
         $data['profile'] = $this->grespanaria_model->get_page(1);
         $data['margres'] = $this->grespanaria_model->get_page(2);
@@ -61,22 +61,22 @@ class Pages extends CI_Controller {
         $data['easy'] = $this->grespanaria_model->get_page(5);
 
         $data['videos'] = $this->grespanaria_model->get_page_videos();
-		$this->load->view('pages/grespanaria', $data);
-		$this->load->view('templates/footer');
-	}
-	
-	public function presentations()
-	{
-		$data['current'] = 'presentations';
-		$this->load->view('templates/header',$data);
+        $this->load->view('pages/grespanaria', $data);
+        $this->load->view('templates/footer');
+    }
+    
+    public function presentations()
+    {
+        $data['current'] = 'presentations';
+        $this->load->view('templates/header',$data);
 
         $data['intro'] = $this->grespanaria_model->get_page(7);
         $data['apresentacoes'] = $this->grespanaria_model->get_apresentacoes();
         $data['video'] = $this->grespanaria_model->get_page_videos();
-		$this->load->view('pages/presentations', $data);
+        $this->load->view('pages/presentations', $data);
 
-		$this->load->view('templates/footer');	
-	}
+        $this->load->view('templates/footer');  
+    }
 
     public function media()
     {
@@ -126,19 +126,19 @@ class Pages extends CI_Controller {
         $this->load->view('templates/footer');
 
     }
-	
-	public function certification()
-	{
+    
+    public function certification()
+    {
         $data['current'] = 'certification';
-		$this->load->view('templates/header', $data);
+        $this->load->view('templates/header', $data);
 
         $data['intro'] = $this->grespanaria_model->get_page(6);
         $data['certificados'] = $this->grespanaria_model->get_certificados();
         $data['tipos'] = $this->grespanaria_model->get_certificados_tipos();
-		$this->load->view('pages/certification', $data);
+        $this->load->view('pages/certification', $data);
 
-		$this->load->view('templates/footer');	
-	}
+        $this->load->view('templates/footer');  
+    }
 
     public function contact()
     {
@@ -150,17 +150,17 @@ class Pages extends CI_Controller {
     }
 
     public function contactus()
-	{
+    {
         $data['current'] = 'contactus';
         $this->load->helper(array('form', 'url', 'captcha'));
 
-		$this->load->view('templates/header',$data);
+        $this->load->view('templates/header',$data);
 
         $config = array(
             'img_path' => 'assets/captcha/',
             'img_url' => base_url().'assets/captcha/',
-            'font_path'	=> 'assets/grespanaria/font/OpenSans-Bold.ttf',
-            'img_width'	=> '100',
+            'font_path' => 'assets/grespanaria/font/OpenSans-Bold.ttf',
+            'img_width' => '100',
             'img_height' => 35,
             'expiration' => 7200
         );
@@ -175,9 +175,9 @@ class Pages extends CI_Controller {
         $this->session->set_userdata($data);
         $data['cap_img']=$captcha['image'];
 
-		$this->load->view('pages/contactus', $data);
-		$this->load->view('templates/footer');	
-	}
+        $this->load->view('pages/contactus', $data);
+        $this->load->view('templates/footer');  
+    }
 
     public function send_contactus()
     {
@@ -198,8 +198,8 @@ class Pages extends CI_Controller {
             $config = array(
                 'img_path' => 'assets/captcha/',
                 'img_url' => base_url().'assets/captcha/',
-                'font_path'	=> 'assets/grespanaria/font/OpenSans-Bold.ttf',
-                'img_width'	=> '100',
+                'font_path' => 'assets/grespanaria/font/OpenSans-Bold.ttf',
+                'img_width' => '100',
                 'img_height' => 35,
                 'expiration' => 7200
             );
@@ -243,19 +243,19 @@ class Pages extends CI_Controller {
 
             // Run some setup
             $this->email->initialize($config);
-            $this->email->from(set_value("email"));
-            $this->email->to('alexandresantos@mediaweb.pt');
-            $this->email->subject(set_value("assunto"));
-            $this->email->message('Exmo.(s) do Grupo Gres Panaria,<br><br>'.set_value("mensagem").'<br><br>Os meus dados pessoais são:<br><br>Nome: '.set_value("sender_name").'<br>E-mail: '.set_value("sender_email").'<br><br>Atenciosamente,<br><br>'.set_value("sender_name").'');
+            $this->email->from(set_value("sender_email"));
+            $this->email->to('geral@grespanaria.pt');
+            $this->email->subject(set_value("subject"));
+            $this->email->message('Exmo.(s) do Grupo Gres Panaria,<br><br>'.set_value("message").'<br><br>Os meus dados pessoais são:<br><br>Nome: '.set_value("sender_name").'<br>E-mail: '.set_value("sender_email").'<br><br>Atenciosamente,<br><br>'.set_value("sender_name").'');
 
             $this->email->send();
 
             // Run some setup
             $this->email->initialize($config);
-            $this->email->from('alexandresantos@mediaweb.pt');
-            $this->email->to(set_value("email"));
-            $this->email->subject(set_value("assunto"));
-            $this->email->message('Agradecemos o seu contacto. Ao qual responderemos o mais breve possível.<br> Caso queira rever o seu e-mail, aqui fica uma cópia do mesmo:<br><br> Exmo.(s) do Grupo Gres Panaria,<br><br>'.set_value("mensagem").'<br><br>Os meus dados pessoais são:<br><br>Nome: '.set_value("sender_name").'<br>E-mail: '.set_value("sender_email").'<br><br>Atenciosamente,<br><br>'.set_value("sender_name").'');
+            $this->email->from('geral@grespanaria.pt');
+            $this->email->to(set_value("sender_email"));
+            $this->email->subject(set_value("subject"));
+            $this->email->message('Agradecemos o seu contacto. Ao qual responderemos o mais breve possível.<br> Caso queira rever o seu e-mail, aqui fica uma cópia do mesmo:<br><br> Exmo.(s) do Grupo Gres Panaria,<br><br>'.set_value("message").'<br><br>Os meus dados pessoais são:<br><br>Nome: '.set_value("sender_name").'<br>E-mail: '.set_value("sender_email").'<br><br>Atenciosamente,<br><br>'.set_value("sender_name").'');
 
             $this->email->send();
 
@@ -263,8 +263,8 @@ class Pages extends CI_Controller {
             $config = array(
                 'img_path' => 'assets/captcha/',
                 'img_url' => base_url().'assets/captcha/',
-                'font_path'	=> 'assets/grespanaria/font/OpenSans-Bold.ttf',
-                'img_width'	=> '100',
+                'font_path' => 'assets/grespanaria/font/OpenSans-Bold.ttf',
+                'img_width' => '100',
                 'img_height' => 35,
                 'expiration' => 7200
             );
@@ -299,13 +299,13 @@ class Pages extends CI_Controller {
         }
     }
     
-		
-	
+        
+    
 
-	/* ------  URL ENGLISH ------- */
-	public function company() {
-		$this->empresa();
-	}
+    /* ------  URL ENGLISH ------- */
+    public function company() {
+        $this->empresa();
+    }
 }
 
 /* End of file home.php */
