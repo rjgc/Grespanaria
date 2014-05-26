@@ -50,14 +50,53 @@
                 </div>
                 <div class="col-md-3">
                     <h3><?= lang('g_contactus'); ?></h3>
-                    <form method="post">
-                        <input class="form-control" type="text" id="name" name="name" placeholder="<?= lang('g_form_name'); ?>">
-                        <input class="form-control" type="email" id="mail" name="mail" placeholder="<?= lang('g_form_email'); ?>">
-                        <input class="form-control" type="text" id="subject" name="subject" placeholder="<?= lang('g_form_subject'); ?>">
-                        <textarea class="form-control" id="message" name="message" rows="7" placeholder="<?= lang('g_form_message'); ?>"></textarea>
-                        <span class="captcha"><img src="http://placehold.it/80x34&text=5 -+ 3 ="><input class="form-control" type="text" id="captcha" name="captcha"></span>
-                        <input class="btn-block" type="submit" value="<?= lang('g_form_send_btn'); ?>">
-                    </form>
+                    <div class="contact-form">
+                        <?php   if( $this->session->flashdata('message') != null ) { ?>
+                            <div class="form-success text-success">
+                                <?= $this->session->flashdata('message'); ?>
+                                <?php form_reset(); ?>
+                            </div>
+                        <?php   } ?>
+                        <?php   if(isset($erros)) { ?>
+                            <div class="form-errors text-danger">
+                                <?php echo validation_errors(); ?>
+                            </div>
+                        <?php   } ?>
+                        <?php echo form_open('pages/contact');
+
+                            echo form_input(array(
+                                'name' => 'sender_name',
+                                'value' => set_value('sender_name'),
+                                'placeholder' => lang('g_form_name') ) );
+
+                            echo form_input(array(
+                                'name' => 'sender_email',
+                                'value' => set_value('sender_email'),
+                                'placeholder' => lang('g_form_email') )  );
+
+                            echo form_input(array(
+                            'name' => 'subject',
+                            'value' => set_value('subject'),
+                            'placeholder' => lang('g_form_subject') )  );
+
+                            echo form_textarea(array(
+                            'name' => 'message',
+                            'value' => set_value('message'),
+                            'placeholder' => lang('g_form_message') ) ); ?>
+
+                            <div class="captcha">
+                            <?php echo $cap_img; ?>
+                                <div class="captcha-input">
+                                    <?php echo form_input(array(
+                                        'name' => 'captcha',
+                                        'value' => set_value('captcha'),
+                                        'placeholder' => 'Captcha' ) ); ?>
+                                </div>
+                            </div>
+
+                            <?php echo form_submit('submit', lang('g_form_send_btn') ); ?>
+                        <?php echo form_close(); ?>
+                    </div>
                 </div>
             </div>
         </div>

@@ -9,14 +9,16 @@ main p {font-size: 14px;}
 
 main .contactus #mails a {font-size: 14px;color: #006940;}
 main #mails {display: block;margin: 0 0 30px;}
-main input, main textarea {margin: 5px;}
-
-main .contactus .form-control {border: 0;border-radius: 0;}
-main .contactus .btn-block {background-color: #006940;border: 0;color: #fff;height: 35px;font-weight: 500;
+main .contact-form input, main .contact-form  textarea {margin: 5px 0; width: 100%; border: 0;border-radius: 0; padding: 0 10px; height: 34px;}
+main .contact-form  textarea {height: 150px;}
+main .contact-form input[type="submit"] {background-color: #006940;border: 0;color: #fff;height: 35px;font-weight: 500;
     -webkit-border-radius: 25px;-moz-border-radius: 25px;border-radius: 25px; }
 
-main .captcha {display: block;margin: 5px;position: relative;}
-main .captcha .form-control {display: inline-block;width: 70%;margin: 0;position: absolute;right: -10px;}
+main .contact-form .captcha {margin-top: -10px;}
+main .contact-form .captcha-input {display: inline-block;width: calc(100% - 110px);margin-left: 6px;}
+main .contact-form .form-success,
+main .contact-form .form-errors {font-weight: 700;text-align: center;}
+
 main .divider {border: 0;margin: -10px 0 40px;}
 
 main .showroom {

@@ -54,6 +54,8 @@ $lang["g_showrooms"] = "Showrooms";
 
 $lang["g_hora_func"] = "Opening Hours";
 
+$lang["g_form_success"] = "Your message has been sent with success!";
+
 // Formulário de Contacto *********************************************
 
 $lang["g_form_name"] = "Name";

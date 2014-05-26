@@ -240,7 +240,7 @@
                             <li><a <?php echo ( isset($current) && $current === 'media' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/media')?>"><?= lang('g_media'); ?></a></li>
                             <li><a <?php echo ( isset($current) && $current === 'news' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/news')?>"><?= lang('g_news'); ?></a></li>
                             <li><a <?php echo ( isset($current) && $current === 'certification' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/certification')?>"><?= lang('g_certification'); ?></a></li>
-                            <li><a <?php echo ( isset($current) && $current === 'contactus' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/contactus')?>"><?= lang('g_contactus'); ?></a></li>
+                            <li><a <?php echo ( isset($current) && $current === 'contactus' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/contact')?>"><?= lang('g_contactus'); ?></a></li>
                         </ul>
                     </div>
                 </nav>
@@ -252,7 +252,7 @@
                         <li><a <?php echo ( isset($current) && $current === 'media' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/media')?>"><?= lang('g_media'); ?></a></li>
                         <li><a <?php echo ( isset($current) && $current === 'news' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/news')?>"><?= lang('g_news'); ?></a></li>
                         <li><a <?php echo ( isset($current) && $current === 'certification' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/certification')?>"><?= lang('g_certification'); ?></a></li>
-                        <li><a <?php echo ( isset($current) && $current === 'contactus' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/contactus')?>"><?= lang('g_contactus'); ?></a></li>
+                        <li><a <?php echo ( isset($current) && $current === 'contactus' ) ? 'class="active"' : ''?> href="<?php echo site_url('pages/contact')?>"><?= lang('g_contactus'); ?></a></li>
                     </ul>
                 </div>
             </div>
