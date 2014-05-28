@@ -46,7 +46,7 @@
             </h3>
         </div>
         <div class="row">
-            <div class="col-md-2"><img class="img" src="<?php echo base_url() ?>assets/grespanaria/img/margres2.png"></div>
+            <div class="col-md-2"><img class="img" src="<?php echo base_url() ?>assets/grespanaria/img/profile_margres.png"></div>
             <div class="col-md-10">
                 <div><?= $margres[0]['texto_'.$this->lang->lang()]; ?></div>
                 <h3>
@@ -58,7 +58,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-2"><img class="img" src="<?php echo base_url() ?>assets/grespanaria/img/love2.png"></div>
+            <div class="col-md-2"><img class="img" src="<?php echo base_url() ?>assets/grespanaria/img/profile_love.png"></div>
             <div class="col-md-10">
                 <div><?= $love[0]['texto_'.$this->lang->lang()]; ?></div>
                 <h3>
@@ -70,13 +70,13 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-2"><img class="img" src="<?php echo base_url() ?>assets/grespanaria/img/bloom2.png"></div>
+            <div class="col-md-2"><img class="img" src="<?php echo base_url() ?>assets/grespanaria/img/profile_bloom.png"></div>
             <div class="col-md-10">
                 <div><?= $bloom[0]['texto_'.$this->lang->lang()]; ?></div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-2"><img class="img" src="<?php echo base_url() ?>assets/grespanaria/img/easy2.png"></div>
+            <div class="col-md-2"><img class="img" src="<?php echo base_url() ?>assets/grespanaria/img/profile_easy.png"></div>
             <div class="col-md-10">
                 <div><?= $easy[0]['texto_'.$this->lang->lang()]; ?></div>
             </div>

@@ -61,6 +61,13 @@ class grespanaria_model extends CI_Model
         return $data;
     }
 
+    public function get_fotos_tipo(){
+        $query = $this->db->query("select * from media_photo_tipos");
+
+        $data = $query->result_array();
+        return $data;
+    }
+
     public function get_videos(){
         $query = $this->db->query("select * from media_video");
 

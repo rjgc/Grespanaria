@@ -210,11 +210,11 @@
                             <span class="glyphicon glyphicon-chevron-down"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="<?= site_url($this->lang->switch_uri('pt')) ?>" >PT</a></li>
-                            <li><a href="<?= site_url($this->lang->switch_uri('en')) ?>" >EN</a></li>
+                            <!-- <li><a href="<?= site_url($this->lang->switch_uri('en')) ?>" >EN</a></li>
                             <li><a href="<?= site_url($this->lang->switch_uri('fr')) ?>" >FR</a></li>
                             <li><a href="<?= site_url($this->lang->switch_uri('es')) ?>" >ES</a></li>
                             <li><a href="<?= site_url($this->lang->switch_uri('de')) ?>" >DE</a></li>
-                            <li><a href="<?= site_url($this->lang->switch_uri('py')) ?>" >PY</a></li>
+                            <li><a href="<?= site_url($this->lang->switch_uri('py')) ?>" >PY</a></li> -->
                         </ul>
                     </div>
                 </div>

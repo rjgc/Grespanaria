@@ -21,7 +21,7 @@ main {height: auto; font-family: "Open Sans", sans-serif;}
 .triangle-green-invert {position: absolute;right: 310px;top: 0;z-index: 2;width: 200px;height: 0;
     border-style: solid;border-width: 150px 150px 0 0;border-color: #005f3a transparent transparent transparent;}
 
-.triangle-bottom-white {width: 0;height: 0;margin: 0;position: absolute;top: 150px;right: 0; z-index: -1;
+.triangle-bottom-white {width: 0;height: 0;margin: 0;position: absolute;top: 150px;right: 0; z-index: 0;
     border-style: solid;border-width: 600px 0 0 600px;border-color: #eee transparent transparent transparent;}
 
 main #certification {background: url('../img/back-certification.png') no-repeat right;background-size: cover}
@@ -30,14 +30,16 @@ main h1 {font-size: 24px;font-family: Raleway, sans-serif;font-weight: 400;margi
 main .container p {font-family: "Open Sans", sans-serif;font-size: 14px;font-weight: 300;margin: 10px 0 50px;padding: 0;line-height: 2;width: 75%;}
 
 .logos {padding: 0 20px 0 0;margin: 0 20px 50px;height: 62px;border-bottom: 2px solid #d3d3d3;max-width: 1000px;}
-.logos th {padding: 0 40px;margin: 0;text-align: center;}
+.logos th {padding: 0 30px;margin: 0;text-align: center;}
 .logos th:hover {border-bottom: 2px solid #006940;}
 .logos th:first-child:hover {border-bottom: 2px solid #d3d3d3;}
 .logos th:first-child {padding: 0;text-align: left;}
 .logos h1 {width: 275px;}
 
-.col-md-12 td {text-align: center;height: 28px;padding: 10px 0 0;}
+.col-md-12 td {text-align: center;height: 28px;padding: 10px 0 0;vertical-align: middle;}
 .col-md-12 td:first-child {text-align: left;}
+
+.col-md-12 table tr {height: 58px;}
 
 
 /* ========== MEDIA QUERYS ================================================================ */
@@ -79,7 +81,7 @@ main .container p {font-family: "Open Sans", sans-serif;font-size: 14px;font-wei
     .triangle-left {display: none;}
     .img-news {margin-left: -40px;}
 
-    .triangle-darkgreen {right: 335px;width: 200px;}
+    .triangle-darkgreen {right: 435px;width: 200px;}
     .triangle-green {right: 215px;width: 400px;}
     .triangle-green-invert {right: 65px;width: 200px;}
     .triangle-bottom-white {border-width: 300px 0 0 300px;}

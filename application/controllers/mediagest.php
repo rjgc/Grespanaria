@@ -57,6 +57,8 @@ class Mediagest extends CI_Controller {
 		$crud->field_type('texto_pt', 'text')->field_type('texto_en', 'text')->field_type('texto_fr', 'text')->field_type('texto_es', 'text')->field_type('texto_de', 'text')->field_type('texto_py', 'text');
 		$crud->set_field_upload('foto','assets/uploads/noticias');
 
+        $crud->callback_after_upload(array($this,'callback_after_upload_news'));
+
 		$output = $crud->render();
         
 		$data['titulo'] = 'Noticias';
@@ -83,6 +85,8 @@ class Mediagest extends CI_Controller {
         $crud->field_type('texto_pt', 'text')->field_type('texto_en', 'text')->field_type('texto_fr', 'text')->field_type('texto_es', 'text')->field_type('texto_de', 'text')->field_type('texto_py', 'text');
         $crud->set_field_upload('foto','assets/uploads/noticias');
 
+        $crud->callback_after_upload(array($this,'callback_after_upload_news'));
+
         $output = $crud->render();
 
         $data['titulo'] = 'Noticias';
@@ -90,6 +94,20 @@ class Mediagest extends CI_Controller {
         $this->load->view('mediagest/header',(object)array('data' => $data, 'js_files' => $crud->get_js_files() , 'css_files' => $crud->get_css_files()));
 
         $this->_admin_output($output);
+    }
+
+    function callback_after_upload_news($uploader_response, $field_info, $files_to_upload)
+    {
+        $this->load->library('image_moo');
+
+        $file_uploaded = $field_info->upload_path.'/'.$uploader_response[0]->name;
+
+        //list - normal - thumb
+        $this->image_moo->load($file_uploaded)->resize_crop(250, 167)->save_pa($prepend="", $append="", $overwrite=true);
+
+        //refold
+        //rename($field_info->upload_path."/"."list_".$uploader_response[0]->name, "assets/uploads/produtos/list/".$uploader_response[0]->name);
+        return true;
     }
 
     function apresentacoes_management()
@@ -118,10 +136,10 @@ class Mediagest extends CI_Controller {
 
         $crud->set_table('certificados');
         $crud->set_subject('Certificados');
-        $crud->columns('nome','url', 'id_tipos', 'id_marcas');
+        $crud->columns('nome', 'id_tipos', 'id_marcas');
 
-        $crud->required_fields('nome','url', 'id_tipos', 'id_marcas');
-        $crud->set_field_upload('url','assets/uploads/files');
+        $crud->required_fields('nome', 'id_tipos', 'id_marcas');
+        $crud->set_field_upload('url_pt','assets/uploads/files')->set_field_upload('url_en','assets/uploads/files')->set_field_upload('url_fr','assets/uploads/files')->set_field_upload('url_es','assets/uploads/files')->set_field_upload('url_de','assets/uploads/files')->set_field_upload('url_py','assets/uploads/files');
         $crud->display_as('id_tipos', 'Tipo de Certificados')->display_as('id_marcas', 'Marca');
 
         $crud->set_relation('id_tipos', 'certificados_tipos', 'nome_pt');
@@ -160,15 +178,52 @@ class Mediagest extends CI_Controller {
 
         $crud->set_table('media_photo');
         $crud->set_subject('Media');
-        $crud->columns('nome_pt', 'url');
+        $crud->columns('id_media_tipo', 'url');
 
-        $crud->required_fields('nome_pt', 'nome_en', 'nome_fr', 'nome_es', 'nome_de', 'nome_py', 'url');
+        $crud->required_fields('id_media_tipo', 'url');
+        $crud->display_as('id_media_tipo', 'Tipo de Galeria');
+        $crud->set_relation('id_media_tipo', 'media_photo_tipos', 'nome_pt');
         $crud->set_field_upload('url','assets/uploads/media');
+
+        $crud->callback_after_upload(array($this,'callback_after_upload_photo'));
 
         $output = $crud->render();
 
         $data['titulo'] = 'Fotos';
         $data['sub-titulo'] = 'Faça aqui a gestão das Fotos';
+        $this->load->view('mediagest/header',(object)array('data' => $data, 'js_files' => $crud->get_js_files() , 'css_files' => $crud->get_css_files()));
+
+        $this->_admin_output($output);
+    }
+
+    function callback_after_upload_photo($uploader_response, $field_info, $files_to_upload)
+    {
+        $this->load->library('image_moo');
+
+        $file_uploaded = $field_info->upload_path.'/'.$uploader_response[0]->name;
+
+        //list - normal - thumb
+        $this->image_moo->load($file_uploaded)->resize_crop(1200, 720)->save_pa($prepend="", $append="", $overwrite=true);
+
+        //refold
+        //rename($field_info->upload_path."/"."list_".$uploader_response[0]->name, "assets/uploads/produtos/list/".$uploader_response[0]->name);
+        return true;
+    }
+
+    function media_photo_tipo_management()
+    {
+        $crud = new grocery_CRUD();
+
+        $crud->set_table('media_photo_tipos');
+        $crud->set_subject('Media');
+        $crud->columns('nome_pt');
+
+        $crud->required_fields('nome_pt', 'nome_en', 'nome_fr', 'nome_es', 'nome_de', 'nome_py');
+
+        $output = $crud->render();
+
+        $data['titulo'] = 'Fotos';
+        $data['sub-titulo'] = 'Faça aqui a gestão das Fotos Tipo Galeria';
         $this->load->view('mediagest/header',(object)array('data' => $data, 'js_files' => $crud->get_js_files() , 'css_files' => $crud->get_css_files()));
 
         $this->_admin_output($output);

@@ -47,7 +47,7 @@ a {color: #000;}
 a:focus, a:hover {color: #006940; text-decoration: none}
 .btn-default, .btn-default:hover, .btn-default:focus {color: #333;text-shadow: none;background-color: #fff;border: 1px solid #fff;}
 
-html,body {width: 100%;overflow: hidden}
+html,body {width: 100%;overflow-x: hidden}
 body {
     font-family: 'Raleway', sans-serif;
     background: url('img/showroom-back.png') #e7e7e7 no-repeat;

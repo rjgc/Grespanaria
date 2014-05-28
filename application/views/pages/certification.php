@@ -28,10 +28,11 @@
                             <thead>
                                 <tr class="logos">
                                     <th><h1><?= lang('g_available_documents') ?></h1></th>
-                                    <th><img src="<?php echo base_url() ?>assets/grespanaria/img/margres3.png" height="31"></th>
-                                    <th><img src="<?php echo base_url() ?>assets/grespanaria/img/love3.png" height="31"></th>
-                                    <th><img src="<?php echo base_url() ?>assets/grespanaria/img/bloom3.png" height="31"></th>
-                                    <th><img src="<?php echo base_url() ?>assets/grespanaria/img/easy3.png" height="31"></th>
+                                    <th><img src="<?php echo base_url() ?>assets/grespanaria/img/cert/cert_mini_gpp.png"     height="32"></th>
+                                    <th><img src="<?php echo base_url() ?>assets/grespanaria/img/cert/cert_mini_margres.png" height="32"></th>
+                                    <th><img src="<?php echo base_url() ?>assets/grespanaria/img/cert/cert_mini_love.png"    height="32"></th>
+                                    <th><img src="<?php echo base_url() ?>assets/grespanaria/img/cert/cert_mini_bloom.png"   height="32"></th>
+                                    <th><img src="<?php echo base_url() ?>assets/grespanaria/img/cert/cert_mini_easy.png"    height="32"></th>
                                 </tr>
                             </thead>
                             <?php   if(isset($tipos) && !empty($tipos)) { ?>
@@ -42,51 +43,77 @@
                                         <td>
                                             <?php   foreach($certificados as $certficado) {
 
-                                                        if($tipo['id_certificados_tipo'] == $certficado['id_tipos'] && $certficado['id_marcas'] == 1) { ?>
+                                                if($tipo['id_certificados_tipo'] == $certficado['id_tipos'] && $certficado['id_marcas'] == 5) {
 
-                                                            <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url'] ?>" target="_blank">
-                                                                <i class="icon-pdf"></i>
-                                                            </a>
+                                                    if(!empty($certficado['url_'.$this->lang->lang()])) { ?>
 
-                                                <?php   } ?>
-                                            <?php } ?>
+                                                        <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url_'.$this->lang->lang()] ?>" target="_blank">
+                                                            <i class="icon-pdf"></i>
+                                                        </a>
+
+                                                    <?php }
+                                                }
+                                            } ?>
                                         </td>
                                         <td>
                                             <?php   foreach($certificados as $certficado) {
 
-                                                if($tipo['id_certificados_tipo'] == $certficado['id_tipos'] && $certficado['id_marcas'] == 2) { ?>
+                                                if($tipo['id_certificados_tipo'] == $certficado['id_tipos'] && $certficado['id_marcas'] == 1) {
 
-                                                    <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url'] ?>" target="_blank">
+                                                    if(!empty($certficado['url_'.$this->lang->lang()])) { ?>
+
+                                                    <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url_'.$this->lang->lang()] ?>" target="_blank">
                                                         <i class="icon-pdf"></i>
                                                     </a>
 
-                                                <?php   } ?>
-                                            <?php } ?>
+                                                <?php }
+                                                }
+                                            } ?>
                                         </td>
                                         <td>
                                             <?php   foreach($certificados as $certficado) {
 
-                                                if($tipo['id_certificados_tipo'] == $certficado['id_tipos'] && $certficado['id_marcas'] == 3) { ?>
+                                                if($tipo['id_certificados_tipo'] == $certficado['id_tipos'] && $certficado['id_marcas'] == 2) {
 
-                                                    <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url'] ?>" target="_blank">
-                                                        <i class="icon-pdf"></i>
-                                                    </a>
+                                                    if(!empty($certficado['url_'.$this->lang->lang()])) { ?>
 
-                                                <?php   } ?>
-                                            <?php } ?>
+                                                        <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url_'.$this->lang->lang()] ?>" target="_blank">
+                                                            <i class="icon-pdf"></i>
+                                                        </a>
+
+                                                    <?php }
+                                                }
+                                            } ?>
                                         </td>
                                         <td>
                                             <?php   foreach($certificados as $certficado) {
 
-                                                if($tipo['id_certificados_tipo'] == $certficado['id_tipos'] && $certficado['id_marcas'] == 4) { ?>
+                                                if($tipo['id_certificados_tipo'] == $certficado['id_tipos'] && $certficado['id_marcas'] == 3) {
 
-                                                    <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url'] ?>" target="_blank">
-                                                        <!--<img src="<?php /*echo base_url() */?>assets/grespanaria/img/icon_pdf.png" width="42" height="42" alt="<?/*= $certficado['nome'] */?>" title="<?/*= $certficado['nome'] */?>"/>-->
-                                                        <i class="icon-pdf"></i>
-                                                    </a>
+                                                    if(!empty($certficado['url_'.$this->lang->lang()])) { ?>
 
-                                                <?php   } ?>
-                                            <?php } ?>
+                                                        <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url_'.$this->lang->lang()] ?>" target="_blank">
+                                                            <i class="icon-pdf"></i>
+                                                        </a>
+
+                                                    <?php }
+                                                }
+                                            } ?>
+                                        </td>
+                                        <td>
+                                            <?php   foreach($certificados as $certficado) {
+
+                                                if($tipo['id_certificados_tipo'] == $certficado['id_tipos'] && $certficado['id_marcas'] == 4) {
+
+                                                    if(!empty($certficado['url_'.$this->lang->lang()])) { ?>
+
+                                                        <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url_'.$this->lang->lang()] ?>" target="_blank">
+                                                            <i class="icon-pdf"></i>
+                                                        </a>
+
+                                                    <?php }
+                                                }
+                                            } ?>
                                         </td>
                                     </tr>
                                 <?php } ?>
@@ -105,90 +132,123 @@
                             <h1><?= lang('g_available_documents') ?></h1>
                             <?php if(isset($tipos) && !empty($tipos)) { ?>
 
+                                <div class="gpp">
+                                    <div class="logos">
+                                        <img src="<?php echo base_url() ?>assets/grespanaria/img/cert/cert_gpp.png" height="38">
+                                    </div>
+                                    <div class="certificados">
+                                        <?php foreach($tipos as $tipo) {
+
+                                            foreach($certificados as $certficado) {
+
+                                                if($tipo['id_certificados_tipo'] == $certficado['id_tipos'] && $certficado['id_marcas'] == 5) {
+
+                                                    if(!empty($certficado['url_'.$this->lang->lang()])) { ?>
+                                                        <div class="certificado">
+                                                            <?= $tipo['nome_'.$this->lang->lang()] ?>
+                                                            <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url_'.$this->lang->lang()] ?>" target="_blank">
+                                                                <i class="icon-pdf"></i>
+                                                            </a>
+                                                        </div>
+                                                <?php }
+                                                }
+                                            }
+                                        } ?>
+                                    </div>
+                                </div>
+
                                 <div class="margres">
                                     <div class="logos">
-                                        <img src="<?php echo base_url() ?>assets/grespanaria/img/margres3.png" height="45">
+                                        <img src="<?php echo base_url() ?>assets/grespanaria/img/cert/cert_margres.png" height="38">
                                     </div>
                                     <div class="certificados">
                                         <?php foreach($tipos as $tipo) {
 
                                                 foreach($certificados as $certficado) {
 
-                                                    if($tipo['id_certificados_tipo'] == $certficado['id_tipos'] && $certficado['id_marcas'] == 1) { ?>
+                                                    if($tipo['id_certificados_tipo'] == $certficado['id_tipos'] && $certficado['id_marcas'] == 1) {
 
-                                                        <div class="certificado">
-                                                            <?= $tipo['nome_'.$this->lang->lang()] ?>
-                                                            <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url'] ?>" target="_blank">
-                                                                <i class="icon-pdf"></i>
-                                                            </a>
-                                                        </div>
-                                        <?php       }
+                                                        if(!empty($certficado['url_'.$this->lang->lang()])) { ?>
+                                                            <div class="certificado">
+                                                                <?= $tipo['nome_'.$this->lang->lang()] ?>
+                                                                <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url_'.$this->lang->lang()] ?>" target="_blank">
+                                                                    <i class="icon-pdf"></i>
+                                                                </a>
+                                                            </div>
+                                                        <?php }
+                                                    }
                                                 }
                                         } ?>
                                     </div>
                                 </div>
                                 <div class="love">
                                     <div class="logos">
-                                        <img src="<?php echo base_url() ?>assets/grespanaria/img/love3.png" height="45">
+                                        <img src="<?php echo base_url() ?>assets/grespanaria/img/cert/cert_love.png" height="38">
                                     </div>
                                     <div class="certificados">
                                         <?php foreach($tipos as $tipo) {
 
                                             foreach($certificados as $certficado) {
 
-                                                if($tipo['id_certificados_tipo'] == $certficado['id_tipos'] && $certficado['id_marcas'] == 2) { ?>
+                                                if($tipo['id_certificados_tipo'] == $certficado['id_tipos'] && $certficado['id_marcas'] == 2) {
 
-                                                    <div class="certificado">
-                                                        <?= $tipo['nome_'.$this->lang->lang()] ?>
-                                                        <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url'] ?>" target="_blank">
-                                                            <i class="icon-pdf"></i>
-                                                        </a>
-                                                    </div>
-                                                <?php       }
+                                                    if(!empty($certficado['url_'.$this->lang->lang()])) { ?>
+                                                        <div class="certificado">
+                                                            <?= $tipo['nome_'.$this->lang->lang()] ?>
+                                                            <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url_'.$this->lang->lang()] ?>" target="_blank">
+                                                                <i class="icon-pdf"></i>
+                                                            </a>
+                                                        </div>
+                                                    <?php }
+                                                }
                                             }
                                         } ?>
                                     </div>
                                 </div>
                                 <div class="bloom">
                                     <div class="logos">
-                                        <img src="<?php echo base_url() ?>assets/grespanaria/img/bloom3.png" height="45">
+                                        <img src="<?php echo base_url() ?>assets/grespanaria/img/cert/cert_bloom.png" height="38">
                                     </div>
                                     <div class="certificados">
                                         <?php foreach($tipos as $tipo) {
 
                                             foreach($certificados as $certficado) {
 
-                                                if($tipo['id_certificados_tipo'] == $certficado['id_tipos'] && $certficado['id_marcas'] == 3) { ?>
+                                                if($tipo['id_certificados_tipo'] == $certficado['id_tipos'] && $certficado['id_marcas'] == 3) {
 
-                                                    <div class="certificado">
-                                                        <?= $tipo['nome_'.$this->lang->lang()] ?>
-                                                        <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url'] ?>" target="_blank">
-                                                            <i class="icon-pdf"></i>
-                                                        </a>
-                                                    </div>
-                                                <?php       }
+                                                    if(!empty($certficado['url_'.$this->lang->lang()])) { ?>
+                                                        <div class="certificado">
+                                                            <?= $tipo['nome_'.$this->lang->lang()] ?>
+                                                            <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url_'.$this->lang->lang()] ?>" target="_blank">
+                                                                <i class="icon-pdf"></i>
+                                                            </a>
+                                                        </div>
+                                                    <?php }
+                                                }
                                             }
                                         } ?>
                                     </div>
                                 </div>
                                 <div class="easy">
                                     <div class="logos">
-                                        <img src="<?php echo base_url() ?>assets/grespanaria/img/easy3.png" height="45">
+                                        <img src="<?php echo base_url() ?>assets/grespanaria/img/cert/cert_easy.png" height="38">
                                     </div>
                                     <div class="certificados">
                                         <?php foreach($tipos as $tipo) {
 
                                             foreach($certificados as $certficado) {
 
-                                                if($tipo['id_certificados_tipo'] == $certficado['id_tipos'] && $certficado['id_marcas'] == 4) { ?>
+                                                if($tipo['id_certificados_tipo'] == $certficado['id_tipos'] && $certficado['id_marcas'] == 4) {
 
-                                                    <div class="certificado">
-                                                        <?= $tipo['nome_'.$this->lang->lang()] ?>
-                                                        <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url'] ?>" target="_blank">
-                                                            <i class="icon-pdf"></i>
-                                                        </a>
-                                                    </div>
-                                    <?php       }
+                                                    if(!empty($certficado['url_'.$this->lang->lang()])) { ?>
+                                                        <div class="certificado">
+                                                            <?= $tipo['nome_'.$this->lang->lang()] ?>
+                                                            <a href="<?php echo base_url() ?>assets/uploads/files/<?= $certficado['url_'.$this->lang->lang()] ?>" target="_blank">
+                                                                <i class="icon-pdf"></i>
+                                                            </a>
+                                                        </div>
+                                                    <?php }
+                                                }
                                             }
                                         } ?>
                                     </div>

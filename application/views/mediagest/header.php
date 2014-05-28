@@ -61,6 +61,7 @@
             <a href='#'><span class="icon">&#59176;</span> Media</a>
             <ul class="submenu">
                 <li><a href='<?php echo site_url("mediagest/media_photo_management")?>'>Fotos</a></li>
+                <li><a href='<?php echo site_url("mediagest/media_photo_tipo_management")?>'>Fotos Tipo Galeria</a></li>
                 <li><a href='<?php echo site_url("mediagest/media_video_management")?>'>Videos</a></li>
                 <li><a href='<?php echo site_url("mediagest/page_video_management")?>'>Videos das Páginas</a></li>
             </ul>

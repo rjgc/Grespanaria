@@ -9,17 +9,25 @@
     <div class="container">
         <div>
             <h1><?= lang('g_photo_gallery'); ?></h1>
-            <div class="row">
-                <?php foreach($fotos as $foto) { ?>
-                    <div class="col-md-3">
-                        <div class="media-feed">
-                            <a class="galeria" href="<?php echo base_url() ?>assets/uploads/media/<?= $foto['url'] ?>">
-                                <img src="<?php echo base_url() ?>assets/uploads/media/<?= $foto['url'] ?>" width="250" height="167">
-                            </a>
-                        </div>
-                    </div>
-                <?php } ?>
-            </div>
+            <?php   foreach($fotos_tipo as $tipo) { ?>
+                <div class="row">
+                    <h4><?= $tipo['nome_'.$this->lang->lang()]; ?></h4>
+
+                    <?php   foreach($fotos as $foto) {
+
+                                if($foto['id_media_tipo'] == $tipo['id_photos_tipo']) { ?>
+
+                                    <div class="col-md-3">
+                                        <div class="media-feed">
+                                            <a class="galeria" href="<?php echo base_url() ?>assets/uploads/media/<?= $foto['url'] ?>">
+                                                <img src="<?php echo base_url() ?>assets/uploads/media/<?= $foto['url'] ?>" width="250" height="167">
+                                            </a>
+                                        </div>
+                                    </div>
+                                <?php   }
+                            } ?>
+                </div>
+            <?php   } ?>
 
             <h1><?= lang('g_video_gallery'); ?></h1>
             <div class="row">
