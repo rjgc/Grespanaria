@@ -10,20 +10,16 @@
         <div>
             <h1><?= lang('g_photo_gallery'); ?></h1>
             <?php   foreach($fotos_tipo as $tipo) { ?>
-                <div class="row">
+                <div class="row grid effect-6" id="grid">
                     <h4><?= $tipo['nome_'.$this->lang->lang()]; ?></h4>
 
                     <?php   foreach($fotos as $foto) {
 
-                                if($foto['id_media_tipo'] == $tipo['id_photos_tipo']) { ?>
+                                if($foto['id_media_tipo'] == $tipo['id_photo_tipos']) { ?>
 
-                                    <div class="col-md-3">
-                                        <div class="media-feed">
-                                            <a class="galeria" href="<?php echo base_url() ?>assets/uploads/media/<?= $foto['url'] ?>">
-                                                <img src="<?php echo base_url() ?>assets/uploads/media/<?= $foto['url'] ?>" width="250" height="167">
-                                            </a>
-                                        </div>
-                                    </div>
+                                    <a class="col-md-3 galeria" href="<?php echo base_url() ?>assets/uploads/media/<?= $foto['url'] ?>">
+                                        <img src="<?php echo base_url() ?>assets/uploads/media/<?= $foto['url'] ?>" width="250" height="167">
+                                    </a>
                                 <?php   }
                             } ?>
                 </div>
@@ -43,3 +39,16 @@
         </div>
     </div>
 </main>
+
+<script src="<?php echo base_url() ?>assets/grespanaria/js/AnimOnScroll/modernizr.custom.js"></script>
+<script src="<?php echo base_url() ?>assets/grespanaria/js/AnimOnScroll/masonry.pkgd.min.js"></script>
+<script src="<?php echo base_url() ?>assets/grespanaria/js/AnimOnScroll/imagesloaded.js"></script>
+<script src="<?php echo base_url() ?>assets/grespanaria/js/AnimOnScroll/classie.js"></script>
+<script src="<?php echo base_url() ?>assets/grespanaria/js/AnimOnScroll/AnimOnScroll.js"></script>
+<script>
+    new AnimOnScroll( document.getElementById( 'grid' ), {
+        minDuration : 0.4,
+        maxDuration : 0.7,
+        viewportFactor : 0.2
+    } );
+</script>

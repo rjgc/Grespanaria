@@ -62,7 +62,7 @@ class grespanaria_model extends CI_Model
     }
 
     public function get_fotos_tipo(){
-        $query = $this->db->query("select * from media_photo_tipos");
+        $query = $this->db->query("select * from media_photo_tipos where id_photo_tipos > 2 order by id_photo_tipos");
 
         $data = $query->result_array();
         return $data;

@@ -25,6 +25,7 @@
         <link href="<?php echo base_url() ?>assets/grespanaria/css/styles-presentations.css" rel="stylesheet">
                 <?php   }
         if( isset($current) && $current === 'media' ){ ?>
+            <link href="<?php echo base_url() ?>assets/grespanaria/css/AnimOnScroll.css" rel="stylesheet">
             <link href="<?php echo base_url() ?>assets/grespanaria/css/styles-media.css" rel="stylesheet">
         <?php   }
         if( isset($current) && $current === 'news' ){ ?>
@@ -57,6 +58,8 @@
             });
         //]]>
         </script>
+
+
         <?php } ?>
 
         <!-- Just for debugging purposes. Don't actually copy this line! -->

@@ -24,12 +24,11 @@ main .container {margin: 30px auto 0;}
 main .container div .row .col-md-3 {min-width: 280px;margin: 0 0 20px;display: inline-block;vertical-align: top;padding: 0 20px 10px 0;}
 main h1 {font-size: 24px;font-family: Raleway, sans-serif;font-weight: 400;margin: 5px 0 35px;}
 
-main .media-feed, .media-feed h4 {line-height: 30px;color: #313131;}
-main .date {font-weight: 300;font-size: 18px;margin-top: 10px;}
-main h4 {font-weight: 700;font-size: 18px;margin: -5px 0 10px;height: 30px;}
 
-main .col-md-3 p {font-weight: 300;font-size: 14px;}
-main .col-md-3 p > a {font-weight: 400;font-size: 14px;color: #006940;margin-left: 6px;}
+main .date {font-weight: 300;font-size: 18px;margin-top: 10px;}
+main h4 {font-weight: 700;font-size: 18px;margin: -5px 0 10px;height: 30px;clear: both;}
+
+main .col-md-3 img {display: inline-block;margin: 0 auto;}
 main .row {margin: 20px auto 30px;}
 
 main .col-md-6 {padding: 0 30px 10px 0;}
@@ -79,15 +78,16 @@ main .video-feed {max-width: 560px;margin: 0 auto 30px}
     .triangle-green {width: 435px;}
     .triangle-right-grey {width: 170px;}
 
-    main .container div .row .col-md-3 {width: 33.3%;}
+    main .container div .row .col-md-3 {width: 33%;}
 }
 
 @media screen and (max-width: 991px) {
     .imgHeader {display: none}
 
-    main .container div .row .col-md-3 {margin: 0 4% 10px;}
+    main .container div .row .col-md-3 {width: 50%;min-width: 265px;}
 }
 
-@media screen and (max-width: 768px) {
-    main .container div .row .col-md-3 {margin: 0 auto 10px;width: 49%;}
+@media screen and (max-width: 610px) {
+    main .container div .row .col-md-3 {width: 100%;text-align: center;}
+
 }
