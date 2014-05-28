@@ -20,7 +20,7 @@ $lang["g_contactus"] = "Contatos";
 
 // ====================== HOME =============================
 
-$lang["g_welcome"] = "Bem vindo à Gres Panaria Portugal";
+$lang["g_welcome"] = "Bem-vindo à Gres Panaria Portugal";
 
 $lang["g_latest_news"] = "Últimas Notícias";
 

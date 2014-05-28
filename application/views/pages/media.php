@@ -26,12 +26,14 @@
             <?php   } ?>
 
             <h1><?= lang('g_video_gallery'); ?></h1>
-            <div class="row">
+            <div class="row grid effect-6" id="videos">
                 <?php foreach($videos as $video) { ?>
                     <div class="col-md-6">
                         <div class="video-feed">
+
                             <h4><?= $video['nome_'.$this->lang->lang()] ?></h4>
                             <iframe width="560" height="315" src="//www.youtube.com/embed/<?= $video['url'] ?>" frameborder="0" allowfullscreen></iframe>
+
                         </div>
                     </div>
                 <?php } ?>
