@@ -117,8 +117,9 @@
                         }
                     ];
 
-                    var image1 = '<?=base_url()?>assets/grespanaria/img/markerM.png';
-                    var image2 = '<?=base_url()?>assets/grespanaria/img/markerPG.png';
+                    /*var image1 = '<?=base_url()?>assets/grespanaria/img/markerM.png';
+                    var image2 = '<?=base_url()?>assets/grespanaria/img/markerPG.png';*/
+		    var image2 = '<?=base_url()?>assets/grespanaria/img/markerGP_M.png';
                     var image3 = '<?=base_url()?>assets/grespanaria/img/markerLove.png';
 
                     var styledMap = new google.maps.StyledMapType(styles,
@@ -136,7 +137,7 @@
                     var map = new google.maps.Map(document.getElementById("map-canvas"),
                             mapOptions);
 
-                    var myLatLng3 = new google.maps.LatLng(40.647686, -8.608828);
+                    var myLatLng3 = new google.maps.LatLng(40.64840, -8.60818);
 
                     var marker = new google.maps.Marker({
                         position: myLatLng3,
@@ -146,7 +147,7 @@
                         title:"LoveTiles"
                     });
 
-                    var myLatLng = new google.maps.LatLng(40.605095, -8.651530);
+                   /* var myLatLng = new google.maps.LatLng(40.605196, -8.651420);
 
                     var marker = new google.maps.Marker({
                         position: myLatLng,
@@ -154,21 +155,21 @@
                         animation: google.maps.Animation.DROP,
                         icon: image1,
                         title:"MarGres"
-                    });
+                    });*/
 
-                    var myLatLng2 = new google.maps.LatLng(40.603183,-8.652140);
+                    var myLatLng2 = new google.maps.LatLng(40.605196, -8.651420);
 
                     var marker = new google.maps.Marker({
                         position: myLatLng2,
                         map: map,
                         animation: google.maps.Animation.DROP,
                         icon: image2,
-                        title:"Gres Panaria"
+                        title:"Gres Panaria - Margres"
                     });
 
                     // Code for infowindow
                     var popup=new google.maps.InfoWindow({
-                        content: "Title oi"
+                        content: "GRÉS PANARIA PORTUGAL, S.A."
                     });
                     google.maps.event.addListener(marker, 'click', function(e) {
                         console.log(e);

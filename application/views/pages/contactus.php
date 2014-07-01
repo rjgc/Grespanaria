@@ -7,17 +7,16 @@
             <div class="row">
                 <div class="col-md-3">
                     <h3><?= lang('g_contact_sede'); ?></h3>
-                    <span id="mails"><a href="mailto:grespanaria@grespanaria.pt">grespanaria@grespanaria.pt</a></span>
+                    <span id="mails"><a href="mailto:geral@grespanaria.pt">geral@grespanaria.pt</a></span>
                     <p>Gres Panaria Portugal, S.A.</p>
-                    <p>Z.I. de Aveiro</p>
-                    <p>Apartado 3002</p>
-                    <p>3801-101 Aveiro</p>
+                    <p>Chousa Nova 3830-133</p>
+                    <p>Ílhavo - Portugal</p>
                     <hr class="divider">
-                    <p>T +351 234 303 030</p>
-                    <p>F +351 234 303 031</p>
+                    <p>T +351 234 329 700</p>
+                    <p>F +351 234 302 090</p>
                     <hr class="divider">
-                    <p>N 40.64840º</p>
-                    <p>W 8.60818º</p>
+                    <p>N 40.605196º</p>
+                    <p>W 8.651438º</p>
                 </div>
                 <div class="col-md-3">
                     <h3><?= lang('g_contact_aveiro'); ?></h3>
@@ -45,8 +44,8 @@
                     <p>T +351 234 329 700</p>
                     <p>F +351 234 329 702</p>
                     <hr class="divider">
-                    <p>N 40.64840º</p>
-                    <p>W 8.60818º</p>
+                    <p>N 40.605196º</p>
+                    <p>W 8.651438º</p>
                 </div>
                 <div class="col-md-3">
                     <h3><?= lang('g_contactus'); ?></h3>

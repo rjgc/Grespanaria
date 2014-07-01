@@ -32,6 +32,7 @@
                     <span><?= lang('g_gallery') ?></span>
                 </a>
             </h3>
+            <!--
             <h3>
                 <a href="<?php echo site_url('pages/contactus'); ?>">
                     <i class="icon-plus"></i>
@@ -44,6 +45,7 @@
                     <span><?= lang('g_contact_ilhavo') ?></span>
                 </a>
             </h3>
+            -->
         </div>
         <div class="row">
             <div class="col-md-2"><img class="img" src="<?php echo base_url() ?>assets/grespanaria/img/profile_margres.png"></div>
