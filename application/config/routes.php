@@ -51,7 +51,7 @@ $route['^en/(.+)$'] = "$1";
 $route['^fr/(.+)$'] = "$1";
 $route['^es/(.+)$'] = "$1";
 $route['^de/(.+)$'] = "$1";
-$route['^py/(.+)$'] = "$1";
+$route['^ru/(.+)$'] = "$1";
  
 // '/en' and '/pt' -> use default controller
 $route['^pt$'] = $route['default_controller'];
@@ -59,7 +59,7 @@ $route['^en$'] = $route['default_controller'];
 $route['^fr$'] = $route['default_controller'];
 $route['^es$'] = $route['default_controller'];
 $route['^de$'] = $route['default_controller'];
-$route['^py$'] = $route['default_controller'];
+$route['^ru$'] = $route['default_controller'];
 
 
 

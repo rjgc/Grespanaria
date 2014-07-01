@@ -8,7 +8,7 @@ $lang["g_home"] = "Home";
 
 $lang["g_grespanaria"] = "Gres Panaria";
 
-$lang["g_presentations"] = "Presentations";
+$lang["g_presentations"] = "Presentation";
 
 $lang["g_media"] = "Media";
 
@@ -16,7 +16,7 @@ $lang["g_news"] = "News";
 
 $lang["g_certification"] = "Certification";
 
-$lang["g_contactus"] = "Contact Us";
+$lang["g_contactus"] = "Contacts";
 
 // ====================== HOME =============================
 

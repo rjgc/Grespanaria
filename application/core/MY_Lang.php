@@ -17,7 +17,7 @@ class MY_Lang extends CI_Lang {
 		'fr' => 'french',
         'es' => 'spanish',
 		'de' => 'deutsche',
-        'py' => 'paraguay'
+        'ru' => 'russian'
 
 	);
 
@@ -94,7 +94,7 @@ class MY_Lang extends CI_Lang {
            'lu' => 'fr' ,'ch' => 'fr' ,
            'at' => 'de' ,'de' => 'de' ,'li' => 'de' ,
            'es' => 'es' ,
-           'py' => 'py'
+           'ru' => 'ru'
 
        );
 		                            
